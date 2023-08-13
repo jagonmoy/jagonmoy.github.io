@@ -1,0 +1,19 @@
+import * as React from "react";
+
+import TabNavigation from "./components/TabNavigation";
+import SocialLinks from "./components/SocialLinks";
+
+const NavBar = () => {
+  return (
+    <div className="pb-12">
+      <div className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+        <div className="flex justify-between">
+          <TabNavigation />
+          <SocialLinks/>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default NavBar;
