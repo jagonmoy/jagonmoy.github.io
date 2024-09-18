@@ -2,10 +2,10 @@ import Image from "next/image";
 
 function ProfileAndCover() {
   return (
-    <div className="w-full pb-16 sm:pb-8 md:pb-12 lg:pb-28">
+    <div className="w-full pb-12 sm:pb-8 md:pb-12 lg:pb-28">
       <div className="relative w-full">
         {/* Cover Picture */}
-        <div className="relative w-full h-48 sm:h-72 md:h-96 lg:h-[400px] bg-gray-200"> {/* Set height explicitly */}
+        <div className="relative w-full h-60 sm:h-72 md:h-96 lg:h-[400px] bg-gray-200">
           <Image
             style={{ objectFit: 'cover'}}
             src="/coverPortfolio.png"
@@ -16,7 +16,7 @@ function ProfileAndCover() {
         </div>
 
         {/* Profile Picture */}
-        <div className="absolute top-28 sm:top-48 md:top-60 lg:top-64 left-1/2 transform -translate-x-1/2">
+        <div className="absolute top-[140px] sm:top-48 md:top-60 lg:top-64 left-1/2 transform -translate-x-1/2">
           <div className="rounded-full overflow-hidden border-4 border-white shadow-lg">
             <Image
               src="/proPic.jpeg"
