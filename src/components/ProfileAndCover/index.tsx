@@ -5,13 +5,13 @@ function ProfileAndCover() {
     <div className="w-full pb-16 sm:pb-8 md:pb-12 lg:pb-28">
       <div className="relative w-full">
         {/* Cover Picture */}
-        <div className="w-full bg-cover bg-center">
+        <div className="relative w-full h-48 sm:h-72 md:h-96 lg:h-[400px] bg-gray-200"> {/* Set height explicitly */}
           <Image
-            className="object-cover h-48 sm:h-72 md:h-96 lg:h-[400px] w-full"
+            style={{ objectFit: 'cover'}}
             src="/coverPortfolio.png"
-            height={460}
-            width={1500}
             alt="cover"
+            priority
+            layout="fill"  // Fill the container
           />
         </div>
 
@@ -24,12 +24,13 @@ function ProfileAndCover() {
               width={150}
               height={150}
               className="object-cover sm:w-30 sm:h-30 md:w-48 md:h-48 lg:w-64 lg:h-64"
+              priority
             />
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default ProfileAndCover;
