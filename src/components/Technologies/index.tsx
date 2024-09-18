@@ -1,13 +1,5 @@
-'use client';
-import {motion} from 'framer-motion'
-const Technologies = () => {
+function Technologies () {
     return (
-      <motion.div initial={{ y: 1000 }}
-      animate={{ y: 0 }}
-      exit={{ y: 1000 }}
-
-      transition={{ delay: 1, ease: 'easeInOut' }}
-      >
         <div className="bg-white p-4 shadow-md">
         <div className="flex-col space-y-4 ">
           {/* Content for the right column */}
@@ -106,7 +98,6 @@ const Technologies = () => {
           </div>
         </div>
       </div>
-      </motion.div>
     )
 }
 
