@@ -6,7 +6,7 @@ import { FaBars } from 'react-icons/fa';
 import Link from "next/link";
 
 const TabNavigation = () => {
-  const [activeTab, setActiveTab] = useState("introduction"); // Initialize the active tab
+  const [activeTab, setActiveTab] = useState("aboutMe"); // Initialize the active tab
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleTabClick = (tab: string) => {
@@ -23,22 +23,11 @@ const TabNavigation = () => {
             <Link
               href="/"
               className={`inline-block px-4 rounded-t-lg hover:text-gray-600  dark:hover:text-gray-300 ${
-                activeTab === "introduction" && "text-blue-600 border-blue-600"
+                activeTab === "aboutMe" && "text-blue-600 border-blue-600"
               }`}
-              onClick={() => handleTabClick("introduction")}
+              onClick={() => handleTabClick("aboutMe")}
             >
-              Introduction
-            </Link>
-          </li>
-          <li className="mr-2 hidden lg:block">
-            <Link
-              href="/experience"
-              className={`inline-block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
-                activeTab === "experience" && "text-blue-600 border-blue-600"
-              }`}
-              onClick={() => handleTabClick("experience")}
-            >
-              Experience
+              About Me
             </Link>
           </li>
           <li className="mr-2 hidden lg:block">
@@ -50,6 +39,17 @@ const TabNavigation = () => {
               onClick={() => handleTabClick("education")}
             >
               Education
+            </Link>
+          </li>
+          <li className="mr-2 hidden lg:block">
+            <Link
+              href="/experience"
+              className={`inline-block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
+                activeTab === "experience" && "text-blue-600 border-blue-600"
+              }`}
+              onClick={() => handleTabClick("experience")}
+            >
+              Experience
             </Link>
           </li>
           <li className="mr-2 hidden lg:block">
@@ -74,29 +74,17 @@ const TabNavigation = () => {
             {dropdownOpen && (
               <div className="absolute top-10 left-0 bg-white shadow-md p-2 w-[250px]">
                 <Link
-                  href="/"
+                  href="/about-me"
                   className={`block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
-                    activeTab === "introduction" &&
+                    activeTab === "aboutMe" &&
                     "text-blue-600 border-blue-600"
                   }`}
                   onClick={() => {
-                    handleTabClick("introduction");
+                    handleTabClick("aboutMe");
                     handleDropdownToggle();
                   }}
                 >
-                  Introduction
-                </Link>
-                <Link
-                  href="/experience"
-                  className={`block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
-                    activeTab === "experience" && "text-blue-600 border-blue-600"
-                  }`}
-                  onClick={() => {
-                    handleTabClick("experience");
-                    handleDropdownToggle();
-                  }}
-                >
-                  Experience
+                  About Me
                 </Link>
                 <Link
                   href="/education"
@@ -109,6 +97,18 @@ const TabNavigation = () => {
                   }}
                 >
                   Education
+                </Link>
+                <Link
+                  href="/experience"
+                  className={`block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
+                    activeTab === "experience" && "text-blue-600 border-blue-600"
+                  }`}
+                  onClick={() => {
+                    handleTabClick("experience");
+                    handleDropdownToggle();
+                  }}
+                >
+                  Experience
                 </Link>
                 <Link
                   href="/projects-and-ps"
