@@ -4,9 +4,13 @@ import { useState } from "react";
 import { FaBars } from 'react-icons/fa';
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const TabNavigation = () => {
-  const [activeTab, setActiveTab] = useState("aboutMe"); // Initialize the active tab
+  const pathname = usePathname();
+  const sectionName = pathname.split("/").pop();
+
+  const [activeTab, setActiveTab] = useState(sectionName || "about-me"); // Initialize the active tab
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleTabClick = (tab: string) => {
@@ -23,9 +27,9 @@ const TabNavigation = () => {
             <Link
               href="/"
               className={`inline-block px-4 rounded-t-lg hover:text-gray-600  dark:hover:text-gray-300 ${
-                activeTab === "aboutMe" && "text-blue-600 border-blue-600"
+                activeTab === "about-me" && "font-bold text-black border-black"
               }`}
-              onClick={() => handleTabClick("aboutMe")}
+              onClick={() => handleTabClick("about-me")}
             >
               About Me
             </Link>
@@ -34,7 +38,7 @@ const TabNavigation = () => {
             <Link
               href="/education"
               className={`inline-block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
-                activeTab === "education" && "text-blue-600 border-blue-600"
+                activeTab === "education" && "font-bold text-black border-black"
               }`}
               onClick={() => handleTabClick("education")}
             >
@@ -45,7 +49,7 @@ const TabNavigation = () => {
             <Link
               href="/experience"
               className={`inline-block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
-                activeTab === "experience" && "text-blue-600 border-blue-600"
+                activeTab === "experience" && "font-bold text-black border-black"
               }`}
               onClick={() => handleTabClick("experience")}
             >
@@ -56,7 +60,7 @@ const TabNavigation = () => {
             <Link
               href="/projects-and-ps"
               className={`inline-block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
-                activeTab === "projectsAndPs" && "text-blue-600 border-blue-600"
+                activeTab === "projectsAndPs" && "font-bold text-black border-black"
               }`}
               onClick={() => handleTabClick("projectsAndPs")}
             >
@@ -72,57 +76,59 @@ const TabNavigation = () => {
             </div>
             {/* Dropdown content */}
             {dropdownOpen && (
-              <div className="absolute top-10 left-0 bg-white shadow-md p-2 w-[250px]">
-                <Link
-                  href="/about-me"
-                  className={`block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
-                    activeTab === "aboutMe" &&
-                    "text-blue-600 border-blue-600"
-                  }`}
-                  onClick={() => {
-                    handleTabClick("aboutMe");
-                    handleDropdownToggle();
-                  }}
-                >
-                  About Me
-                </Link>
-                <Link
-                  href="/education"
-                  className={`block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
-                    activeTab === "education" && "text-blue-600 border-blue-600"
-                  }`}
-                  onClick={() => {
-                    handleTabClick("education");
-                    handleDropdownToggle();
-                  }}
-                >
-                  Education
-                </Link>
-                <Link
-                  href="/experience"
-                  className={`block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
-                    activeTab === "experience" && "text-blue-600 border-blue-600"
-                  }`}
-                  onClick={() => {
-                    handleTabClick("experience");
-                    handleDropdownToggle();
-                  }}
-                >
-                  Experience
-                </Link>
-                <Link
-                  href="/projects-and-ps"
-                  className={`block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
-                    activeTab === "projectsAndPs" &&
-                    "text-blue-600 border-blue-600"
-                  }`}
-                  onClick={() => {
-                    handleTabClick("projectsAndPs");
-                    handleDropdownToggle();
-                  }}
-                >
-                  Projects & Problem Solving
-                </Link>
+              <div className="absolute top-10 left-0 bg-white shadow-md py-4 px-2 w-[250px] border-b">
+                <div className="flex flex-col gap-y-2">
+                  <Link
+                    href="/about-me"
+                    className={`block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
+                      activeTab === "about-me" &&
+                      "font-bold text-black border-black"
+                    }`}
+                    onClick={() => {
+                      handleTabClick("about-me");
+                      handleDropdownToggle();
+                    }}
+                  >
+                    About Me
+                  </Link>
+                  <Link
+                    href="/education"
+                    className={`block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
+                      activeTab === "education" && "font-bold text-black border-black"
+                    }`}
+                    onClick={() => {
+                      handleTabClick("education");
+                      handleDropdownToggle();
+                    }}
+                  >
+                    Education
+                  </Link>
+                  <Link
+                    href="/experience"
+                    className={`block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
+                      activeTab === "experience" && "font-bold text-black border-black"
+                    }`}
+                    onClick={() => {
+                      handleTabClick("experience");
+                      handleDropdownToggle();
+                    }}
+                  >
+                    Experience
+                  </Link>
+                  <Link
+                    href="/projects-and-ps"
+                    className={`block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
+                      activeTab === "projectsAndPs" &&
+                      "font-bold text-black border-black"
+                    }`}
+                    onClick={() => {
+                      handleTabClick("projectsAndPs");
+                      handleDropdownToggle();
+                    }}
+                  >
+                    Projects & Problem Solving
+                  </Link>
+                </div>
               </div>
             )}
           </li>
