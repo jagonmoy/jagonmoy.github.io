@@ -1,8 +1,18 @@
+'use client';
+import { useEffect } from 'react';
 import { FaSchool, FaUniversity } from 'react-icons/fa';
 
 function EducationPage() {
+  useEffect(() => {
+    document.getElementById('education')?.focus();
+  }, []);
+
   return (
-    <ol className="relaive bg-white p-4 shadow-xl rounded-md flex flex-col space-y-4">
+    <ol
+      id="education"
+      tabIndex={0}
+      className="relaive bg-white p-4 shadow-xl rounded-md flex flex-col space-y-4"
+    >
       <h1 className="text-center font-bold text-gray-900 text-xl lg:text-2xl">Education</h1>
       <div className="flex flex-col gap-y-10 mb-10">
         <li className="flex gap-x-4 items-start">
