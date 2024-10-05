@@ -25,7 +25,7 @@ const TabNavigation = () => {
     <div className="flex items-center py-4 pl-4 space-x-4">
       <div className="text-gray-500 dark:text-gray-400">
         <ul className="flex flex-wrap -mb-px">
-          <li className="mr-2 hidden lg:block relative">
+          <li className="mr-2 hidden md:block relative">
             <Link
               href="/"
               className={`inline-block px-4 rounded-t-lg hover:text-gray-600  ${
@@ -36,7 +36,7 @@ const TabNavigation = () => {
               About Me
             </Link>
           </li>
-          <li className="mr-2 hidden lg:block relative">
+          <li className="mr-2 hidden md:block relative">
             <Link
               href="/education"
               className={`inline-block px-4 rounded-t-lg hover:text-gray-600  ${
@@ -47,7 +47,7 @@ const TabNavigation = () => {
               Education
             </Link>
           </li>
-          <li className="mr-2 hidden lg:block relative">
+          <li className="mr-2 hidden md:block relative">
             <button
               className={`inline-block px-4 rounded-t-lg hover:text-gray-600  ${
                 activeTab === 'experience' && 'font-bold text-black border-black'
@@ -91,7 +91,7 @@ const TabNavigation = () => {
               </div>
             )}
           </li>
-          <li className="mr-2 hidden lg:block">
+          <li className="mr-2 hidden md:block">
             <Link
               href="/projects-and-ps"
               className={`inline-block px-4 rounded-t-lg hover:text-gray-600  ${
@@ -102,7 +102,7 @@ const TabNavigation = () => {
               Projects & Problem Solving
             </Link>
           </li>
-          <div className="mr-2 lg:hidden relative">
+          <div className="mr-2 md:hidden relative">
             <div
               className="inline-block px-4 rounded-t-lg hover:text-gray-600 cursor-pointer"
               onClick={handleDropdownToggle}

@@ -16,7 +16,9 @@ function ProfileAndIntro() {
         <div className="text-gray-500 mt-2 break-words text-sm lg:text-base">
           {profileIntro.bio}
         </div>
-        <ProfileSocialLinks />
+        <div className="hidden md:block">
+          <ProfileSocialLinks />
+        </div>
       </div>
     </div>
   );
