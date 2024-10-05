@@ -8,7 +8,7 @@ import React from 'react';
 const roboto = Roboto({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Jagonmoy',
+  title: 'Jagonmoy | Software Engineer | ML Enthusiast',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
