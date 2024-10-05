@@ -20,26 +20,39 @@
     },
     "aboutMeParagraphs" : {
         "heading" : "About Me",
-        "paragraph1" : "I am a Software Engineering graduate from Shahjalal University of Science and Technology, with a CGPA of 3.60 out of 4.00 and a strong upward trend (3.85+ in my last four semesters). My academic journey culminated in a Machine Learning thesis titled Speaker Diarization with Speech Recognition in Bangla, where I explored advanced NLP technologies. During my studies, I also excelled in competitive programming, earning notable achievements that highlight my problem-solving skills.",
-        "paragraph2" : "For the past 1.5 years, I have worked as a full-stack developer at Cefalo, a Norway-based offshore software company, where I have gained valuable experience in building dynamic and scalable solutions.",
-        "paragraph3": "Driven by curiosity and a passion for merging software engineering with machine learning, I am eager to apply my skills in a role that combines both fields. I aim to leverage my expertise to tackle complex challenges and drive innovation."
+        "areasOfInterestHeading" : "Areas of Interest",
+        "areasOfInterest" : [
+            "Software Development",
+            "Software Architecture and Design",
+            "Frontend Development",
+            "Machine Learning",
+            "Software Testing",
+            "CI/CD (Continuous Integration and Deployment)",
+            "Human Computer Interaction",
+            "Algorithms and Data Structures",
+            "Natural Language Processing"
+        ],
+        "paragraph1" : "A software engineer with two years of full-stack development experience, specializing in Next.js and Nest.js, with a solid focus on frontend development. Experience also includes mentoring junior engineers, supporting their growth in technical skills and career development.",
+        "paragraph2" : "Strong academic background, including research in NLP during an undergraduate thesis, and participation in competitive programming to develop problem-solving skills. Volunteer experience includes involvement in arranging tech fests, showcasing a commitment to the tech community.",
+        "paragraph3": "Outside of professional and academic pursuits, enjoys socializing, traveling, and has a great passion for photography."
     },
     "education" : {
         "heading" : "Education",
         "university" : {
-            "name": "Shahjalal University of Science and Technology",
+            "name": "Shahjalal University of Science and Technology, Sylhet, Bangladesh",
             "degree": "Bachelor of Science in Software Engineering",
             "duration": "January 2018 - February 2023",
             "result": "CGPA: 3.60/4.00",
-            "bulletPoints" : [
-                "Ranked among top 10 performers in my batch",
-                "Maintained a CGPA of 3.85+ over the last four semesters, achieving 1st place in the 7th semester and 2nd place in the 8th semester",
-                "Cousework: Data Structures, Algorithms, Object Oriented Programming, Database Management Systems, Operating Systems, Computer Networking, Distributed Systems, Software Architecture and Design Patterns, Software Requirement Engineering, Software Verification and Validation, Software Metrics, Linear and Abstract Algebra, Data Science, Machine Learning, Artifical Intelligence ."
+            "bulletPoints": [
+                "Ranked among the top 10 performers in the graduating batch, demonstrating consistent academic excellence.",
+                "Achieved a 3.85 average GPA over the last four semesters, with a perfect 4.0 (1st place) in the 7th semester and 3.97 (2nd place) in the 8th semester.",
+                "Coursework: Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networking, Distributed Systems, Software Architecture and Design Patterns, Software Requirement Engineering, Software Verification and Validation, Software Metrics, Linear and Abstract Algebra, Data Science, Machine Learning, Artificial Intelligence."
             ]
+
         },
         "college" : {
-            "name": "Higher Secondary School Certificate in Science",
-            "degree": "MC College, Sylhet, Bangladesh",
+            "name": "MC College, Sylhet, Bangladesh",
+            "degree": "Higher Secondary School Certificate in Science",
             "duration": "July 2014 — August 2016",
             "result": "CGPA 5.00 / 5.00",
             "bulletPoints" : [

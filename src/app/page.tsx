@@ -23,6 +23,18 @@ function Home() {
           <br /> <br />
           {aboutMeParagraphs.paragraph3}
         </div>
+        <h1 className="font-semibold text-gray-900 text-md lg:text-lg">
+          {aboutMeParagraphs.areasOfInterestHeading}
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {aboutMeParagraphs.areasOfInterest.map((interest, index) => (
+            <div key={index} className="flex items-start">
+              <ul className="list-disc ml-4">
+                <li className="text-gray-500 text-sm lg:text-base">{interest}</li>
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
