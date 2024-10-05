@@ -1,0 +1,49 @@
+{
+    "profileIntro" : {
+        "name" : "Jagonmoy Dey",
+        "pronouns" : "he/him",
+        "bio" : " Software Engineer @ Cefalo | Full-Stack Developer | Machine Learning Enthusiast",
+        "company" : "Cefalo Bangladesh Limited",
+        "companyLink": "https://www.cefalo.com/en",
+        "university" : "Shahjalal University of Science and Technology",
+        "universityLink" : "https://www.sust.edu/",
+        "emailText": "jagonmoydey1997@gmail.com",
+        "emailLink": "mailto:jagonmoydey1997@gmail.com",
+        "phoneText": "(+880) 1932 880 727",
+        "phoneLink": "tel:+8801932880727",
+        "githubLinkText" : "github.com/jagonmoy",
+        "githubLink" : "https://github.com/jagonmoy",
+        "linkedinLinkText" : "linkedin.com/in/jagonmoy",
+        "linkedinLink" : "https://www.linkedin.com/in/jagonmoy/"
+    },
+    "aboutMeParagraphs" : {
+        "heading" : "About Me",
+        "paragraph1" : "I am a Software Engineering graduate from Shahjalal University of Science and Technology, with a CGPA of 3.60 out of 4.00 and a strong upward trend (3.85+ in my last four semesters). My academic journey culminated in a Machine Learning thesis titled Speaker Diarization with Speech Recognition in Bangla, where I explored advanced NLP technologies. During my studies, I also excelled in competitive programming, earning notable achievements that highlight my problem-solving skills.",
+        "paragraph2" : "For the past 1.5 years, I have worked as a full-stack developer at Cefalo, a Norway-based offshore software company, where I have gained valuable experience in building dynamic and scalable solutions.",
+        "paragraph3": "Driven by curiosity and a passion for merging software engineering with machine learning, I am eager to apply my skills in a role that combines both fields. I aim to leverage my expertise to tackle complex challenges and drive innovation."
+    },
+    "education" : {
+        "heading" : "Education",
+        "university" : {
+            "name": "Shahjalal University of Science and Technology",
+            "degree": "Bachelor of Science in Software Engineering",
+            "duration": "January 2018 - February 2023",
+            "result": "CGPA: 3.60/4.00",
+            "bulletPoints" : [
+                "Ranked among top 10 performers in my batch",
+                "Maintained a CGPA of 3.85+ over the last four semesters, achieving 1st place in the 7th semester and 2nd place in the 8th semester",
+                "Cousework: Data Structures, Algorithms, Object Oriented Programming, Database Management Systems, Operating Systems, Computer Networking, Distributed Systems, Software Architecture and Design Patterns, Software Requirement Engineering, Software Verification and Validation, Software Metrics, Linear and Abstract Algebra, Data Science, Machine Learning, Artifical Intelligence ."
+            ]
+        },
+        "college" : {
+            "name": "Higher Secondary School Certificate in Science",
+            "degree": "MC College, Sylhet, Bangladesh",
+            "duration": "July 2014 — August 2016",
+            "result": "CGPA 5.00 / 5.00",
+            "bulletPoints" : [
+                "Scored above 85% in Higher Secondary School Certificate exams and received government scholarships.",
+                "Achieved a perfect score of GPA 5.00/5.00 in both the Secondary School Certificate and Junior School Certificate exams, receiving government scholarships for both."
+            ]
+        }
+    }
+}

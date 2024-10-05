@@ -11,6 +11,9 @@
       ],
       "app/*": [
         "app/*"
+      ],
+      "data/*": [
+        "data/*"
       ]
     },
     "jsx": "preserve",
