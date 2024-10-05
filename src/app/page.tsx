@@ -2,7 +2,6 @@ function Home() {
   return (
     <div className="w-full bg-white p-4 shadow-xl rounded-md">
       <div className="flex-col space-y-4">
-        {/* Content for the right column */}
         <h1 className="text-center font-bold text-gray-900 text-xl lg:text-2xl">About me</h1>
         <div className="text-gray-500 break-words text-sm lg:text-base">
           I am a Software Engineering graduate from Shahjalal University of Science and Technology,
