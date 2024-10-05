@@ -14,6 +14,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="./favicon.ico" />
+      </head>
       <body className={`${roboto.className} min-h-screen`}>
         <NavBar />
         <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-4 pt-12">

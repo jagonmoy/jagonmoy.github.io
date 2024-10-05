@@ -4,7 +4,7 @@ import { MdMail } from 'react-icons/md';
 
 function ProfileSocialLinks() {
   return (
-    <div className="w-full bg-white mt-4 rounded-md shadow-xl flex flex-col p-4 gap-y-2">
+    <div className="w-full bg-white mt-4 rounded-md shadow-xl flex flex-col p-4 gap-y-3">
       <div className="flex gap-x-3 items-center">
         <FaBuilding className="text-xl lg:text-2xl flex-shrink-0" />
         <Link href="https://www.cefalo.com/en/" target="_blank">
