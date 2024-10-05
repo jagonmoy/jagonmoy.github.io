@@ -1,16 +1,14 @@
-"use client";
-import { useState } from "react";
-
+'use client';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
-
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 const TabNavigation = () => {
   const pathname = usePathname();
-  const sectionName = pathname.split("/").pop();
+  const sectionName = pathname.split('/').pop();
 
-  const [activeTab, setActiveTab] = useState(sectionName || "about-me"); // Initialize the active tab
+  const [activeTab, setActiveTab] = useState(sectionName || 'about-me'); // Initialize the active tab
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleTabClick = (tab: string) => {
@@ -27,9 +25,9 @@ const TabNavigation = () => {
             <Link
               href="/"
               className={`inline-block px-4 rounded-t-lg hover:text-gray-600  dark:hover:text-gray-300 ${
-                activeTab === "about-me" && "font-bold text-black border-black"
+                activeTab === 'about-me' && 'font-bold text-black border-black'
               }`}
-              onClick={() => handleTabClick("about-me")}
+              onClick={() => handleTabClick('about-me')}
             >
               About Me
             </Link>
@@ -38,9 +36,9 @@ const TabNavigation = () => {
             <Link
               href="/education"
               className={`inline-block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
-                activeTab === "education" && "font-bold text-black border-black"
+                activeTab === 'education' && 'font-bold text-black border-black'
               }`}
-              onClick={() => handleTabClick("education")}
+              onClick={() => handleTabClick('education')}
             >
               Education
             </Link>
@@ -49,9 +47,9 @@ const TabNavigation = () => {
             <Link
               href="/experience"
               className={`inline-block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
-                activeTab === "experience" && "font-bold text-black border-black"
+                activeTab === 'experience' && 'font-bold text-black border-black'
               }`}
-              onClick={() => handleTabClick("experience")}
+              onClick={() => handleTabClick('experience')}
             >
               Experience
             </Link>
@@ -60,9 +58,9 @@ const TabNavigation = () => {
             <Link
               href="/projects-and-ps"
               className={`inline-block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
-                activeTab === "projectsAndPs" && "font-bold text-black border-black"
+                activeTab === 'projectsAndPs' && 'font-bold text-black border-black'
               }`}
-              onClick={() => handleTabClick("projectsAndPs")}
+              onClick={() => handleTabClick('projectsAndPs')}
             >
               Projects & Problem Solving
             </Link>
@@ -72,7 +70,7 @@ const TabNavigation = () => {
               className="inline-block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 cursor-pointer"
               onClick={handleDropdownToggle}
             >
-              <FaBars className="text-2xl"/>
+              <FaBars className="text-2xl" />
             </div>
             {/* Dropdown content */}
             {dropdownOpen && (
@@ -81,11 +79,10 @@ const TabNavigation = () => {
                   <Link
                     href="/about-me"
                     className={`block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
-                      activeTab === "about-me" &&
-                      "font-bold text-black border-black"
+                      activeTab === 'about-me' && 'font-bold text-black border-black'
                     }`}
                     onClick={() => {
-                      handleTabClick("about-me");
+                      handleTabClick('about-me');
                       handleDropdownToggle();
                     }}
                   >
@@ -94,10 +91,10 @@ const TabNavigation = () => {
                   <Link
                     href="/education"
                     className={`block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
-                      activeTab === "education" && "font-bold text-black border-black"
+                      activeTab === 'education' && 'font-bold text-black border-black'
                     }`}
                     onClick={() => {
-                      handleTabClick("education");
+                      handleTabClick('education');
                       handleDropdownToggle();
                     }}
                   >
@@ -106,10 +103,10 @@ const TabNavigation = () => {
                   <Link
                     href="/experience"
                     className={`block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
-                      activeTab === "experience" && "font-bold text-black border-black"
+                      activeTab === 'experience' && 'font-bold text-black border-black'
                     }`}
                     onClick={() => {
-                      handleTabClick("experience");
+                      handleTabClick('experience');
                       handleDropdownToggle();
                     }}
                   >
@@ -118,11 +115,10 @@ const TabNavigation = () => {
                   <Link
                     href="/projects-and-ps"
                     className={`block px-4 rounded-t-lg hover:text-gray-600 dark:hover:text-gray-300 ${
-                      activeTab === "projectsAndPs" &&
-                      "font-bold text-black border-black"
+                      activeTab === 'projectsAndPs' && 'font-bold text-black border-black'
                     }`}
                     onClick={() => {
-                      handleTabClick("projectsAndPs");
+                      handleTabClick('projectsAndPs');
                       handleDropdownToggle();
                     }}
                   >

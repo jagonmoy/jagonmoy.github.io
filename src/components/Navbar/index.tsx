@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 
-import TabNavigation from "./components/TabNavigation";
+import TabNavigation from './components/TabNavigation';
 
 const NavBar = () => {
   return (
