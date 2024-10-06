@@ -165,5 +165,50 @@
 
             }
         }
+    },
+    "showcase": {
+        "technicalSkills" : {
+            "heading" : "Technical Skills",
+            "languagesHeading" : "Languages",
+            "frameworksHeading" : "Frameworks / Libraries",
+            "developerToolsHeading" : "Developer Tools",
+            "mlToolsHeading": "Machine Learning Technologies",
+            "languages" : {
+                "js" : "JavaScript",
+                "ts" : "TypeScript",
+                "python" : "Python",
+                "c": "C",
+                "cpp": "C++",
+                "sql": "SQL",
+                "html": "HTML",
+                "css": "CSS"
+            },
+            "frameworks": {
+                "react": "React.js",
+                "next": "Next.js",
+                "nest": "Nest.js",
+                "node": "Node.js",
+                "express": "Express.js",
+                "tailwind": "Tailwind CSS",
+                "jest": "Jest",
+                "playwright": "Playwright",
+                "postgres": "PostgreSQL"
+            },
+            "developerTools": {
+                "git": "Git",
+                "github": "GitHub",
+                "linux": "Linux",
+                "docker": "Docker",
+                "jupyter": "Jupyter",
+                "swagger": "Swagger",
+                "postman": "Postman"
+            },
+            "mlTools": {
+                "tensorflow": "TensorFlow",
+                "scikit": "Scikit-learn",
+                "numpy": "NumPy",
+                "pandas": "Pandas"
+            }
+        }
     }
 }

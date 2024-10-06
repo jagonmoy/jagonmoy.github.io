@@ -1,5 +1,11 @@
-const Page = () => {
-  return <>This is my Project</>;
-};
+import TechnicalSkills from 'components/TechnicalSkills';
 
-export default Page;
+function ShowcasePage() {
+  return (
+    <div className="flex flex-col gap-y-8">
+      <TechnicalSkills />
+    </div>
+  );
+}
+
+export default ShowcasePage;
