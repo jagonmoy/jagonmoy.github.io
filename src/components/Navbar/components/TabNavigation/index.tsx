@@ -74,7 +74,7 @@ const TabNavigation = () => {
               <div className="absolute top-9 left-0 bg-white shadow-md py-4 px-2 w-[250px] border-b z-10">
                 <div className="flex flex-col gap-y-2">
                   <Link
-                    href="/experience?type=industry"
+                    href="/experience"
                     className="block px-4 rounded-t-lg hover:text-gray-600 "
                     onClick={() => handleTabClickForExperience()}
                   >
@@ -118,7 +118,7 @@ const TabNavigation = () => {
               <div className="absolute top-9 left-0 bg-white shadow-md py-4 px-2 w-[250px] border-b z-10">
                 <div className="flex flex-col gap-y-2">
                   <Link
-                    href="/showcase?type=technical-skills"
+                    href="/showcase"
                     className="block px-4 rounded-t-lg hover:text-gray-600 "
                     onClick={() => handleTabClickForShowcase()}
                   >
