@@ -33,13 +33,13 @@ function IndustryExperience() {
             <span className="text-md lg:text-lg font-semibold text-gray-900">
               {industry.experience1.position}
             </span>
-            <span className="block text-sm lg:text-base  font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {industry.experience1.company}
             </span>
-            <span className="block text-sm lg:text-base font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {industry.experience1.duration}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-4 space-y-1">
+            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
               {industry.experience1.bulletPoints.map((point) => (
                 <li key={point} className="break-words text-sm lg:text-base">
                   {point}
@@ -55,13 +55,13 @@ function IndustryExperience() {
             <span className="text-md lg:text-lg font-semibold text-gray-900">
               {industry.experience2.position}
             </span>
-            <span className="block text-sm lg:text-base font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {industry.experience2.company}
             </span>
-            <span className="block text-sm lg:text-base font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {industry.experience2.duration}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-4 space-y-1">
+            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
               {industry.experience2.bulletPoints.map((point) => (
                 <li key={point} className="break-words text-sm lg:text-base">
                   {point}
@@ -77,13 +77,13 @@ function IndustryExperience() {
             <span className="text-md lg:text-lg font-semibold text-gray-900">
               {industry.experience3.position}
             </span>
-            <span className="block text-sm lg:text-base font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {industry.experience3.company}
             </span>
-            <span className="block text-sm lg:text-base font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {industry.experience3.duration}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-4 space-y-1">
+            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
               {industry.experience3.bulletPoints.map((point) => (
                 <li key={point} className="break-words text-sm lg:text-base">
                   {point}

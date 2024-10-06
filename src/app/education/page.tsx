@@ -26,16 +26,16 @@ function EducationPage() {
             <span className="text-md lg:text-lg font-semibold text-gray-900">
               {education.university.degree}
             </span>
-            <span className="block text-sm lg:text-base  font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {education.university.name}
             </span>
-            <time className="block text-sm lg:text-base font-normal leading-none text-gray-500">
+            <time className="text-sm lg:text-base text-gray-500 break-words">
               {education.university.duration}
             </time>
-            <span className="block text-sm lg:text-base font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {education.university.result}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-4 space-y-1">
+            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
               {education.university.bulletPoints.map((point) => (
                 <li key={point} className="break-words text-sm lg:text-base">
                   {point}
@@ -51,16 +51,16 @@ function EducationPage() {
             <span className="text-md lg:text-lg font-semibold text-gray-900">
               {education.college.degree}
             </span>
-            <span className="block text-sm lg:text-base font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {education.college.name}
             </span>
-            <time className="block text-sm lg:text-base font-normal leading-none text-gray-500">
+            <time className="text-sm lg:text-base text-gray-500 break-words">
               {education.college.duration}
             </time>
-            <span className="block text-sm lg:text-base font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {education.college.result}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-4 space-y-1">
+            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
               {education.college.bulletPoints.map((point) => (
                 <li key={point} className="break-words text-sm lg:text-base">
                   {point}

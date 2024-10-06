@@ -33,13 +33,13 @@ function MentorshipExperience() {
             <span className="text-md lg:text-lg font-semibold text-gray-900">
               {mentorship.mentorship1.position}
             </span>
-            <span className="block text-sm lg:text-base  font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {mentorship.mentorship1.institue}
             </span>
-            <span className="block text-sm lg:text-base font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {mentorship.mentorship1.duration}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-4 space-y-1">
+            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
               {mentorship.mentorship1.bulletPoints.map((point) => (
                 <li key={point} className="break-words text-sm lg:text-base">
                   {point}
@@ -55,13 +55,13 @@ function MentorshipExperience() {
             <span className="text-md lg:text-lg font-semibold text-gray-900">
               {mentorship.mentorship2.position}
             </span>
-            <span className="block text-sm lg:text-base font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {mentorship.mentorship2.institue}
             </span>
-            <span className="block text-sm lg:text-base font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {mentorship.mentorship2.duration}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-4 space-y-1">
+            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
               {mentorship.mentorship2.bulletPoints.map((point) => (
                 <li key={point} className="break-words text-sm lg:text-base">
                   {point}

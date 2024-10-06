@@ -38,10 +38,10 @@ function Projects() {
             >
               {projects.project1.name}
             </Link>
-            <span className="block text-sm lg:text-base  font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {projects.project1.technologies}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-4 space-y-1">
+            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
               {projects.project1.bulletPoints.map((point) => (
                 <li key={point} className="break-words text-sm lg:text-base">
                   {point}
@@ -70,10 +70,10 @@ function Projects() {
                 {projects.project2.name2}
               </Link>
             </div>
-            <span className="block text-sm lg:text-base font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {projects.project2.technologies}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-4 space-y-1">
+            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
               {projects.project2.bulletPoints.map((point) => (
                 <li key={point} className="break-words text-sm lg:text-base">
                   {point}
@@ -92,10 +92,10 @@ function Projects() {
             >
               {projects.project3.name}
             </Link>
-            <span className="block text-sm lg:text-base  font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {projects.project3.technologies}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-4 space-y-1">
+            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
               {projects.project3.bulletPoints.map((point) => (
                 <li key={point} className="break-words text-sm lg:text-base">
                   {point}
@@ -114,10 +114,10 @@ function Projects() {
             >
               {projects.project4.name}
             </Link>
-            <span className="block text-sm lg:text-base  font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {projects.project4.technologies}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-4 space-y-1">
+            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
               {projects.project4.bulletPoints.map((point) => (
                 <li key={point} className="break-words text-sm lg:text-base">
                   {point}

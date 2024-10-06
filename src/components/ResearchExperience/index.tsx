@@ -32,16 +32,16 @@ function ResearchExperience() {
             <span className="text-md lg:text-lg font-semibold text-gray-900">
               {research.research1.title}
             </span>
-            <span className="block text-sm lg:text-base  font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {research.research1.university}
             </span>
-            <span className="block text-sm lg:text-base font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {research.research1.superviser}
             </span>
-            <span className="block text-sm lg:text-base font-normal leading-none text-gray-500">
+            <span className="text-sm lg:text-base text-gray-500 break-words">
               {research.research1.duration}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-4 space-y-1">
+            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
               {research.research1.bulletPoints.map((point) => (
                 <li key={point} className="break-words text-sm lg:text-base">
                   {point}
