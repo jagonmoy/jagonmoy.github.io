@@ -1,19 +1,11 @@
 import IndustryExperience from 'components/IndustryExperience';
 import ResearchExperience from 'components/ResearchExperience';
 
-type ExperiencePageProps = {
-  searchParams: {
-    type: string;
-  };
-};
-
-function ExperiencePage({ searchParams }: ExperiencePageProps) {
-  const { type } = searchParams;
-
+function ExperiencePage() {
   return (
     <div className="flex flex-col gap-y-8">
-      <IndustryExperience type={type} />
-      <ResearchExperience type={type} />
+      <IndustryExperience />
+      <ResearchExperience />
     </div>
   );
 }

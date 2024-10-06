@@ -1,10 +1,15 @@
 'use client';
 
 import data from 'data/data.json';
+import { useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 import { FaIndustry } from 'react-icons/fa';
 
-function IndustryExperience({ type }: { type: string }) {
+function IndustryExperience() {
+  const searchParams = useSearchParams();
+
+  const type = searchParams.get('type');
+
   useEffect(() => {
     if (type === 'industry') document.getElementById('industry')?.focus();
   }, [type]);

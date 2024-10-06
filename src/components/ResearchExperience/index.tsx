@@ -1,10 +1,14 @@
 'use client';
 
 import data from 'data/data.json';
+import { useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 import { FaBong } from 'react-icons/fa';
 
-function ResearchExperience({ type }: { type: string }) {
+function ResearchExperience() {
+  const searchParams = useSearchParams();
+  const type = searchParams.get('type');
+
   useEffect(() => {
     if (type === 'research') document.getElementById('research')?.focus();
   }, [type]);
