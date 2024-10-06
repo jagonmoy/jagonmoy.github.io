@@ -22,17 +22,17 @@ function EducationPage() {
       <div className="flex flex-col gap-y-10 mb-10">
         <li className="flex gap-x-4 items-start">
           <FaUniversity className="text-2xl flex-shrink-0" />
-          <div className="flex-grow">
-            <h3 className="mb-1 text-md lg:text-lg font-semibold text-gray-900">
+          <div className="flex-grow flex flex-col gap-y-2 lg:gap-y-1">
+            <span className="text-md lg:text-lg font-semibold text-gray-900">
               {education.university.degree}
-            </h3>
-            <span className="block mb-2 text-sm lg:text-base  font-normal leading-none text-gray-500">
+            </span>
+            <span className="block text-sm lg:text-base  font-normal leading-none text-gray-500">
               {education.university.name}
             </span>
-            <time className="block mb-2 text-sm lg:text-base font-normal leading-none text-gray-500">
+            <time className="block text-sm lg:text-base font-normal leading-none text-gray-500">
               {education.university.duration}
             </time>
-            <span className="block mb-2 text-sm lg:text-base font-normal leading-none text-gray-500">
+            <span className="block text-sm lg:text-base font-normal leading-none text-gray-500">
               {education.university.result}
             </span>
             <ul className="list-disc ml-2 text-gray-500 mt-4 space-y-1">
@@ -47,17 +47,17 @@ function EducationPage() {
 
         <li className="flex gap-x-4 items-start">
           <FaSchool className="text-2xl flex-shrink-0" />
-          <div className="flex-grow">
-            <h3 className="mb-1 text-md lg:text-lg font-semibold text-gray-900">
+          <div className="flex-grow flex flex-col gap-y-2 lg:gap-y-1">
+            <span className="text-md lg:text-lg font-semibold text-gray-900">
               {education.college.degree}
-            </h3>
-            <span className="block mb-2 text-sm lg:text-base font-normal leading-none text-gray-500">
+            </span>
+            <span className="block text-sm lg:text-base font-normal leading-none text-gray-500">
               {education.college.name}
             </span>
-            <time className="block mb-2 text-sm lg:text-base font-normal leading-none text-gray-500">
+            <time className="block text-sm lg:text-base font-normal leading-none text-gray-500">
               {education.college.duration}
             </time>
-            <span className="block mb-2 text-sm lg:text-base font-normal leading-none text-gray-500">
+            <span className="block text-sm lg:text-base font-normal leading-none text-gray-500">
               {education.college.result}
             </span>
             <ul className="list-disc ml-2 text-gray-500 mt-4 space-y-1">

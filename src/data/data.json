@@ -39,7 +39,7 @@
     "education" : {
         "heading" : "Education",
         "university" : {
-            "name": "Shahjalal University of Science and Technology, Sylhet, Bangladesh",
+            "name": "Shahjalal University of Science and Technology",
             "degree": "Bachelor of Science in Software Engineering",
             "duration": "January 2018 - February 2023",
             "result": "CGPA: 3.60/4.00",
@@ -51,7 +51,7 @@
 
         },
         "college" : {
-            "name": "MC College, Sylhet, Bangladesh",
+            "name": "MC College",
             "degree": "Higher Secondary School Certificate in Science",
             "duration": "July 2014 — August 2016",
             "result": "CGPA 5.00 / 5.00",
@@ -59,6 +59,61 @@
                 "Scored above 85% in Higher Secondary School Certificate exams and received government scholarships.",
                 "Achieved a perfect score of GPA 5.00/5.00 in both the Secondary School Certificate and Junior School Certificate exams, receiving government scholarships for both."
             ]
+        }
+    },
+    "experience" : {
+        "industry" : {
+            "heading" : "Industry Experience",
+            "experience1" : {
+                "position" : "Software Engineer",
+                "company" : "Cefalo Bangladesh Limited",
+                "duration" : "July 2024 - Present",
+                "location" : "Dhaka, Bangladesh",
+                "bulletPoints": [
+                    "Worked from scratch in an Oslo-based start-up environment as a full-stack engineer to develop Subrite, a multi-tenant SaaS subscription management system, following Agile methodologies.",
+                    "Optimized images using Next/Image and imgix, implemented server-side fetching, server actions, and Next.js cache revalidation. Increased the SEO score from 85% to 100%, the best practices score from 95% to 100%, and improved overall page load performance from 55% to 95%, achieving significant enhancements in Google Lighthouse metrics.",
+                    "Worked with Nest.js event queue architecture to facilitate automated email functions for both scheduled and event-driven tasks, serving over 200,000 users in Scandinavian countries.",
+                    "Configured multi-tenant email provider settings and utilized MJML to create responsive email templates, accommodating dynamic values for enhanced flexibility and personalization."
+                ]                   
+            },
+            "experience2" : {
+                "position" : "Associate Software Engineer",
+                "company" : "Cefalo Bangladesh Limited",
+                "duration" : "February 2023 - June 2024",
+                "location" : "Dhaka, Bangladesh",
+                "bulletPoints": [
+                    "Integrated external tenant application with the subscription system’s OIDC using NextAuth.",
+                    "Introduced and configured Playwright for end-to-end testing across the system, integrating it into the CI/CD pipeline for automated testing and quality assurance, and wrote unit tests using Jest to ensure code reliability and functionality.",
+                    "Implemented custom fields integration for a multi-tenant front-end, allowing tenant-specific configurations to be applied dynamically, built responsive UIs, and developed well-maintained, reusable components.",
+                    "Optimized backend RESTful API performance and fine-tuned TypeORM SQL queries, resulting in a 1.5x improvement in API response times and overall system efficiency."
+                ]
+        
+            },
+            "experience3" : {
+                "position" : "Trainee Software Engineer",
+                "company" : "Cefalo Bangladesh Limited",
+                "duration" : "September 2021 - March 2022",
+                "location" : "Dhaka, Bangladesh",
+                "bulletPoints": [
+                    "Gained foundational knowledge of HTTP, HTTPS, Caching, CORS, and REST APIs.",
+                    "Built an in-house web application with secure authentication, content negotiation, and state management."
+                ]
+        
+            }
+        },
+        "research" : {
+            "heading" : "Research Experience",
+            "research1" : {
+                "title" : "Thesis: Speaker Diarization with Speech Recognition in Bengali",
+                "university" : "Shahjalal University of Science and Technology",
+                "duration" : "September 2022 - February 2023",
+                "location" : "Sylhet, Bangladesh",
+                "superviser": "Supervised by Mohammad Shahidur Rahman, PhD",
+                "bulletPoints": [
+                    "Developed a speaker diarization system using Bi-LSTM and Google Cloud Speech-to-Text for Bangla, incorporating voice activity detection, speaker segmentation, and clustering (k-means, Mean Shift).",
+                    "Created and annotated an 8-hour Bangla dataset from YouTube debates and talk shows using ELAN, Audacity, and y2Mate, referencing DIHARD II and CALLHOME."
+                ]
+            }
         }
     }
 }
