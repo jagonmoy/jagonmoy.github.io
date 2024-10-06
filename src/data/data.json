@@ -236,6 +236,15 @@
                 "technologies" : "Technologies: TensorFlow, NumPy, Pandas, Scikit-learn",
                 "description": "Implemented various deep learning fundamentals including gradient descent, regularization techniques, and  solved exercises as a part of the prepation for the undergrad thesis."
             }
+        },
+        "languageProficiency": {
+            "heading": "Language Proficiency",
+            "english": "English",
+            "englishDescription": "C1 English proficiency, IELTS 7.5 ( Listening: 8.5, Reading: 7.0, Writing: 6.5, Speaking: 7.5)",
+            "bengali": "Bengali",
+            "bengaliDescription": "Native Proficiency",
+            "hindi": "Hindi",
+            "hindiDescription": "Speaking and Listening Proficiency"
         }
     }
 }
