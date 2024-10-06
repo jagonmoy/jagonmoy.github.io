@@ -1,3 +1,4 @@
+import Footer from 'components/Footer';
 import NavBar from 'components/Navbar';
 import './globals.css';
 import ProfileAndIntro from 'components/ProfileAndIntro';
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
           </div>
         </div>
+        <Footer />
       </body>
     </html>
   );

@@ -16,7 +16,11 @@
         "githubLinkText" : "github.com/jagonmoy",
         "githubLink" : "https://github.com/jagonmoy",
         "linkedinLinkText" : "linkedin.com/in/jagonmoy",
-        "linkedinLink" : "https://www.linkedin.com/in/jagonmoy/"
+        "linkedinLink" : "https://www.linkedin.com/in/jagonmoy/",
+        "instagramLinkText" : "instagram.com/jagonmoy",
+        "instagramLink" : "https://www.instagram.com/jagonmoy/",
+        "facebookLinkText" : "facebook.com/jagonmoy",
+        "facebookLink" : "https://www.facebook.com/jagonmoy/"
     },
     "aboutMeParagraphs" : {
         "heading" : "About Me",
