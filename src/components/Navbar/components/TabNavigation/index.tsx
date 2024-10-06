@@ -267,16 +267,6 @@ const TabNavigation = () => {
                           Technical Skills
                         </Link>
                         <Link
-                          href="/showcase?type=competitive-programming"
-                          className="block px-4 rounded-t-lg hover:text-gray-600"
-                          onClick={() => {
-                            handleTabClickForShowcase();
-                            handleDropdownToggle();
-                          }}
-                        >
-                          Competitive Programming
-                        </Link>
-                        <Link
                           href="/showcase?type=projects"
                           className="block px-4 rounded-t-lg hover:text-gray-600"
                           onClick={() => {
@@ -285,6 +275,16 @@ const TabNavigation = () => {
                           }}
                         >
                           Projects
+                        </Link>
+                        <Link
+                          href="/showcase?type=competitive-programming"
+                          className="block px-4 rounded-t-lg hover:text-gray-600"
+                          onClick={() => {
+                            handleTabClickForShowcase();
+                            handleDropdownToggle();
+                          }}
+                        >
+                          Competitive Programming
                         </Link>
                         <Link
                           href="/showcase?type=language-proficiency"
