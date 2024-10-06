@@ -114,6 +114,29 @@
                     "Created and annotated an 8-hour Bangla dataset from YouTube debates and talk shows using ELAN, Audacity, and y2Mate, referencing DIHARD II and CALLHOME."
                 ]
             }
+        },
+        "mentorship": {
+            "heading": "Mentorship Experience",
+            "mentorship1": {
+                "position": "Trainer for Junior Software Engineers and Interns",
+                "institue": "Cefalo Bangladesh Limited",
+                "duration": "September 2023 - Present",
+                "location": "Dhaka, Bangladesh",
+                "bulletPoints": [
+                    "Trained junior engineers on the complete software development process, conducted React.js and Next.js workshops, reviewed code, and planned training programs."
+                ]
+
+            },
+            "mentorship2": {
+                "position": "Competitive Programming Instructor",
+                "institue": "Shahjalal University of Science and Technology",
+                "duration": "January 2021 - August 2021",
+                "location": "Sylhet, Bangladesh",
+                "bulletPoints": [
+                    "Conducted university workshops on competitive programming, teaching concepts related to various data structures and algorithms to improve problem-solving skills."
+                ]
+
+            }
         }
     }
 }
