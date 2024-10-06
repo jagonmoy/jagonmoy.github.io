@@ -125,9 +125,8 @@
                 "institue": "Cefalo Bangladesh Limited",
                 "duration": "September 2023 - Present",
                 "location": "Dhaka, Bangladesh",
-                "bulletPoints": [
-                    "Trained junior engineers on the complete software development process, conducted React.js and Next.js workshops, reviewed code, and planned training programs."
-                ]
+                "description": "Trained junior engineers on the complete software development process, conducted React.js and Next.js workshops, reviewed code, and planned training programs."
+                
 
             },
             "mentorship2": {
@@ -135,9 +134,8 @@
                 "institue": "Shahjalal University of Science and Technology",
                 "duration": "January 2021 - August 2021",
                 "location": "Sylhet, Bangladesh",
-                "bulletPoints": [
-                    "Conducted university workshops on competitive programming, teaching concepts related to various data structures and algorithms to improve problem-solving skills."
-                ]
+                "description": "Conducted university workshops on competitive programming, teaching concepts related to various data structures and algorithms to improve problem-solving skills."
+                
 
             }
         },
@@ -148,21 +146,15 @@
                 "event": "SUST SWE TECHNOVENT 2023",
                 "location": "Shahjalal University of Science and Technology",
                 "duration": "January 2023",
-                "bulletPoints": [
-                    "Worked as a Programming Contest Coordinator, overseeing the setup and management of the contest infrastructure for participants from 100+ universities nationwide, and led a team of juniors in executing the event."
-                ]
-
+                "description": "Worked as a Programming Contest Coordinator, overseeing the setup and management of the contest infrastructure for participants from 100+ universities nationwide, and led a team of juniors in executing the event."
+                
             },
             "volunteering2": {
                 "position": "Photography Team Lead at SUST SWE TECHNOVENT 2023",
                 "event": "SUST SWE TECHNOVENT 2023",
                 "location": "Shahjalal University of Science and Technology",
                 "duration": "January 2023",
-                "bulletPoints": [
-                    "Led the photography team to cover all major events, including the opening and closing ceremonies, programming contest, hackathons, and security contest."
-                ]
-
-
+                "description": "Led the photography team to cover all major events, including the opening and closing ceremonies, programming contest, hackathons, and security contest."
             }
         }
     },
@@ -216,9 +208,8 @@
                 "name": "SlackBook",
                 "link": "https://github.com/RakibulRanak/SlackBook",
                 "technologies": "Technologies: JavaScript, Node.js, Slack API, Facebook Graph API",
-                "bulletPoints": [
-                    "Developed a Slackbot, integrating Slack API and Facebook Graph API to automate message/attachment sharing between Slack and Facebook using various commands."
-                ]
+                "description": "Developed a Slackbot, integrating Slack API and Facebook Graph API to automate message/attachment sharing between Slack and Facebook using various commands."
+                
 
             },
             "project2": {
@@ -227,27 +218,23 @@
                 "link1": "https://github.com/jagonmoy/Number-Theory",
                 "link2": "https://github.com/jagonmoy/Graph-Theory",
                 "technologies": "Technologies: C++, C",
-                "bulletPoints": [
-                    "Created and maintained two GitHub repositories on Number Theory and Graph Theory, featuring tutorials, problems, and solutions for learning DSA. Each repository has received 20+ stars and is now used in the department to construct Competitive Programming and Data Structures and Algorithms courses."
-                ]
+                "description": "Created and maintained two GitHub repositories on Number Theory and Graph Theory, featuring tutorials, problems, and solutions for learning DSA. Each repository has received 20+ stars and is now used in the department to construct Competitive Programming and Data Structures and Algorithms courses."
+                
 
             },
             "project3": {
                 "name" : "Personal Portfolio",
                 "link" : "https://github.com/jagonmoy/jagonmoy.github.io",
                 "technologies" : "Technologies: TypeScript, Next.js, Tailwind CSS, ESLint, Prettier",
-                "bulletPoints": [
-                    "Designed and developed a personal portfolio website, showcasing professional experience, education, skills, and projects."
-                ]
+                "description": "Designed and developed a personal portfolio website, showcasing professional experience, education, skills, and projects."
+                
 
             },
             "project4": {
                 "name" : "Deep Learrning Exercises",
                 "link" : "https://github.com/jagonmoy/Deep-Learning-Exercises",
                 "technologies" : "Technologies: TensorFlow, NumPy, Pandas, Scikit-learn",
-                "bulletPoints": [
-                    "Implemented various deep learning fundamentals including gradient descent, regularization techniques, and  solved exercises as a part of the prepation for the undergrad thesis."
-                ]
+                "description": "Implemented various deep learning fundamentals including gradient descent, regularization techniques, and  solved exercises as a part of the prepation for the undergrad thesis."
             }
         }
     }

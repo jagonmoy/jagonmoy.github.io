@@ -41,13 +41,9 @@ function Projects() {
             <span className="text-sm lg:text-base text-gray-500 break-words">
               {projects.project1.technologies}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
-              {projects.project1.bulletPoints.map((point) => (
-                <li key={point} className="break-words text-sm lg:text-base">
-                  {point}
-                </li>
-              ))}
-            </ul>
+            <span className="text-sm lg:text-base text-gray-500 break-words mt-2">
+              {projects.project1.description}
+            </span>
           </div>
         </li>
         <li className="flex gap-x-4 items-start">
@@ -73,13 +69,9 @@ function Projects() {
             <span className="text-sm lg:text-base text-gray-500 break-words">
               {projects.project2.technologies}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
-              {projects.project2.bulletPoints.map((point) => (
-                <li key={point} className="break-words text-sm lg:text-base">
-                  {point}
-                </li>
-              ))}
-            </ul>
+            <span className="text-sm lg:text-base text-gray-500 break-words mt-2">
+              {projects.project2.description}
+            </span>
           </div>
         </li>
         <li className="flex gap-x-4 items-start">
@@ -95,13 +87,9 @@ function Projects() {
             <span className="text-sm lg:text-base text-gray-500 break-words">
               {projects.project3.technologies}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
-              {projects.project3.bulletPoints.map((point) => (
-                <li key={point} className="break-words text-sm lg:text-base">
-                  {point}
-                </li>
-              ))}
-            </ul>
+            <span className="text-sm lg:text-base text-gray-500 break-words mt-2">
+              {projects.project3.description}
+            </span>
           </div>
         </li>
         <li className="flex gap-x-4 items-start">
@@ -117,13 +105,9 @@ function Projects() {
             <span className="text-sm lg:text-base text-gray-500 break-words">
               {projects.project4.technologies}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
-              {projects.project4.bulletPoints.map((point) => (
-                <li key={point} className="break-words text-sm lg:text-base">
-                  {point}
-                </li>
-              ))}
-            </ul>
+            <span className="text-sm lg:text-base text-gray-500 break-words mt-2">
+              {projects.project4.description}
+            </span>
           </div>
         </li>
       </div>

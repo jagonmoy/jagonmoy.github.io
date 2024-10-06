@@ -39,13 +39,9 @@ function MentorshipExperience() {
             <span className="text-sm lg:text-base text-gray-500 break-words">
               {mentorship.mentorship1.duration}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
-              {mentorship.mentorship1.bulletPoints.map((point) => (
-                <li key={point} className="break-words text-sm lg:text-base">
-                  {point}
-                </li>
-              ))}
-            </ul>
+            <span className="text-sm lg:text-base mt-2 text-gray-500 break-words mt-2">
+              {mentorship.mentorship1.description}
+            </span>
           </div>
         </li>
 
@@ -61,13 +57,9 @@ function MentorshipExperience() {
             <span className="text-sm lg:text-base text-gray-500 break-words">
               {mentorship.mentorship2.duration}
             </span>
-            <ul className="list-disc ml-2 text-gray-500 mt-2 space-y-1">
-              {mentorship.mentorship2.bulletPoints.map((point) => (
-                <li key={point} className="break-words text-sm lg:text-base">
-                  {point}
-                </li>
-              ))}
-            </ul>
+            <span className="text-sm lg:text-base text-gray-500 break-words mt-2">
+              {mentorship.mentorship2.description}
+            </span>
           </div>
         </li>
       </div>
