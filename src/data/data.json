@@ -209,6 +209,46 @@
                 "numpy": "NumPy",
                 "pandas": "Pandas"
             }
+        },
+        "projects": {
+            "heading": "Projects",
+            "project1": {
+                "name": "SlackBook",
+                "link": "https://github.com/RakibulRanak/SlackBook",
+                "technologies": "Technologies: JavaScript, Node.js, Slack API, Facebook Graph API",
+                "bulletPoints": [
+                    "Developed a Slackbot, integrating Slack API and Facebook Graph API to automate message/attachment sharing between Slack and Facebook using various commands."
+                ]
+
+            },
+            "project2": {
+                "name1": "Number Theory",
+                "name2": "Graph Theory",
+                "link1": "https://github.com/jagonmoy/Number-Theory",
+                "link2": "https://github.com/jagonmoy/Graph-Theory",
+                "technologies": "Technologies: C++, C",
+                "bulletPoints": [
+                    "Created and maintained two GitHub repositories on Number Theory and Graph Theory, featuring tutorials, problems, and solutions for learning DSA. Each repository has received 20+ stars and is now used in the department to construct Competitive Programming and Data Structures and Algorithms courses."
+                ]
+
+            },
+            "project3": {
+                "name" : "Personal Portfolio",
+                "link" : "https://github.com/jagonmoy/jagonmoy.github.io",
+                "technologies" : "Technologies: TypeScript, Next.js, Tailwind CSS, ESLint, Prettier",
+                "bulletPoints": [
+                    "Designed and developed a personal portfolio website, showcasing professional experience, education, skills, and projects."
+                ]
+
+            },
+            "project4": {
+                "name" : "Deep Learrning Exercises",
+                "link" : "https://github.com/jagonmoy/Deep-Learning-Exercises",
+                "technologies" : "Technologies: TensorFlow, NumPy, Pandas, Scikit-learn",
+                "bulletPoints": [
+                    "Implemented various deep learning fundamentals including gradient descent, regularization techniques, and  solved exercises as a part of the prepation for the undergrad thesis."
+                ]
+            }
         }
     }
 }
