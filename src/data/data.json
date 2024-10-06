@@ -137,6 +137,30 @@
                 ]
 
             }
+        },
+        "volunteering": {
+            "heading": "Volunteering Experience",
+            "volunteering1": {
+                "position": "Programming Contest Coordinator at SUST SWE TECHNOVENT 2023",
+                "event": "SUST SWE TECHNOVENT 2023",
+                "location": "Shahjalal University of Science and Technology",
+                "duration": "January 2023",
+                "bulletPoints": [
+                    "Worked as a Programming Contest Coordinator, overseeing the setup and management of the contest infrastructure for participants from 100+ universities nationwide, and led a team of juniors in executing the event."
+                ]
+
+            },
+            "volunteering2": {
+                "position": "Photography Team Lead at SUST SWE TECHNOVENT 2023",
+                "event": "SUST SWE TECHNOVENT 2023",
+                "location": "Shahjalal University of Science and Technology",
+                "duration": "January 2023",
+                "bulletPoints": [
+                    "Led the photography team to cover all major events, including the opening and closing ceremonies, programming contest, hackathons, and security contest."
+                ]
+
+
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 import IndustryExperience from 'components/IndustryExperience';
 import MentorshipExperience from 'components/MentorshipExperience';
 import ResearchExperience from 'components/ResearchExperience';
+import VolunteeringExperience from 'components/VolunteeringExperience';
 
 function ExperiencePage() {
   return (
@@ -8,6 +9,7 @@ function ExperiencePage() {
       <IndustryExperience />
       <ResearchExperience />
       <MentorshipExperience />
+      <VolunteeringExperience />
     </div>
   );
 }
