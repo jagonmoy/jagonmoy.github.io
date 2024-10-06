@@ -69,6 +69,7 @@
                 "company" : "Cefalo Bangladesh Limited",
                 "duration" : "July 2024 - Present",
                 "location" : "Dhaka, Bangladesh",
+                "technologies" : "Technologies: TypeScript, Next.js, Imgix, MJML, Nest.js, BullMQ",
                 "bulletPoints": [
                     "Worked from scratch in an Oslo-based start-up environment as a full-stack engineer to develop Subrite, a multi-tenant SaaS subscription management system, following Agile methodologies.",
                     "Optimized images using Next/Image and imgix, implemented server-side fetching, server actions, and Next.js cache revalidation. Increased the SEO score from 85% to 100%, the best practices score from 95% to 100%, and improved overall page load performance from 55% to 95%, achieving significant enhancements in Google Lighthouse metrics.",
@@ -81,19 +82,21 @@
                 "company" : "Cefalo Bangladesh Limited",
                 "duration" : "February 2023 - June 2024",
                 "location" : "Dhaka, Bangladesh",
+                "technologies" : "Technologies: NextAuth, Playwright, Jest, TailwindCSS, TypeORM, PostgreSQL, Jira, Notion, Miro",
                 "bulletPoints": [
                     "Integrated external tenant application with the subscription system’s OIDC using NextAuth.",
                     "Introduced and configured Playwright for end-to-end testing across the system, integrating it into the CI/CD pipeline for automated testing and quality assurance, and wrote unit tests using Jest to ensure code reliability and functionality.",
                     "Implemented custom fields integration for a multi-tenant front-end, allowing tenant-specific configurations to be applied dynamically, built responsive UIs, and developed well-maintained, reusable components.",
-                    "Optimized backend RESTful API performance and fine-tuned TypeORM SQL queries, resulting in a 1.5x improvement in API response times and overall system efficiency."
+                    "Optimized backend RESTful API performance and fine-tuned TypeORM SQL queries, resulting in a 1.5x improvement in API response times and overall system efficiency.",
+                    "Utilized Jira for task management and progress tracking, Miro for creating collaborative visual diagrams and workflows, and Notion for comprehensive project documentation."
                 ]
-        
             },
             "experience3" : {
                 "position" : "Trainee Software Engineer",
                 "company" : "Cefalo Bangladesh Limited",
                 "duration" : "September 2021 - March 2022",
                 "location" : "Dhaka, Bangladesh",
+                "technologies" : "Technologies: JavaScript, React.js, Material UI, Node.js, Express.js, MongoDB, Mongoose, Git",
                 "bulletPoints": [
                     "Gained foundational knowledge of HTTP, HTTPS, Caching, CORS, and REST APIs.",
                     "Built an in-house web application with secure authentication, content negotiation, and state management."

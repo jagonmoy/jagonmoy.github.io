@@ -118,11 +118,11 @@ const TabNavigation = () => {
               <div className="absolute top-9 left-0 bg-white shadow-md py-4 px-2 w-[250px] border-b z-10">
                 <div className="flex flex-col gap-y-2">
                   <Link
-                    href="/showcase?type=competitive-programming"
+                    href="/showcase?type=technical-skills"
                     className="block px-4 rounded-t-lg hover:text-gray-600 "
                     onClick={() => handleTabClickForShowcase()}
                   >
-                    Competitive Programming
+                    Technical Skills
                   </Link>
                   <Link
                     href="/showcase?type=projects"
@@ -130,6 +130,20 @@ const TabNavigation = () => {
                     onClick={() => handleTabClickForShowcase()}
                   >
                     Projects
+                  </Link>
+                  <Link
+                    href="/showcase?type=competitive-programming"
+                    className="block px-4 rounded-t-lg hover:text-gray-600 "
+                    onClick={() => handleTabClickForShowcase()}
+                  >
+                    Competitive Programming
+                  </Link>
+                  <Link
+                    href="/showcase?type=language-proficiency"
+                    className="block px-4 rounded-t-lg hover:text-gray-600 "
+                    onClick={() => handleTabClickForShowcase()}
+                  >
+                    Language Proficiency
                   </Link>
                 </div>
               </div>
@@ -243,6 +257,16 @@ const TabNavigation = () => {
                     <div className="pl-4 bg-white px-2 w-full">
                       <div className="flex flex-col gap-y-2">
                         <Link
+                          href="/showcase?type=technical-skills"
+                          className="block px-4 rounded-t-lg hover:text-gray-600"
+                          onClick={() => {
+                            handleTabClickForShowcase();
+                            handleDropdownToggle();
+                          }}
+                        >
+                          Technical Skills
+                        </Link>
+                        <Link
                           href="/showcase?type=competitive-programming"
                           className="block px-4 rounded-t-lg hover:text-gray-600"
                           onClick={() => {
@@ -261,6 +285,16 @@ const TabNavigation = () => {
                           }}
                         >
                           Projects
+                        </Link>
+                        <Link
+                          href="/showcase?type=language-proficiency"
+                          className="block px-4 rounded-t-lg hover:text-gray-600"
+                          onClick={() => {
+                            handleTabClickForShowcase();
+                            handleDropdownToggle();
+                          }}
+                        >
+                          Language Proficiency
                         </Link>
                       </div>
                     </div>
