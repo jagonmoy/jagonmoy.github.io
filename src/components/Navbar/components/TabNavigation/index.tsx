@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import { FaAngleRight, FaBars } from 'react-icons/fa';
+import { FaAngleDown, FaAngleRight, FaBars } from 'react-icons/fa';
 
 const TabNavigation = () => {
   const pathname = usePathname();
@@ -11,10 +11,24 @@ const TabNavigation = () => {
   const [activeTab, setActiveTab] = useState(sectionName || 'about-me');
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [dropdownForExperience, setDropdownForExperience] = useState(false);
+  const [dropdownForShowcase, setDropdownForShowcase] = useState(false);
 
   const handleTabClick = (tab: string) => {
     setActiveTab(tab);
-    setDropdownForExperience(tab === 'experience' ? !dropdownForExperience : false);
+    setDropdownForExperience(false);
+    setDropdownForShowcase(false);
+  };
+
+  const handleTabClickForExperience = () => {
+    setActiveTab('experience');
+    setDropdownForExperience(!dropdownForExperience);
+    setDropdownForShowcase(false);
+  };
+
+  const handleTabClickForShowcase = () => {
+    setActiveTab('showcase');
+    setDropdownForShowcase(!dropdownForShowcase);
+    setDropdownForExperience(false);
   };
 
   const handleDropdownToggle = () => {
@@ -52,7 +66,7 @@ const TabNavigation = () => {
               className={`inline-block px-4 rounded-t-lg hover:text-gray-600  ${
                 activeTab === 'experience' && 'font-bold text-black border-black'
               }`}
-              onClick={() => handleTabClick('experience')}
+              onClick={() => handleTabClickForExperience()}
             >
               Experience
             </button>
@@ -60,30 +74,30 @@ const TabNavigation = () => {
               <div className="absolute top-9 left-0 bg-white shadow-md py-4 px-2 w-[250px] border-b z-10">
                 <div className="flex flex-col gap-y-2">
                   <Link
-                    href="/experience?type=work"
+                    href="/experience?type=industry"
                     className="block px-4 rounded-t-lg hover:text-gray-600 "
-                    onClick={() => setDropdownForExperience(false)}
+                    onClick={() => handleTabClickForExperience()}
                   >
-                    Work
+                    Industry
                   </Link>
                   <Link
                     href="/experience?type=research"
                     className="block px-4 rounded-t-lg hover:text-gray-600 "
-                    onClick={() => setDropdownForExperience(false)}
+                    onClick={() => handleTabClickForExperience()}
                   >
                     Research
                   </Link>
                   <Link
                     href="/experience?type=mentorship"
                     className="block px-4 rounded-t-lg hover:text-gray-600 "
-                    onClick={() => setDropdownForExperience(false)}
+                    onClick={() => handleTabClickForExperience()}
                   >
                     Mentorship
                   </Link>
                   <Link
                     href="/experience?type=volunteering"
                     className="block px-4 rounded-t-lg hover:text-gray-600 "
-                    onClick={() => setDropdownForExperience(false)}
+                    onClick={() => handleTabClickForExperience()}
                   >
                     Volunteering
                   </Link>
@@ -91,16 +105,35 @@ const TabNavigation = () => {
               </div>
             )}
           </li>
-          <li className="mr-2 hidden md:block">
-            <Link
-              href="/projects-and-ps"
+          <li className="mr-2 hidden md:block relative">
+            <button
               className={`inline-block px-4 rounded-t-lg hover:text-gray-600  ${
-                activeTab === 'projectsAndPs' && 'font-bold text-black border-black'
+                activeTab === 'showcase' && 'font-bold text-black border-black'
               }`}
-              onClick={() => handleTabClick('projectsAndPs')}
+              onClick={() => handleTabClickForShowcase()}
             >
-              Projects & Problem Solving
-            </Link>
+              Showcase
+            </button>
+            {dropdownForShowcase && (
+              <div className="absolute top-9 left-0 bg-white shadow-md py-4 px-2 w-[250px] border-b z-10">
+                <div className="flex flex-col gap-y-2">
+                  <Link
+                    href="/showcase?type=competitive-programming"
+                    className="block px-4 rounded-t-lg hover:text-gray-600 "
+                    onClick={() => handleTabClickForShowcase()}
+                  >
+                    Competitive Programming
+                  </Link>
+                  <Link
+                    href="/showcase?type=projects"
+                    className="block px-4 rounded-t-lg hover:text-gray-600 "
+                    onClick={() => handleTabClickForShowcase()}
+                  >
+                    Projects
+                  </Link>
+                </div>
+              </div>
+            )}
           </li>
           <div className="mr-2 md:hidden relative">
             <div
@@ -137,85 +170,101 @@ const TabNavigation = () => {
                     Education
                   </Link>
                   <button
-                    className={`inline-block text-left px-4 rounded-t-lg hover:text-gray-600 ${
+                    className={`inline-block text-left -ml-1 rounded-t-lg hover:text-gray-600 ${
                       activeTab === 'experience' && 'font-bold text-black border-black'
                     }`}
                     onClick={() => {
-                      handleTabClick('experience');
+                      handleTabClickForExperience();
                     }}
                   >
-                    Experience
+                    <span className="flex gap-1 items-center">
+                      {dropdownForExperience ? <FaAngleDown /> : <FaAngleRight />}
+                      <span>Experience</span>
+                    </span>
                   </button>
                   {dropdownForExperience && (
                     <div className="pl-4 bg-white px-2 w-full">
                       <div className="flex flex-col gap-y-2">
                         <Link
-                          href="/experience?type=work"
+                          href="/experience?type=industry"
                           className="block px-4 rounded-t-lg hover:text-gray-600"
                           onClick={() => {
-                            handleTabClick('experience');
-                            setDropdownForExperience(false);
-                            setDropdownOpen(false);
+                            handleTabClickForExperience();
+                            handleDropdownToggle();
                           }}
                         >
-                          <span className="flex gap-2 items-center">
-                            <FaAngleRight /> <span>Work</span>
-                          </span>
+                          Industry
                         </Link>
                         <Link
                           href="/experience?type=research"
                           className="block px-4 rounded-t-lg hover:text-gray-600"
                           onClick={() => {
-                            handleTabClick('experience');
-                            setDropdownForExperience(false);
-                            setDropdownOpen(false);
+                            handleTabClickForExperience();
+                            handleDropdownToggle();
                           }}
                         >
-                          <span className="flex gap-2 items-center">
-                            <FaAngleRight /> <span>Research</span>
-                          </span>
+                          Research
                         </Link>
                         <Link
                           href="/experience?type=mentorship"
                           className="block px-4 rounded-t-lg hover:text-gray-600"
                           onClick={() => {
-                            handleTabClick('experience');
-                            setDropdownForExperience(false);
-                            setDropdownOpen(false);
+                            handleTabClickForExperience();
+                            handleDropdownToggle();
                           }}
                         >
-                          <span className="flex gap-2 items-center">
-                            <FaAngleRight /> <span>Mentorship</span>
-                          </span>
+                          Mentorship
                         </Link>
                         <Link
                           href="/experience?type=volunteering"
                           className="block px-4 rounded-t-lg hover:text-gray-600"
                           onClick={() => {
-                            handleTabClick('experience');
-                            setDropdownForExperience(false);
-                            setDropdownOpen(false);
+                            handleTabClickForExperience();
+                            handleDropdownToggle();
                           }}
                         >
-                          <span className="flex gap-2 items-center">
-                            <FaAngleRight /> <span>Volunteering</span>
-                          </span>
+                          Volunteering
                         </Link>
                       </div>
                     </div>
                   )}
-                  <Link
-                    href="/projects-and-ps"
-                    className={`block px-4 rounded-t-lg hover:text-gray-600 ${
-                      activeTab === 'projectsAndPs' && 'font-bold text-black border-black'
+                  <button
+                    className={`inline-block text-left -ml-1 rounded-t-lg hover:text-gray-600 ${
+                      activeTab === 'showcase' && 'font-bold text-black border-black'
                     }`}
-                    onClick={() => {
-                      handleTabClick('projectsAndPs');
-                      handleDropdownToggle();
-                    }}
+                    onClick={() => handleTabClickForShowcase()}
                   >
-                    Projects & Problem Solving
-                  </Link>
+                    <span className="flex gap-1 items-center">
+                      {dropdownForShowcase ? <FaAngleDown /> : <FaAngleRight />}
+                      <span>Showcase</span>
+                    </span>
+                  </button>
+                  {dropdownForShowcase && (
+                    <div className="pl-4 bg-white px-2 w-full">
+                      <div className="flex flex-col gap-y-2">
+                        <Link
+                          href="/showcase?type=competitive-programming"
+                          className="block px-4 rounded-t-lg hover:text-gray-600"
+                          onClick={() => {
+                            handleTabClickForShowcase();
+                            handleDropdownToggle();
+                          }}
+                        >
+                          Competitive Programming
+                        </Link>
+                        <Link
+                          href="/showcase?type=projects"
+                          className="block px-4 rounded-t-lg hover:text-gray-600"
+                          onClick={() => {
+                            handleTabClickForShowcase();
+                            handleDropdownToggle();
+                          }}
+                        >
+                          Projects
+                        </Link>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             )}
