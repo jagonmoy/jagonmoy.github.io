@@ -57,7 +57,7 @@ function ProfileSocialLinks() {
       </div>
       <div className="flex gap-x-3 items-center">
         <FaGithub className="text-xl lg:text-2xl flex-shrink-0" />
-        <Link href={profileIntro.githubLinkText} target="_blank">
+        <Link href={profileIntro.githubLink} target="_blank">
           <p className="text-gray-500 flex-grow text-sm lg:text-base break-all">
             {profileIntro.githubLinkText}
           </p>
@@ -65,7 +65,7 @@ function ProfileSocialLinks() {
       </div>
       <div className="flex gap-x-3 items-center">
         <FaLinkedin className="text-xl lg:text-2xl flex-shrink" />
-        <Link href={profileIntro.linkedinLinkText} target="_blank">
+        <Link href={profileIntro.linkedinLink} target="_blank">
           <p className="text-gray-500 flex-grow text-sm lg:text-base break-all">
             {profileIntro.linkedinLinkText}
           </p>
