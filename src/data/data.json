@@ -36,8 +36,8 @@
             "Algorithms and Data Structures",
             "Natural Language Processing"
         ],
-        "paragraph1" : "A software engineer with two years of full-stack development experience, specializing in Next.js and Nest.js, with a solid focus on frontend development. Experience also includes mentoring junior engineers, supporting their growth in technical skills and career development.",
-        "paragraph2" : "Strong academic background, including research in NLP during an undergraduate thesis, and participation in competitive programming to develop problem-solving skills. Volunteer experience includes involvement in arranging tech fests, showcasing a commitment to the tech community.",
+        "paragraph1": "A software engineer with two years of full-stack development experience at Cefalo Bangladesh Limited, specializing in Next.js and Nest.js, with a solid focus on frontend development. Experience also includes mentoring junior engineers, supporting their growth in technical skills and career development.",
+        "paragraph2": "Strong academic background from Shahjalal University of Science and Technology, including research in NLP during an undergraduate thesis, and participation in competitive programming to develop problem-solving skills. Volunteer experience includes involvement in arranging tech fests, showcasing a commitment to the tech community.",
         "paragraph3": "Outside of professional and academic pursuits, enjoys socializing, traveling, and has a great passion for photography."
     },
     "education" : {
@@ -91,8 +91,7 @@
                     "Integrated external tenant application with the subscription system’s OIDC using NextAuth.",
                     "Introduced and configured Playwright for end-to-end testing across the system, integrating it into the CI/CD pipeline for automated testing and quality assurance, and wrote unit tests using Jest to ensure code reliability and functionality.",
                     "Implemented custom fields integration for a multi-tenant front-end, allowing tenant-specific configurations to be applied dynamically, built responsive UIs, and developed well-maintained, reusable components.",
-                    "Optimized backend RESTful API performance and fine-tuned TypeORM SQL queries, resulting in a 1.5x improvement in API response times and overall system efficiency.",
-                    "Utilized Jira for task management and progress tracking, Miro for creating collaborative visual diagrams and workflows, and Notion for comprehensive project documentation."
+                    "Optimized backend RESTful API performance and fine-tuned TypeORM SQL queries, resulting in a 1.5x improvement in API response times and overall system efficiency."
                 ]
             },
             "experience3" : {
@@ -240,6 +239,17 @@
                 "technologies" : "Technologies: TensorFlow, NumPy, Pandas, Scikit-learn",
                 "description": "Implemented various deep learning fundamentals including gradient descent, regularization techniques, and  solved exercises as a part of the prepation for the undergrad thesis."
             }
+        },
+        "competitiveProgramming" : {
+            "heading": "Competitive Programming",
+            "cfLink": "https://codeforces.com/profile/jagonmoy",
+            "leetCodeLink": "https://leetcode.com/jagonmoy/",
+            "stopstalkLink": "https://www.stopstalk.com/user/profile/jagonmoy",
+            "bulletPoints": [
+                "Solved over 1200 problems on online judges like Codeforces, UVa, LightOJ, and LeetCode, with a maximum rating of 1500+ on Codeforces.",
+                "Participated in 80+ contests which includes both virtual and on-site contests",
+                "Competitive Programming Profiles:"
+            ]
         },
         "languageProficiency": {
             "heading": "Language Proficiency",
