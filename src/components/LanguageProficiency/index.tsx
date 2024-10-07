@@ -49,17 +49,6 @@ function LanguageProficiency() {
             </span>
           </div>
         </li>
-        <li className="flex gap-x-4 items-start">
-          <FaLanguage className="text-2xl flex-shrink-0" />
-          <div className="flex-grow flex flex-col gap-y-2 lg:gap-y-1">
-            <span className="text-md lg:text-lg font-semibold text-gray-900">
-              {languageProficiency.hindi}
-            </span>
-            <span className="text-sm lg:text-base text-gray-500 break-words">
-              {languageProficiency.hindiDescription}
-            </span>
-          </div>
-        </li>
       </div>
     </ol>
   );
