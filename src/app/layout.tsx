@@ -14,8 +14,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  console.log(process.env.NEXT_PUBLIC_MEASUREMENT_ID);
-  console.log('ki khbr');
   return (
     <html lang="en">
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_MEASUREMENT_ID || ''} />
