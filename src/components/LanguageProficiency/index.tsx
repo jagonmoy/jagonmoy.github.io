@@ -11,7 +11,20 @@ function LanguageProficiency() {
   const type = searchParams.get('type');
 
   useEffect(() => {
-    if (type === 'language-proficiency') document.getElementById('language-proficiency')?.focus();
+    if (type === 'language-proficiency') {
+      const languageProficiencyElement = document.getElementById('language-proficiency');
+      if (languageProficiencyElement) {
+        languageProficiencyElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest',
+        });
+
+        setTimeout(() => {
+          languageProficiencyElement.focus();
+        }, 500); // Adjust delay if needed
+      }
+    }
   }, [type]);
 
   const { showcase } = data;

@@ -11,7 +11,20 @@ function MentorshipExperience() {
   const type = searchParams.get('type');
 
   useEffect(() => {
-    if (type === 'mentorship') document.getElementById('mentorship')?.focus();
+    if (type === 'mentorship-experience') {
+      const mentorshipExperienceElement = document.getElementById('mentorship-experience');
+      if (mentorshipExperienceElement) {
+        mentorshipExperienceElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest',
+        });
+
+        setTimeout(() => {
+          mentorshipExperienceElement.focus();
+        }, 500); // Adjust delay if needed
+      }
+    }
   }, [type]);
 
   const { experience } = data;
@@ -19,7 +32,7 @@ function MentorshipExperience() {
 
   return (
     <ol
-      id="mentorship"
+      id="mentorship-experience"
       tabIndex={0}
       className="relaive bg-white p-4 shadow-xl rounded-md flex flex-col space-y-4"
     >

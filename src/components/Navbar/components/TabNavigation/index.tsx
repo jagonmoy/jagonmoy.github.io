@@ -52,7 +52,7 @@ const TabNavigation = () => {
           </li>
           <li className="mr-2 hidden md:block relative">
             <Link
-              href="/education"
+              href="/?type=education"
               className={`inline-block px-4 rounded-t-lg hover:text-gray-600  ${
                 activeTab === 'education' && 'font-bold text-black border-black'
               }`}
@@ -74,28 +74,28 @@ const TabNavigation = () => {
               <div className="absolute top-9 left-0 bg-white shadow-md py-4 px-2 w-[250px] border-b z-10">
                 <div className="flex flex-col gap-y-2">
                   <Link
-                    href="/experience"
+                    href={'/?type=industry-experience'}
                     className="block px-4 rounded-t-lg hover:text-gray-600 "
                     onClick={() => handleTabClickForExperience()}
                   >
                     Industry
                   </Link>
                   <Link
-                    href="/experience?type=research"
+                    href="/?type=research-experience"
                     className="block px-4 rounded-t-lg hover:text-gray-600 "
                     onClick={() => handleTabClickForExperience()}
                   >
                     Research
                   </Link>
                   <Link
-                    href="/experience?type=mentorship"
+                    href="/?type=mentorship-experience"
                     className="block px-4 rounded-t-lg hover:text-gray-600 "
                     onClick={() => handleTabClickForExperience()}
                   >
                     Mentorship
                   </Link>
                   <Link
-                    href="/experience?type=volunteering"
+                    href="/?type=volunteering-experience"
                     className="block px-4 rounded-t-lg hover:text-gray-600 "
                     onClick={() => handleTabClickForExperience()}
                   >
@@ -118,28 +118,28 @@ const TabNavigation = () => {
               <div className="absolute top-9 left-0 bg-white shadow-md py-4 px-2 w-[250px] border-b z-10">
                 <div className="flex flex-col gap-y-2">
                   <Link
-                    href="/showcase"
+                    href="/?type=technical-skills"
                     className="block px-4 rounded-t-lg hover:text-gray-600 "
                     onClick={() => handleTabClickForShowcase()}
                   >
                     Technical Skills
                   </Link>
                   <Link
-                    href="/showcase?type=projects"
+                    href="/?type=projects"
                     className="block px-4 rounded-t-lg hover:text-gray-600 "
                     onClick={() => handleTabClickForShowcase()}
                   >
                     Projects
                   </Link>
                   <Link
-                    href="/showcase?type=competitive-programming"
+                    href="/?type=competitive-programming"
                     className="block px-4 rounded-t-lg hover:text-gray-600 "
                     onClick={() => handleTabClickForShowcase()}
                   >
                     Competitive Programming
                   </Link>
                   <Link
-                    href="/showcase?type=language-proficiency"
+                    href="/?type=language-proficiency"
                     className="block px-4 rounded-t-lg hover:text-gray-600 "
                     onClick={() => handleTabClickForShowcase()}
                   >
@@ -160,7 +160,7 @@ const TabNavigation = () => {
               <div className="absolute top-10 left-0 bg-white shadow-md py-4 px-2 w-[250px] border-b">
                 <div className="flex flex-col gap-y-2">
                   <Link
-                    href="/about-me"
+                    href="/"
                     className={`block px-4 rounded-t-lg hover:text-gray-600 ${
                       activeTab === 'about-me' && 'font-bold text-black border-black'
                     }`}
@@ -172,7 +172,7 @@ const TabNavigation = () => {
                     About Me
                   </Link>
                   <Link
-                    href="/education"
+                    href="/?type=education"
                     className={`block px-4 rounded-t-lg hover:text-gray-600 ${
                       activeTab === 'education' && 'font-bold text-black border-black'
                     }`}
@@ -200,7 +200,7 @@ const TabNavigation = () => {
                     <div className="pl-4 bg-white px-2 w-full">
                       <div className="flex flex-col gap-y-2">
                         <Link
-                          href="/experience?type=industry"
+                          href="/?type=industry-experience"
                           className="block px-4 rounded-t-lg hover:text-gray-600"
                           onClick={() => {
                             handleTabClickForExperience();
@@ -210,7 +210,7 @@ const TabNavigation = () => {
                           Industry
                         </Link>
                         <Link
-                          href="/experience?type=research"
+                          href="/?type=research-experience"
                           className="block px-4 rounded-t-lg hover:text-gray-600"
                           onClick={() => {
                             handleTabClickForExperience();
@@ -220,7 +220,7 @@ const TabNavigation = () => {
                           Research
                         </Link>
                         <Link
-                          href="/experience?type=mentorship"
+                          href="/?type=mentorship-experience"
                           className="block px-4 rounded-t-lg hover:text-gray-600"
                           onClick={() => {
                             handleTabClickForExperience();
@@ -230,7 +230,7 @@ const TabNavigation = () => {
                           Mentorship
                         </Link>
                         <Link
-                          href="/experience?type=volunteering"
+                          href="/?type=volunteering-experience"
                           className="block px-4 rounded-t-lg hover:text-gray-600"
                           onClick={() => {
                             handleTabClickForExperience();
@@ -257,7 +257,7 @@ const TabNavigation = () => {
                     <div className="pl-4 bg-white px-2 w-full">
                       <div className="flex flex-col gap-y-2">
                         <Link
-                          href="/showcase?type=technical-skills"
+                          href="/?type=technical-skills"
                           className="block px-4 rounded-t-lg hover:text-gray-600"
                           onClick={() => {
                             handleTabClickForShowcase();
@@ -267,7 +267,7 @@ const TabNavigation = () => {
                           Technical Skills
                         </Link>
                         <Link
-                          href="/showcase?type=projects"
+                          href="/?type=projects"
                           className="block px-4 rounded-t-lg hover:text-gray-600"
                           onClick={() => {
                             handleTabClickForShowcase();
@@ -277,7 +277,7 @@ const TabNavigation = () => {
                           Projects
                         </Link>
                         <Link
-                          href="/showcase?type=competitive-programming"
+                          href="/?type=competitive-programming"
                           className="block px-4 rounded-t-lg hover:text-gray-600"
                           onClick={() => {
                             handleTabClickForShowcase();
@@ -287,7 +287,7 @@ const TabNavigation = () => {
                           Competitive Programming
                         </Link>
                         <Link
-                          href="/showcase?type=language-proficiency"
+                          href="/?type=language-proficiency"
                           className="block px-4 rounded-t-lg hover:text-gray-600"
                           onClick={() => {
                             handleTabClickForShowcase();

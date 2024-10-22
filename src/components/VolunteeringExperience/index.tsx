@@ -11,7 +11,20 @@ function VolunteeringExperience() {
   const type = searchParams.get('type');
 
   useEffect(() => {
-    if (type === 'volunteering') document.getElementById('volunteering')?.focus();
+    if (type === 'volunteering-experience') {
+      const volunteeringExperienceElement = document.getElementById('volunteering-experience');
+      if (volunteeringExperienceElement) {
+        volunteeringExperienceElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest',
+        });
+
+        setTimeout(() => {
+          volunteeringExperienceElement.focus();
+        }, 500); // Adjust delay if needed
+      }
+    }
   }, [type]);
 
   const { experience } = data;
@@ -19,7 +32,7 @@ function VolunteeringExperience() {
 
   return (
     <ol
-      id="volunteering"
+      id="volunteering-experience"
       tabIndex={0}
       className="relaive bg-white p-4 shadow-xl rounded-md flex flex-col space-y-4"
     >

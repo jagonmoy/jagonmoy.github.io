@@ -11,19 +11,31 @@ function IndustryExperience() {
   const type = searchParams.get('type');
 
   useEffect(() => {
-    if (type === 'industry') document.getElementById('industry')?.focus();
+    if (type === 'industry-experience') {
+      const industryExperienceElement = document.getElementById('industry-experience');
+      if (industryExperienceElement) {
+        industryExperienceElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest',
+        });
+
+        setTimeout(() => {
+          industryExperienceElement.focus();
+        }, 500); // Adjust delay if needed
+      }
+    }
   }, [type]);
 
   const { experience } = data;
   const { industry } = experience;
 
   return (
-    <ol
-      id="industry"
-      tabIndex={0}
-      className="relaive bg-white p-4 shadow-xl rounded-md flex flex-col space-y-4"
-    >
-      <h1 className="text-center font-bold text-gray-900 text-xl lg:text-2xl">
+    <ol tabIndex={0} className="relaive bg-white p-4 shadow-xl rounded-md flex flex-col space-y-4">
+      <h1
+        id="industry-experience"
+        className="text-center font-bold text-gray-900 text-xl lg:text-2xl"
+      >
         {industry.heading}
       </h1>
       <div className="flex flex-col gap-y-10 mb-10">

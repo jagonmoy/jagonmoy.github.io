@@ -10,7 +10,20 @@ function ResearchExperience() {
   const type = searchParams.get('type');
 
   useEffect(() => {
-    if (type === 'research') document.getElementById('research')?.focus();
+    if (type === 'research-experience') {
+      const researchExperienceElement = document.getElementById('research-experience');
+      if (researchExperienceElement) {
+        researchExperienceElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest',
+        });
+
+        setTimeout(() => {
+          researchExperienceElement.focus();
+        }, 500); // Adjust delay if needed
+      }
+    }
   }, [type]);
 
   const { experience } = data;
@@ -18,7 +31,7 @@ function ResearchExperience() {
 
   return (
     <ol
-      id="research"
+      id="research-experience"
       tabIndex={0}
       className="relaive bg-white p-4 shadow-xl rounded-md flex flex-col space-y-4"
     >

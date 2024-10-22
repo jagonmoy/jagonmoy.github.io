@@ -1,12 +1,30 @@
 'use client';
 import data from 'data/data.json';
+import { useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 import { FaSchool, FaUniversity } from 'react-icons/fa';
 
-function EducationPage() {
+function Education() {
+  const searchParams = useSearchParams();
+
+  const type = searchParams.get('type');
+
   useEffect(() => {
-    document.getElementById('education')?.focus();
-  }, []);
+    if (type === 'education') {
+      const educationElement = document.getElementById('education');
+      if (educationElement) {
+        educationElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest',
+        });
+
+        setTimeout(() => {
+          educationElement.focus();
+        }, 500); // Adjust delay if needed
+      }
+    }
+  }, [type]);
 
   const { education } = data;
 
@@ -74,4 +92,4 @@ function EducationPage() {
   );
 }
 
-export default EducationPage;
+export default Education;

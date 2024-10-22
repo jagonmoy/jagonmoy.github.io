@@ -14,8 +14,20 @@ function CP() {
   const type = searchParams.get('type');
 
   useEffect(() => {
-    if (type === 'competitive-programming')
-      document.getElementById('competitive-programming')?.focus();
+    if (type === 'competitive-programming') {
+      const competitiveProgrammingElement = document.getElementById('competitive-programming');
+      if (competitiveProgrammingElement) {
+        competitiveProgrammingElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest',
+        });
+
+        setTimeout(() => {
+          competitiveProgrammingElement.focus();
+        }, 500); // Adjust delay if needed
+      }
+    }
   }, [type]);
 
   const { showcase } = data;

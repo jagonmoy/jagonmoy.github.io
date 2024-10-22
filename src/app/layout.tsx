@@ -1,4 +1,5 @@
 import Footer from 'components/Footer';
+import GoogleAnalytics from 'components/GoogleAnalytics';
 import NavBar from 'components/Navbar';
 import './globals.css';
 import ProfileAndIntro from 'components/ProfileAndIntro';
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <GoogleAnalytics />
       <body className={`${roboto.className} min-h-screen`}>
         <NavBar />
         <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-4 pt-12">

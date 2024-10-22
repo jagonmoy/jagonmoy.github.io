@@ -37,7 +37,20 @@ function TechnicalSkills() {
   const type = searchParams.get('type');
 
   useEffect(() => {
-    if (type === 'technical-skills') document.getElementById('technical-skills')?.focus();
+    if (type === 'technical-skills') {
+      const technicalSkillsElement = document.getElementById('technical-skills');
+      if (technicalSkillsElement) {
+        technicalSkillsElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest',
+        });
+
+        setTimeout(() => {
+          technicalSkillsElement.focus();
+        }, 500); // Adjust delay if needed
+      }
+    }
   }, [type]);
 
   const { showcase } = data;
@@ -164,12 +177,8 @@ function TechnicalSkills() {
   ];
 
   return (
-    <ol
-      id="technical-skills"
-      tabIndex={0}
-      className="relaive bg-white p-4 shadow-xl rounded-md flex flex-col space-y-4"
-    >
-      <h1 className="text-center font-bold text-gray-900 text-xl lg:text-2xl">
+    <ol tabIndex={0} className="relaive bg-white p-4 shadow-xl rounded-md flex flex-col space-y-4">
+      <h1 id="technical-skills" className="text-center font-bold text-gray-900 text-xl lg:text-2xl">
         {technicalSkills.heading}
       </h1>
       <div className="flex flex-col gap-y-10">

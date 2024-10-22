@@ -226,18 +226,18 @@
 
             },
             "project3": {
+                "name" : "Deep Learrning Exercises",
+                "link" : "https://github.com/jagonmoy/Deep-Learning-Exercises",
+                "technologies" : "Technologies: TensorFlow, NumPy, Pandas, Scikit-learn",
+                "description": "Implemented various deep learning fundamentals including gradient descent, regularization techniques, and  solved exercises as a part of the prepation for the undergrad thesis."
+            },
+            "project4": {
                 "name" : "Personal Portfolio",
                 "link" : "https://github.com/jagonmoy/jagonmoy.github.io",
                 "technologies" : "Technologies: TypeScript, Next.js, Tailwind CSS, ESLint, Prettier",
                 "description": "Designed and developed a personal portfolio website, showcasing professional experience, education, skills, and projects."
                 
 
-            },
-            "project4": {
-                "name" : "Deep Learrning Exercises",
-                "link" : "https://github.com/jagonmoy/Deep-Learning-Exercises",
-                "technologies" : "Technologies: TensorFlow, NumPy, Pandas, Scikit-learn",
-                "description": "Implemented various deep learning fundamentals including gradient descent, regularization techniques, and  solved exercises as a part of the prepation for the undergrad thesis."
             }
         },
         "competitiveProgramming" : {

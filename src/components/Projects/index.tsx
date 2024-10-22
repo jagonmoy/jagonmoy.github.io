@@ -12,7 +12,20 @@ function Projects() {
   const type = searchParams.get('type');
 
   useEffect(() => {
-    if (type === 'projects') document.getElementById('projects')?.focus();
+    if (type === 'projects') {
+      const projectsElement = document.getElementById('projects');
+      if (projectsElement) {
+        projectsElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest',
+        });
+
+        setTimeout(() => {
+          projectsElement.focus();
+        }, 500); // Adjust delay if needed
+      }
+    }
   }, [type]);
 
   const { showcase } = data;
@@ -89,24 +102,6 @@ function Projects() {
             </span>
             <span className="text-sm lg:text-base text-gray-500 break-words mt-2">
               {projects.project3.description}
-            </span>
-          </div>
-        </li>
-        <li className="flex gap-x-4 items-start">
-          <FaCode className="text-2xl flex-shrink-0" />
-          <div className="flex-grow flex flex-col gap-y-2 lg:gap-y-1">
-            <Link
-              href={projects.project4.link}
-              className="text-md lg:text-lg font-semibold text-gray-900"
-              target="_blank"
-            >
-              {projects.project4.name}
-            </Link>
-            <span className="text-sm lg:text-base text-gray-500 break-words">
-              {projects.project4.technologies}
-            </span>
-            <span className="text-sm lg:text-base text-gray-500 break-words mt-2">
-              {projects.project4.description}
             </span>
           </div>
         </li>
