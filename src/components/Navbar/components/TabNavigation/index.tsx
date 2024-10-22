@@ -8,7 +8,7 @@ const TabNavigation = () => {
   const pathname = usePathname();
   const sectionName = pathname.split('/').pop();
 
-  console.log(process.env.NEXT_PUBLIC_MEASUREMENT_ID);
+  console.log(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID);
   console.log('ki khbr');
 
   const [activeTab, setActiveTab] = useState(sectionName || 'about-me');
