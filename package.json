@@ -12,6 +12,7 @@
     "check-format": "npm run prettier -- --list-different"
   },
   "dependencies": {
+    "@next/third-parties": "^15.0.0",
     "eslint-config-next": "14.2.13",
     "next": "14.2.13",
     "prettier": "3.3.3",

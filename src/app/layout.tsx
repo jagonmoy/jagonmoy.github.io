@@ -1,5 +1,5 @@
+import { GoogleAnalytics } from '@next/third-parties/google';
 import Footer from 'components/Footer';
-import GoogleAnalytics from 'components/GoogleAnalytics';
 import NavBar from 'components/Navbar';
 import './globals.css';
 import ProfileAndIntro from 'components/ProfileAndIntro';
@@ -14,9 +14,11 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  console.log(process.env.NEXT_PUBLIC_MEASUREMENT_ID);
+  console.log('ki khbr');
   return (
     <html lang="en">
-      <GoogleAnalytics />
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_MEASUREMENT_ID || ''} />
       <body className={`${roboto.className} min-h-screen`}>
         <NavBar />
         <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-4 pt-12">
