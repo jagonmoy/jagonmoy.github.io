@@ -12,10 +12,8 @@ function ProfileAndIntro() {
       </div>
       <div className="w-full p-4">
         <h1 className="font-bold text-gray-900 text-xl lg:text-2xl">{profileIntro.name}</h1>
-        <div className="text-gray-500 text-sm lg:text-base">{profileIntro.pronouns}</div>
-        <div className="text-gray-500 mt-2 break-words text-sm lg:text-base">
-          {profileIntro.bio}
-        </div>
+        <div className="text-gray-500 text-md lg:text-lg">{profileIntro.pronouns}</div>
+        <div className="text-gray-500 mt-2 break-words text-md lg:text-lg">{profileIntro.bio}</div>
         <div className="hidden md:block">
           <ProfileSocialLinks />
         </div>

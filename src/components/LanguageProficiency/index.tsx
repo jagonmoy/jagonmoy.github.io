@@ -1,69 +1,44 @@
-'use client';
-
 import data from 'data/data.json';
-import { useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
 import { FaLanguage } from 'react-icons/fa';
 
 function LanguageProficiency() {
-  const searchParams = useSearchParams();
-
-  const type = searchParams.get('type');
-
-  useEffect(() => {
-    if (type === 'language-proficiency') {
-      const languageProficiencyElement = document.getElementById('language-proficiency');
-      if (languageProficiencyElement) {
-        languageProficiencyElement.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-          inline: 'nearest',
-        });
-
-        setTimeout(() => {
-          languageProficiencyElement.focus();
-        }, 500); // Adjust delay if needed
-      }
-    }
-  }, [type]);
-
   const { showcase } = data;
   const { languageProficiency } = showcase;
 
   return (
-    <ol
+    <div
       id="language-proficiency"
       tabIndex={0}
-      className="relaive bg-white p-4 shadow-xl rounded-md flex flex-col space-y-4"
+      className="relaive bg-white p-4 lg:p-8 shadow-xl rounded-md flex flex-col space-y-4"
     >
-      <h1 className="text-center font-bold text-gray-900 text-xl lg:text-2xl">
+      <h1 className="text-center font-bold text-gray-900 text-2xl lg:text-3xl">
         {languageProficiency.heading}
       </h1>
       <div className="flex flex-col gap-y-10 mb-10">
         <li className="flex gap-x-4 items-start">
-          <FaLanguage className="text-2xl flex-shrink-0" />
+          <FaLanguage className="text-3xl flex-shrink-0" />
           <div className="flex-grow flex flex-col gap-y-2 lg:gap-y-1">
-            <span className="text-md lg:text-lg font-semibold text-gray-900">
+            <span className="text-lg lg:text-xl font-semibold text-gray-900">
               {languageProficiency.english}
             </span>
-            <span className="text-sm lg:text-base text-gray-500 break-words">
+            <span className="text-md lg:text-lg text-gray-500 break-words">
               {languageProficiency.englishDescription}
             </span>
           </div>
         </li>
         <li className="flex gap-x-4 items-start">
-          <FaLanguage className="text-2xl flex-shrink-0" />
+          <FaLanguage className="text-3xl flex-shrink-0" />
           <div className="flex-grow flex flex-col gap-y-2 lg:gap-y-1">
-            <span className="text-md lg:text-lg font-semibold text-gray-900">
+            <span className="text-lg lg:text-xl font-semibold text-gray-900">
               {languageProficiency.bengali}
             </span>
-            <span className="text-sm lg:text-base text-gray-500 break-words">
+            <span className="text-md lg:text-lg text-gray-500 break-words">
               {languageProficiency.bengaliDescription}
             </span>
           </div>
         </li>
       </div>
-    </ol>
+    </div>
   );
 }
 

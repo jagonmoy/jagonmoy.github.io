@@ -173,7 +173,6 @@
                 "ts" : "TypeScript",
                 "python" : "Python",
                 "c": "C",
-                "cpp": "C++",
                 "sql": "SQL",
                 "html": "HTML",
                 "css": "CSS"

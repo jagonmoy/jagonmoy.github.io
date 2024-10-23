@@ -1,8 +1,5 @@
-'use client';
-
 import data from 'data/data.json';
 import CIcon from 'icons/C';
-import CPlusPlusIcon from 'icons/CPlusPlus';
 import CSSIcon from 'icons/CSS';
 import DockerIcon from 'icons/Docker';
 import ExpressJsIcon from 'icons/ExpressJs';
@@ -28,31 +25,8 @@ import SwaggerIcon from 'icons/Swagger';
 import TailwindIcon from 'icons/Tailwind';
 import TensorFlowIcon from 'icons/TensorFlow';
 import TypeScriptIcon from 'icons/TypeScript';
-import { useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
 
 function TechnicalSkills() {
-  const searchParams = useSearchParams();
-
-  const type = searchParams.get('type');
-
-  useEffect(() => {
-    if (type === 'technical-skills') {
-      const technicalSkillsElement = document.getElementById('technical-skills');
-      if (technicalSkillsElement) {
-        technicalSkillsElement.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-          inline: 'nearest',
-        });
-
-        setTimeout(() => {
-          technicalSkillsElement.focus();
-        }, 500); // Adjust delay if needed
-      }
-    }
-  }, [type]);
-
   const { showcase } = data;
   const { technicalSkills } = showcase;
 
@@ -68,10 +42,6 @@ function TechnicalSkills() {
     {
       icon: <PythonIcon />,
       name: technicalSkills.languages.python,
-    },
-    {
-      icon: <CPlusPlusIcon />,
-      name: technicalSkills.languages.cpp,
     },
     {
       icon: <CIcon />,
@@ -177,20 +147,24 @@ function TechnicalSkills() {
   ];
 
   return (
-    <ol tabIndex={0} className="relaive bg-white p-4 shadow-xl rounded-md flex flex-col space-y-4">
-      <h1 id="technical-skills" className="text-center font-bold text-gray-900 text-xl lg:text-2xl">
+    <div
+      tabIndex={0}
+      id="technical-skills"
+      className="relaive bg-white p-4 lg:p-8 shadow-xl rounded-md flex flex-col space-y-4"
+    >
+      <h1 className="text-center font-bold text-gray-900 text-2xl lg:text-3xl">
         {technicalSkills.heading}
       </h1>
       <div className="flex flex-col gap-y-10">
         <div className="flex flex-col gap-y-5">
-          <span className="text-gray-900 font-bold text-md lg:text-lg">
+          <span className="text-gray-900 font-bold text-lg lg:text-xl">
             {technicalSkills.languagesHeading}
           </span>
           <div className="flex flex-wrap gap-x-10 gap-y-5">
             {languages.map((language) => (
               <div key={language.name} className="flex flex-col items-center gap-y-1">
                 <div className="items-center h-10 w-10">{language.icon}</div>
-                <span className="text-gray-500 text-sm lg:text-base font-semibold">
+                <span className="text-gray-500 text-md lg:text-lg font-semibold">
                   {language.name}
                 </span>
               </div>
@@ -198,14 +172,14 @@ function TechnicalSkills() {
           </div>
         </div>
         <div className="flex flex-col gap-y-5">
-          <span className="text-gray-900 font-bold text-md lg:text-lg">
+          <span className="text-gray-900 font-bold text-lg lg:text-xl">
             {technicalSkills.frameworksHeading}
           </span>
           <div className="flex flex-wrap gap-x-10 gap-y-5">
             {frameworks.map((framework) => (
               <div key={framework.name} className="flex flex-col items-center gap-y-1">
                 <div className="items-center h-10 w-10">{framework.icon}</div>
-                <span className="text-gray-500 text-sm lg:text-base font-semibold">
+                <span className="text-gray-500 text-md lg:text-lg font-semibold">
                   {framework.name}
                 </span>
               </div>
@@ -213,37 +187,33 @@ function TechnicalSkills() {
           </div>
         </div>
         <div className="flex flex-col gap-y-5">
-          <span className="text-gray-900 font-bold text-md lg:text-lg">
+          <span className="text-gray-900 font-bold text-lg lg:text-xl">
             {technicalSkills.developerToolsHeading}
           </span>
           <div className="flex flex-wrap gap-x-10 gap-y-5">
             {developerTools.map((tools) => (
               <div key={tools.name} className="flex flex-col items-center gap-y-1">
                 <div className="items-center h-10 w-10">{tools.icon}</div>
-                <span className="text-gray-500 text-sm lg:text-base font-semibold">
-                  {tools.name}
-                </span>
+                <span className="text-gray-500 text-md lg:text-lg font-semibold">{tools.name}</span>
               </div>
             ))}
           </div>
         </div>
         <div className="flex flex-col gap-y-5">
-          <span className="text-gray-900 font-bold text-md lg:text-lg">
+          <span className="text-gray-900 font-bold text-lg lg:text-xl">
             {technicalSkills.mlToolsHeading}
           </span>
           <div className="flex flex-wrap gap-x-10 gap-y-5">
             {mlTools.map((tools) => (
               <div key={tools.name} className="flex flex-col items-center gap-y-1">
                 <div className="items-center h-10 w-10">{tools.icon}</div>
-                <span className="text-gray-500 text-sm lg:text-base font-semibold">
-                  {tools.name}
-                </span>
+                <span className="text-gray-500 text-md lg:text-lg font-semibold">{tools.name}</span>
               </div>
             ))}
           </div>
         </div>
       </div>
-    </ol>
+    </div>
   );
 }
 

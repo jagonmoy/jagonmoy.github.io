@@ -18,7 +18,7 @@ function ProfileSocialLinks() {
       <div className="flex gap-x-3 items-center">
         <FaMapMarkerAlt className="text-xl lg:text-2xl flex-shrink-0" />
         <Link href={profileIntro.locationLink} target="_blank">
-          <p className="text-gray-500 flex-grow text-sm lg:text-base break-words">
+          <p className="text-gray-500 flex-grow text-md lg:text-lg break-words">
             {profileIntro.location}
           </p>
         </Link>
@@ -26,7 +26,7 @@ function ProfileSocialLinks() {
       <div className="flex gap-x-3 items-center">
         <FaBuilding className="text-xl lg:text-2xl flex-shrink-0" />
         <Link href={profileIntro.companyLink} target="_blank">
-          <p className="text-gray-500 flex-grow text-sm lg:text-base break-words">
+          <p className="text-gray-500 flex-grow text-md lg:text-lg break-words">
             {profileIntro.company}
           </p>
         </Link>
@@ -34,7 +34,7 @@ function ProfileSocialLinks() {
       <div className="flex gap-x-3 items-center">
         <FaUniversity className="text-xl lg:text-2xl flex-shrink-0" />
         <Link href={profileIntro.universityLink} target="_blank">
-          <p className="text-gray-500 flex-grow text-sm lg:text-base break-words">
+          <p className="text-gray-500 flex-grow text-md lg:text-lg break-words">
             {profileIntro.university}
           </p>
         </Link>
@@ -42,7 +42,7 @@ function ProfileSocialLinks() {
       <div className="flex gap-x-3 items-center">
         <MdMail className="text-xl lg:text-2xl flex-shrink-0" />
         <Link href={profileIntro.emailLink}>
-          <p className="text-gray-500 flex-grow text-sm lg:text-base break-all">
+          <p className="text-gray-500 flex-grow text-md lg:text-lg break-all">
             {profileIntro.emailText}
           </p>
         </Link>
@@ -50,7 +50,7 @@ function ProfileSocialLinks() {
       <div className="flex gap-x-3 items-center">
         <FaPhoneAlt className="text-xl lg:text-2xl flex-shrink-0" />
         <Link href={profileIntro.phoneLink}>
-          <p className="text-gray-500 flex-grow text-sm lg:text-base break-all">
+          <p className="text-gray-500 flex-grow text-md lg:text-lg break-all">
             {profileIntro.phoneText}
           </p>
         </Link>
@@ -58,7 +58,7 @@ function ProfileSocialLinks() {
       <div className="flex gap-x-3 items-center">
         <FaGithub className="text-xl lg:text-2xl flex-shrink-0" />
         <Link href={profileIntro.githubLink} target="_blank">
-          <p className="text-gray-500 flex-grow text-sm lg:text-base break-all">
+          <p className="text-gray-500 flex-grow text-md lg:text-lg break-all">
             {profileIntro.githubLinkText}
           </p>
         </Link>
@@ -66,7 +66,7 @@ function ProfileSocialLinks() {
       <div className="flex gap-x-3 items-center">
         <FaLinkedin className="text-xl lg:text-2xl flex-shrink" />
         <Link href={profileIntro.linkedinLink} target="_blank">
-          <p className="text-gray-500 flex-grow text-sm lg:text-base break-all">
+          <p className="text-gray-500 flex-grow text-md lg:text-lg break-all">
             {profileIntro.linkedinLinkText}
           </p>
         </Link>
