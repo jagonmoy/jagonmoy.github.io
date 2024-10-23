@@ -1,9 +1,20 @@
 'use client';
 
 import data from 'data/data.json';
+import { FaRegNewspaper } from 'react-icons/fa';
 
 function AboutMe() {
   const { aboutMeParagraphs } = data;
+
+  const handleDownloadCV = () => {
+    const pdfUrl = 'Jagonmoy_academic.pdf';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'Jagonmoy_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div id="about-me" tabIndex={0} className="w-full bg-white p-4 shadow-xl rounded-md">
@@ -29,6 +40,17 @@ function AboutMe() {
               </ul>
             </div>
           ))}
+        </div>
+        <div className="pt-4">
+          <button
+            className="bg-gray-900 text-white font-semibold text-sm lg:text-md rounded-md border-0"
+            onClick={() => handleDownloadCV()}
+          >
+            <span className="flex items-center justify-center gap-x-2 px-4 py-2 ">
+              {'Download CV'}
+              <FaRegNewspaper />
+            </span>
+          </button>
         </div>
       </div>
     </div>
