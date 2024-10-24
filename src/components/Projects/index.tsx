@@ -36,7 +36,7 @@ function Projects() {
         <li className="flex gap-x-4 items-start">
           <FaCode className="text-3xl flex-shrink-0" />
           <div className="flex-grow flex flex-col gap-y-2 lg:gap-y-1">
-            <div className="flex gap-x-1 items-center">
+            <div className="flex flex-wrap items-center gap-x-2 gap-y-2">
               <Link
                 href={projects.project2.link1}
                 className="text-lg lg:text-xl font-semibold text-gray-900"
