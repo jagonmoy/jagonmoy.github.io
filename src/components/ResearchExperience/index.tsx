@@ -7,11 +7,13 @@ function ResearchExperience() {
 
   return (
     <div
-      id="research-experience"
       tabIndex={0}
       className="relaive bg-white p-4 lg:p-8 shadow-xl rounded-md flex flex-col space-y-4"
     >
-      <h1 className="text-center font-bold text-gray-900 text-2xl lg:text-3xl">
+      <h1
+        id="research-experience"
+        className="text-center font-bold text-gray-900 text-2xl lg:text-3xl"
+      >
         {research.heading}
       </h1>
       <div className="flex flex-col gap-y-10 mb-10">

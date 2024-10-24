@@ -17,9 +17,9 @@ function AboutMe() {
   };
 
   return (
-    <div id="#about-me" tabIndex={0} className="w-full bg-white p-4 lg:p-8 shadow-xl rounded-md">
+    <div tabIndex={0} className="w-full bg-white p-4 lg:p-8 shadow-xl rounded-md">
       <div className="flex-col space-y-4">
-        <h1 className="text-center font-bold text-gray-900 text-2xl lg:text-3xl">
+        <h1 id="about-me" className="text-center font-bold text-gray-900 text-2xl lg:text-3xl">
           {aboutMeParagraphs.heading}
         </h1>
         <div className="text-gray-500 break-words text-md lg:text-lg">

@@ -28,11 +28,13 @@ function CP() {
 
   return (
     <div
-      id="competitive-programming"
       tabIndex={0}
       className="relaive bg-white p-4 lg:p-8 shadow-xl rounded-md flex flex-col space-y-4"
     >
-      <h1 className="text-center font-bold text-gray-900 text-2xl lg:text-3xl">
+      <h1
+        id="competitive-programming"
+        className="text-center font-bold text-gray-900 text-2xl lg:text-3xl"
+      >
         {competitiveProgramming.heading}
       </h1>
       <div className="flex flex-col gap-y-4 mb-10 pl-6">
