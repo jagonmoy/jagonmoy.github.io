@@ -20,6 +20,7 @@ import PostGreSQLIcon from 'icons/PostGreSQL';
 import PostmanIcon from 'icons/Postman';
 import PythonIcon from 'icons/Python';
 import ReactIcon from 'icons/React';
+import SanityIcon from 'icons/Sanity';
 import ScikitLearnIcon from 'icons/Scikit-learn';
 import SwaggerIcon from 'icons/Swagger';
 import TailwindIcon from 'icons/Tailwind';
@@ -93,6 +94,10 @@ function TechnicalSkills() {
     {
       icon: <PostGreSQLIcon />,
       name: technicalSkills.frameworks.postgres,
+    },
+    {
+      icon: <SanityIcon />,
+      name: technicalSkills.frameworks.sanity,
     },
   ];
 

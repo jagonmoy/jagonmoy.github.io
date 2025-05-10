@@ -26,9 +26,14 @@ function ResearchExperience() {
             <span className="text-md lg:text-lg text-gray-500 break-words">
               {research.research1.university}
             </span>
-            <span className="text-md lg:text-lg text-gray-500 break-words">
+            <a
+              className="text-md lg:text-lg text-gray-500 break-words"
+              href={research.research1.superviserLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {research.research1.superviser}
-            </span>
+            </a>
             <span className="text-md lg:text-lg text-gray-500 break-words">
               {research.research1.duration}
             </span>

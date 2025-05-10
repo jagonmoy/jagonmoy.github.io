@@ -14,8 +14,8 @@ function Home() {
     <div className="flex flex-col gap-y-12">
       <AboutMe />
       <Education />
-      <IndustryExperience />
       <ResearchExperience />
+      <IndustryExperience />
       <MentorshipExperience />
       <VolunteeringExperience />
       <TechnicalSkills />

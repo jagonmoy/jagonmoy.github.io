@@ -26,19 +26,22 @@
         "heading" : "About Me",
         "areasOfInterestHeading" : "Areas of Interest",
         "areasOfInterest" : [
-            "Software Engineering",
-            "Software Architecture and Design",
-            "Frontend Development",
-            "Machine Learning",
-            "Software Testing",
-            "CI/CD (Continuous Integration and Deployment)",
-            "Human Computer Interaction",
-            "Algorithms and Data Structures",
-            "Natural Language Processing"
+           "Empirical Software Engineering",
+           "Requirements Engineering and Software Testing",
+           "Use of NLP and Large Language Models (LLMs) in Software Engineering",
+           "Natural Language Processing",
+           "Human-Computer Interaction (HCI)",
+           "Continuous Integration and Continuous Deployment (CI/CD)",
+           "Mining Software Repositories (MSR)",
+           "AI for Software Maintenance and Evolution",
+           "Intelligent Developer Tools / Programming Assistants",
+           "Explainability in AI-based SE Tools",
+           "Privacy and Ethics in AI for SE",
+           "Program Synthesis / Neural Code Generation"
         ],
-        "paragraph1": "A software engineer with two years of full-stack development experience at Cefalo Bangladesh Limited, specializing in Next.js and Nest.js, with a solid focus on frontend development. Experience also includes mentoring junior engineers, supporting their growth in technical skills and career development.",
-        "paragraph2": "Strong academic background from Shahjalal University of Science and Technology, including research in NLP during an undergraduate thesis, and participation in competitive programming to develop problem-solving skills. Volunteer experience includes involvement in arranging tech fests, showcasing a commitment to the tech community.",
-        "paragraph3": "Outside of professional and academic pursuits, enjoys socializing, traveling, and has a great passion for photography."
+        "paragraph1": "Software engineer with over 2.5 years of experience in designing and building large-scale web systems. Skilled in cross-functional collaboration, mentoring, and contributing to team growth and strategic decision-making. Holds a degree in Software Engineering with a strong academic record and hands-on research experience in Natural Language Processing, particularly focused on speech and text understanding. Actively engaged in problem-solving, academic mentorship, and knowledge-sharing through departmental initiatives. Deeply passionate about the intersection of Software Engineering, Artificial Intelligence, and Human-Computer Interaction, with a growing interest in how language models and intelligent automation can advance software development practices and improve developer experience.",    
+        "paragraph2": "Currently seeking research collaborations in areas such as Empirical Software Engineering, AI and Large Language Models applied to Software Engineering, and Human-Computer Interaction. Open to opportunities that explore real-world developer behavior, intelligent tooling, automation of software tasks, and ways to make software systems more usable, efficient, and developer-friendly."
+          
     },
     "education" : {
         "heading" : "Education",
@@ -75,10 +78,11 @@
                 "location" : "Dhaka, Bangladesh",
                 "technologies" : "Technologies: TypeScript, Next.js, Imgix, MJML, Nest.js, BullMQ",
                 "bulletPoints": [
-                    "Worked from scratch in an Oslo-based start-up environment as a full-stack engineer to develop Subrite, a multi-tenant SaaS subscription management system, following Agile methodologies.",
-                    "Optimized images using Next/Image and imgix, implemented server-side fetching, server actions, and Next.js cache revalidation. Increased the SEO score from 85% to 100%, the best practices score from 95% to 100%, and improved overall page load performance from 55% to 95%, achieving significant enhancements in Google Lighthouse metrics.",
-                    "Worked with Nest.js event queue architecture to facilitate automated email functions for both scheduled and event-driven tasks, serving over 200,000 users in Scandinavian countries.",
-                    "Configured multi-tenant email provider settings and utilized MJML to create responsive email templates, accommodating dynamic values for enhanced flexibility and personalization."
+                    "Worked from scratch in an Oslo-based startup environment as a full-stack engineer to build and scale Subrite, a multi-tenant SaaS subscription management platform also contributing to the development of tenant projects, actively following Agile methodologies and the full software development life cycle (SDLC).",
+                    "Architected email automation functions using Nest.js event queue system to handle both scheduled and event-driven tasks, serving around 300,000 users across Scandinavia.",
+                    "Optimized web performance by implementing efficient data fetching and caching strategies incorporating Next.Js and Redis, improving overall page load performance from 55% to 95% and SEO from 85% to 100% (Google Lighthouse metrics).",
+                    "Designed responsive email templates using MJML; implemented rich text rendering to generate parsable HTML and PDF content; developed on-the-fly PDF generation and optimized media delivery with MUX for video, and Imgix, Next/Image for efficient image rendering.",
+                    "Worked extensively with the Sanity CMS alongside traditional SQL databases—implemented automated type generation, wrote efficient GROQ queries, and handled diverse content types (icons, rich text, media) to dynamically render them on the frontend."
                 ]                   
             },
             "experience2" : {
@@ -88,7 +92,7 @@
                 "location" : "Dhaka, Bangladesh",
                 "technologies" : "Technologies: NextAuth, Playwright, Jest, TailwindCSS, TypeORM, PostgreSQL, Jira, Notion, Miro",
                 "bulletPoints": [
-                    "Integrated external tenant application with the subscription system’s OIDC using NextAuth.",
+                    "Integrated an external tenant application with Subrite’s OIDC system using NextAuth, handling secure authentication flows including dynamic redirect and callback URLs to support tenant-specific login and post-login redirection.",
                     "Introduced and configured Playwright for end-to-end testing across the system, integrating it into the CI/CD pipeline for automated testing and quality assurance, and wrote unit tests using Jest to ensure code reliability and functionality.",
                     "Implemented custom fields integration for a multi-tenant front-end, allowing tenant-specific configurations to be applied dynamically, built responsive UIs, and developed well-maintained, reusable components.",
                     "Optimized backend RESTful API performance and fine-tuned TypeORM SQL queries, resulting in a 1.5x improvement in API response times and overall system efficiency."
@@ -115,9 +119,12 @@
                 "duration" : "September 2022 - February 2023",
                 "location" : "Sylhet, Bangladesh",
                 "superviser": "Supervised by Mohammad Shahidur Rahman, PhD",
+                "superviserLink": "https://scholar.google.com/citations?user=EKkysqUAAAAJ&hl=en",
                 "bulletPoints": [
-                    "Developed a speaker diarization system using Bi-LSTM and Google Cloud Speech-to-Text for Bangla, incorporating voice activity detection, speaker segmentation, and clustering (k-means, Mean Shift).",
-                    "Created and annotated an 8-hour Bangla dataset from YouTube debates and talk shows using ELAN, Audacity, and y2Mate, referencing DIHARD II and CALLHOME."
+                    "Addressed the problem of multi-speaker transcription in Bangla by developing a system that combines speaker diarization (”who spoke when”) and speech recognition (”what was said”) to generate structured, dialogue-style transcripts.",
+                    "Designed a full pipeline using Bi-LSTM for speaker diarization and Google Cloud Speech-to-Text for transcription, incorporating voice activity detection, speaker segmentation, and clustering.",
+                    "Integrated the WebRTC VAD library for detecting speech regions, developed custom code snippets to link VAD with segmentation, and used pyannote-audio embeddings for speaker representation.",
+                    "Collected and annotated 8 hours of Bangla audio data from YouTube debates and talk shows using ELAN,Audacity, and y2Mate."
                 ]
             }
         },
@@ -186,7 +193,8 @@
                 "tailwind": "Tailwind CSS",
                 "jest": "Jest",
                 "playwright": "Playwright",
-                "postgres": "PostgreSQL"
+                "postgres": "PostgreSQL",
+                "sanity": "Sanity"
             },
             "developerTools": {
                 "git": "Git",
