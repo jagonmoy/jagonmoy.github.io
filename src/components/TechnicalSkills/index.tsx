@@ -19,6 +19,7 @@ import PlaywrightIcon from 'icons/Playwright';
 import PostGreSQLIcon from 'icons/PostGreSQL';
 import PostmanIcon from 'icons/Postman';
 import PythonIcon from 'icons/Python';
+import PyTorchIcon from 'icons/PyTorch';
 import ReactIcon from 'icons/React';
 import SanityIcon from 'icons/Sanity';
 import ScikitLearnIcon from 'icons/Scikit-learn';
@@ -133,6 +134,10 @@ function TechnicalSkills() {
   ];
 
   const mlTools = [
+    {
+      icon: <PyTorchIcon />,
+      name: technicalSkills.mlTools.pytorch,
+    },
     {
       icon: <TensorFlowIcon />,
       name: technicalSkills.mlTools.tensorflow,

@@ -29,15 +29,10 @@
            "Empirical Software Engineering",
            "Requirements Engineering and Software Testing",
            "Use of NLP and Large Language Models (LLMs) in Software Engineering",
-           "Natural Language Processing",
-           "Human-Computer Interaction (HCI)",
            "Continuous Integration and Continuous Deployment (CI/CD)",
-           "Mining Software Repositories (MSR)",
-           "AI for Software Maintenance and Evolution",
-           "Intelligent Developer Tools / Programming Assistants",
-           "Explainability in AI-based SE Tools",
-           "Privacy and Ethics in AI for SE",
-           "Program Synthesis / Neural Code Generation"
+           "Software Architecture and Design Patterns",
+           "Natural Language Processing",
+           "Human-Computer Interaction (HCI)"
         ],
         "paragraph1": "Software engineer with over 2.5 years of experience in designing and building large-scale web systems. Skilled in cross-functional collaboration, mentoring, and contributing to team growth and strategic decision-making. Holds a degree in Software Engineering with a strong academic record and hands-on research experience in Natural Language Processing, particularly focused on speech and text understanding. Actively engaged in problem-solving, academic mentorship, and knowledge-sharing through departmental initiatives. Deeply passionate about the intersection of Software Engineering, Artificial Intelligence, and Human-Computer Interaction, with a growing interest in how language models and intelligent automation can advance software development practices and improve developer experience.",    
         "paragraph2": "Currently seeking research collaborations in areas such as Empirical Software Engineering, AI and Large Language Models applied to Software Engineering, and Human-Computer Interaction. Open to opportunities that explore real-world developer behavior, intelligent tooling, automation of software tasks, and ways to make software systems more usable, efficient, and developer-friendly."
@@ -206,6 +201,7 @@
                 "postman": "Postman"
             },
             "mlTools": {
+                "pytorch": "PyTorch",
                 "tensorflow": "TensorFlow",
                 "scikit": "Scikit-learn",
                 "numpy": "NumPy",
@@ -215,6 +211,19 @@
         "projects": {
             "heading": "Projects",
             "project1": {
+                "name": "Alternative Requirement Generation with RAG-LM",
+                "link": "https://github.com/jagonmoy/Alternative-Requirement-Generation-with-RAG-LM",
+                "technologies": "Technologies: Python, PyTorch, SpaCy, FAISS, BERT, FLAN-T5",
+                "description": "A prototype for generating alternative software requirements using Retrieval-Augmented Generation (RAG) with FLAN-T5 and BERT, powered by smart masking."
+            },
+            "project2": {
+                "name": "Time-Series-with-stock ",
+                "link": "https://github.com/jagonmoy/Time-Series-with-stock/blob/add-stock-price-data-loader-and-script/README_STOCK.md",
+                "technologies": "Technologies:Python, PyTorch, Scikit-learn, NumPy, Pandas",
+                "description": "Developed a custom extension in a forked version of TSLib, a widely used open-source time series library. Implemented a stock market data loader for a kaggle dataset so that the dataset can be trained and evaluated by available models."
+
+            },
+            "project3": {
                 "name": "SlackBook",
                 "link": "https://github.com/RakibulRanak/SlackBook",
                 "technologies": "Technologies: JavaScript, Node.js, Slack API, Facebook Graph API",
@@ -222,27 +231,13 @@
                 
 
             },
-            "project2": {
+            "project4": {
                 "name1": "Number Theory",
                 "name2": "Graph Theory",
                 "link1": "https://github.com/jagonmoy/Number-Theory",
                 "link2": "https://github.com/jagonmoy/Graph-Theory",
                 "technologies": "Technologies: C++, C",
                 "description": "Created and maintained two GitHub repositories on Number Theory and Graph Theory, featuring tutorials, problems, and solutions for learning DSA. Each repository has received 20+ stars and is now used in the department to construct Competitive Programming and Data Structures and Algorithms courses."
-                
-
-            },
-            "project3": {
-                "name" : "Deep Learrning Exercises",
-                "link" : "https://github.com/jagonmoy/Deep-Learning-Exercises",
-                "technologies" : "Technologies: TensorFlow, NumPy, Pandas, Scikit-learn",
-                "description": "Implemented various deep learning fundamentals including gradient descent, regularization techniques, and  solved exercises as a part of the prepation for the undergrad thesis."
-            },
-            "project4": {
-                "name" : "Personal Portfolio",
-                "link" : "https://github.com/jagonmoy/jagonmoy.github.io",
-                "technologies" : "Technologies: TypeScript, Next.js, Tailwind CSS, ESLint, Prettier",
-                "description": "Designed and developed a personal portfolio website, showcasing professional experience, education, skills, and projects."
                 
 
             }
