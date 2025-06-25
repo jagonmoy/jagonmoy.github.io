@@ -5,7 +5,6 @@ import './globals.css';
 import ProfileAndIntro from 'components/ProfileAndIntro';
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
-import Script from 'next/script';
 import React from 'react';
 
 const roboto = Roboto({ weight: '400', subsets: ['latin'] });
