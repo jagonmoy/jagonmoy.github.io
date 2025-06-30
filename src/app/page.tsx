@@ -18,8 +18,8 @@ function Home() {
       <IndustryExperience />
       <MentorshipExperience />
       <VolunteeringExperience />
-      <TechnicalSkills />
       <Projects />
+      <TechnicalSkills />
       <CP />
       <LanguageProficiency />
     </div>

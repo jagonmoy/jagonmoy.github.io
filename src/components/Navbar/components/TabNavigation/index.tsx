@@ -74,19 +74,19 @@ const TabNavigation = () => {
               <div className="absolute top-9 left-0 bg-white shadow-md py-4 px-2 w-[250px] border-b z-10">
                 <div className="flex flex-col gap-y-2">
                   <Link
-                    href={'#industry-experience'}
-                    className="block px-4 rounded-t-lg hover:text-gray-600 "
-                    onClick={() => handleTabClickForExperience()}
-                  >
-                    Industry
-                  </Link>
-                  <Link
                     href="#research-experience"
                     className="block px-4 rounded-t-lg hover:text-gray-600 "
                     onClick={() => handleTabClickForExperience()}
                     prefetch={false}
                   >
                     Research
+                  </Link>
+                  <Link
+                    href={'#industry-experience'}
+                    className="block px-4 rounded-t-lg hover:text-gray-600 "
+                    onClick={() => handleTabClickForExperience()}
+                  >
+                    Industry
                   </Link>
                   <Link
                     href="#mentorship-experience"
@@ -120,18 +120,18 @@ const TabNavigation = () => {
               <div className="absolute top-9 left-0 bg-white shadow-md py-4 px-2 w-[250px] border-b z-10">
                 <div className="flex flex-col gap-y-2">
                   <Link
-                    href="#technical-skills"
-                    className="block px-4 rounded-t-lg hover:text-gray-600 "
-                    onClick={() => handleTabClickForShowcase()}
-                  >
-                    Technical Skills
-                  </Link>
-                  <Link
                     href="#projects"
                     className="block px-4 rounded-t-lg hover:text-gray-600 "
                     onClick={() => handleTabClickForShowcase()}
                   >
                     Projects
+                  </Link>
+                  <Link
+                    href="#technical-skills"
+                    className="block px-4 rounded-t-lg hover:text-gray-600 "
+                    onClick={() => handleTabClickForShowcase()}
+                  >
+                    Technical Skills
                   </Link>
                   <Link
                     href="#competitive-programming"

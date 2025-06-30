@@ -1,9 +1,20 @@
+'use client';
 import data from 'data/data.json';
-import { FaBong } from 'react-icons/fa';
+import { FaBong, FaRegNewspaper } from 'react-icons/fa';
 
 function ResearchExperience() {
   const { experience } = data;
   const { research } = experience;
+
+  const handleDownloadThesis = () => {
+    const pdfUrl = 'undergrad_thesis.pdf';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'undergrad_thesis.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div
@@ -44,6 +55,17 @@ function ResearchExperience() {
                 </li>
               ))}
             </ul>
+            <div className="pt-4">
+              <button
+                className="bg-gray-900 text-white font-semibold text-md lg:text-lg rounded-md border-0"
+                onClick={() => handleDownloadThesis()}
+              >
+                <span className="flex items-center justify-center gap-x-2 px-4 py-2 ">
+                  {'Download Thesis'}
+                  <FaRegNewspaper />
+                </span>
+              </button>
+            </div>
           </div>
         </li>
       </div>
