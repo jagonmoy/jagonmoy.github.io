@@ -1,4 +1,7 @@
+'use client';
+
 import data from 'data/data.json';
+import { motion } from 'framer-motion';
 import CIcon from 'icons/C';
 import CSSIcon from 'icons/CSS';
 import DockerIcon from 'icons/Docker';
@@ -32,200 +35,188 @@ function TechnicalSkills() {
   const { showcase } = data;
   const { technicalSkills } = showcase;
 
-  const languages = [
+  const skillCategories = [
     {
-      icon: <JavaScriptIcon />,
-      name: technicalSkills.languages.js,
+      title: technicalSkills.languagesHeading,
+      skills: [
+        { icon: <JavaScriptIcon />, name: technicalSkills.languages.js, category: 'Language' },
+        { icon: <TypeScriptIcon />, name: technicalSkills.languages.ts, category: 'Language' },
+        { icon: <PythonIcon />, name: technicalSkills.languages.python, category: 'Language' },
+        { icon: <CIcon />, name: technicalSkills.languages.c, category: 'Language' },
+        { icon: <HTMLIcon />, name: technicalSkills.languages.html, category: 'Language' },
+        { icon: <CSSIcon />, name: technicalSkills.languages.css, category: 'Language' },
+      ],
     },
     {
-      icon: <TypeScriptIcon />,
-      name: technicalSkills.languages.ts,
+      title: technicalSkills.frameworksHeading,
+      skills: [
+        { icon: <NextJsIcon />, name: technicalSkills.frameworks.next, category: 'Framework' },
+        { icon: <ReactIcon />, name: technicalSkills.frameworks.react, category: 'Framework' },
+        { icon: <NodeJsIcon />, name: technicalSkills.frameworks.node, category: 'Framework' },
+        { icon: <NestJsIcon />, name: technicalSkills.frameworks.nest, category: 'Framework' },
+        {
+          icon: <ExpressJsIcon />,
+          name: technicalSkills.frameworks.express,
+          category: 'Framework',
+        },
+        {
+          icon: <TailwindIcon />,
+          name: technicalSkills.frameworks.tailwind,
+          category: 'Framework',
+        },
+        { icon: <JestIcon />, name: technicalSkills.frameworks.jest, category: 'Framework' },
+        {
+          icon: <PlaywrightIcon />,
+          name: technicalSkills.frameworks.playwright,
+          category: 'Framework',
+        },
+        {
+          icon: <PostGreSQLIcon />,
+          name: technicalSkills.frameworks.postgres,
+          category: 'Framework',
+        },
+        { icon: <SanityIcon />, name: technicalSkills.frameworks.sanity, category: 'Framework' },
+      ],
     },
     {
-      icon: <PythonIcon />,
-      name: technicalSkills.languages.python,
+      title: technicalSkills.developerToolsHeading,
+      skills: [
+        { icon: <GitIcon />, name: technicalSkills.developerTools.git, category: 'Tool' },
+        { icon: <GitHubIcon />, name: technicalSkills.developerTools.github, category: 'Tool' },
+        { icon: <LinuxIcon />, name: technicalSkills.developerTools.linux, category: 'Tool' },
+        { icon: <DockerIcon />, name: technicalSkills.developerTools.docker, category: 'Tool' },
+        { icon: <SwaggerIcon />, name: technicalSkills.developerTools.swagger, category: 'Tool' },
+        { icon: <PostmanIcon />, name: technicalSkills.developerTools.postman, category: 'Tool' },
+        { icon: <JupyterIcon />, name: technicalSkills.developerTools.jupyter, category: 'Tool' },
+      ],
     },
     {
-      icon: <CIcon />,
-      name: technicalSkills.languages.c,
-    },
-    {
-      icon: <HTMLIcon />,
-      name: technicalSkills.languages.html,
-    },
-    {
-      icon: <CSSIcon />,
-      name: technicalSkills.languages.css,
-    },
-  ];
-
-  const frameworks = [
-    {
-      icon: <NextJsIcon />,
-      name: technicalSkills.frameworks.next,
-    },
-    {
-      icon: <ReactIcon />,
-      name: technicalSkills.frameworks.react,
-    },
-    {
-      icon: <NodeJsIcon />,
-      name: technicalSkills.frameworks.node,
-    },
-    {
-      icon: <NestJsIcon />,
-      name: technicalSkills.frameworks.nest,
-    },
-    {
-      icon: <ExpressJsIcon />,
-      name: technicalSkills.frameworks.express,
-    },
-    {
-      icon: <TailwindIcon />,
-      name: technicalSkills.frameworks.tailwind,
-    },
-    {
-      icon: <JestIcon />,
-      name: technicalSkills.frameworks.jest,
-    },
-    {
-      icon: <PlaywrightIcon />,
-      name: technicalSkills.frameworks.playwright,
-    },
-    {
-      icon: <PostGreSQLIcon />,
-      name: technicalSkills.frameworks.postgres,
-    },
-    {
-      icon: <SanityIcon />,
-      name: technicalSkills.frameworks.sanity,
+      title: technicalSkills.mlToolsHeading,
+      skills: [
+        { icon: <PyTorchIcon />, name: technicalSkills.mlTools.pytorch, category: 'ML Tool' },
+        { icon: <TensorFlowIcon />, name: technicalSkills.mlTools.tensorflow, category: 'ML Tool' },
+        { icon: <NumPyIcon />, name: technicalSkills.mlTools.numpy, category: 'ML Tool' },
+        { icon: <PandasIcon />, name: technicalSkills.mlTools.pandas, category: 'ML Tool' },
+        { icon: <ScikitLearnIcon />, name: technicalSkills.mlTools.scikit, category: 'ML Tool' },
+      ],
     },
   ];
 
-  const developerTools = [
-    {
-      icon: <GitIcon />,
-      name: technicalSkills.developerTools.git,
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.1,
+      },
     },
-    {
-      icon: <GitHubIcon />,
-      name: technicalSkills.developerTools.github,
-    },
-    {
-      icon: <LinuxIcon />,
-      name: technicalSkills.developerTools.linux,
-    },
-    {
-      icon: <DockerIcon />,
-      name: technicalSkills.developerTools.docker,
-    },
-    {
-      icon: <SwaggerIcon />,
-      name: technicalSkills.developerTools.swagger,
-    },
-    {
-      icon: <PostmanIcon />,
-      name: technicalSkills.developerTools.postman,
-    },
-    {
-      icon: <JupyterIcon />,
-      name: technicalSkills.developerTools.jupyter,
-    },
-  ];
+  };
 
-  const mlTools = [
-    {
-      icon: <PyTorchIcon />,
-      name: technicalSkills.mlTools.pytorch,
+  const categoryVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: 'easeOut' },
     },
-    {
-      icon: <TensorFlowIcon />,
-      name: technicalSkills.mlTools.tensorflow,
+  };
+
+  const skillVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.4, ease: 'easeOut' },
     },
-    {
-      icon: <NumPyIcon />,
-      name: technicalSkills.mlTools.numpy,
-    },
-    {
-      icon: <PandasIcon />,
-      name: technicalSkills.mlTools.pandas,
-    },
-    {
-      icon: <ScikitLearnIcon />,
-      name: technicalSkills.mlTools.scikit,
-    },
-  ];
+  };
 
   return (
-    <div
-      tabIndex={0}
-      className="relaive bg-white p-4 lg:p-8 shadow-xl rounded-md flex flex-col space-y-4"
+    <motion.div
+      className="w-full glass-effect dark:glass-effect-dark p-8 lg:p-10 rounded-3xl"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
     >
-      <h1
-        id="technical-skills"
-        className="text-center font-bold text-gray-900 text-2xl lg:text-3xl"
-      >
-        {technicalSkills.heading}
-      </h1>
-      <div className="flex flex-col gap-y-10">
-        <div className="flex flex-col gap-y-5">
-          <span className="text-gray-900 font-bold text-lg lg:text-xl">
-            {technicalSkills.languagesHeading}
-          </span>
-          <div className="flex flex-wrap gap-x-10 gap-y-5">
-            {languages.map((language) => (
-              <div key={language.name} className="flex flex-col items-center gap-y-1">
-                <div className="items-center h-10 w-10">{language.icon}</div>
-                <span className="text-gray-500 text-md lg:text-lg font-semibold">
-                  {language.name}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="flex flex-col gap-y-5">
-          <span className="text-gray-900 font-bold text-lg lg:text-xl">
-            {technicalSkills.frameworksHeading}
-          </span>
-          <div className="flex flex-wrap gap-x-10 gap-y-5">
-            {frameworks.map((framework) => (
-              <div key={framework.name} className="flex flex-col items-center gap-y-1">
-                <div className="items-center h-10 w-10">{framework.icon}</div>
-                <span className="text-gray-500 text-md lg:text-lg font-semibold">
-                  {framework.name}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="flex flex-col gap-y-5">
-          <span className="text-gray-900 font-bold text-lg lg:text-xl">
-            {technicalSkills.developerToolsHeading}
-          </span>
-          <div className="flex flex-wrap gap-x-10 gap-y-5">
-            {developerTools.map((tools) => (
-              <div key={tools.name} className="flex flex-col items-center gap-y-1">
-                <div className="items-center h-10 w-10">{tools.icon}</div>
-                <span className="text-gray-500 text-md lg:text-lg font-semibold">{tools.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="flex flex-col gap-y-5">
-          <span className="text-gray-900 font-bold text-lg lg:text-xl">
-            {technicalSkills.mlToolsHeading}
-          </span>
-          <div className="flex flex-wrap gap-x-10 gap-y-5">
-            {mlTools.map((tools) => (
-              <div key={tools.name} className="flex flex-col items-center gap-y-1">
-                <div className="items-center h-10 w-10">{tools.icon}</div>
-                <span className="text-gray-500 text-md lg:text-lg font-semibold">{tools.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+      <div className="space-y-10">
+        {/* Header */}
+        <motion.div
+          className="text-center mb-12"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <motion.div
+            className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-500 to-purple-600 rounded-2xl mb-4"
+            whileHover={{ rotate: 360, scale: 1.1 }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+              <span className="text-primary-600 font-bold text-lg">⚡</span>
+            </div>
+          </motion.div>
+          <h2 className="text-3xl lg:text-4xl font-bold gradient-text">
+            {technicalSkills.heading}
+          </h2>
+        </motion.div>
+
+        {/* Skills Grid */}
+        <motion.div
+          className="space-y-12"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {skillCategories.map((category, categoryIndex) => (
+            <motion.div key={categoryIndex} className="space-y-6" variants={categoryVariants}>
+              <motion.h3
+                className="text-2xl font-bold text-foreground border-b-2 border-primary/20 pb-2"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2, duration: 0.6 }}
+              >
+                {category.title}
+              </motion.h3>
+
+              <motion.div
+                className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6"
+                variants={containerVariants}
+              >
+                {category.skills.map((skill, skillIndex) => (
+                  <motion.div
+                    key={skill.name}
+                    className="group relative"
+                    variants={skillVariants}
+                    whileHover={{ y: -5, scale: 1.05 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <div className="flex flex-col items-center p-4 rounded-xl bg-white/50 dark:bg-gray-800/50 border border-gray-200/50 dark:border-gray-700/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                      <div className="w-12 h-12 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
+                        {skill.icon}
+                      </div>
+                      <span className="text-sm font-medium text-foreground text-center leading-tight">
+                        {skill.name}
+                      </span>
+
+                      {/* Category Badge */}
+                      <div className="absolute top-2 right-2">
+                        <span className="px-2 py-1 text-xs font-medium bg-primary-500/20 text-primary-700 dark:text-primary-300 rounded-full">
+                          {skill.category}
+                        </span>
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
