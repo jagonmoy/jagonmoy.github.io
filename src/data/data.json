@@ -220,6 +220,7 @@
                 "nest": "Nest.js",
                 "node": "Node.js",
                 "express": "Express.js",
+                "fastapi": "FastAPI",
                 "tailwind": "Tailwind CSS",
                 "jest": "Jest",
                 "playwright": "Playwright",
@@ -240,7 +241,9 @@
                 "tensorflow": "TensorFlow",
                 "scikit": "Scikit-learn",
                 "numpy": "NumPy",
-                "pandas": "Pandas"
+                "pandas": "Pandas",
+                "langchain": "LangChain",
+                "chroma": "ChromaDB"
             }
         },
         "projects": {

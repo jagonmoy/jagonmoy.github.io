@@ -1,9 +1,41 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Github, ExternalLink } from 'lucide-react';
+import {
+  Github,
+  ExternalLink,
+  Globe,
+  Users,
+  Code,
+  Database,
+  Bot,
+  Smartphone,
+  FolderOpen,
+} from 'lucide-react';
 
 import data from '../../data/data.json';
+
+// Project type icon mapping
+const getProjectIcon = (type: string) => {
+  switch (type.toLowerCase()) {
+    case 'web app':
+      return <Globe className="w-5 h-5 text-white" />;
+    case 'collaboration':
+      return <Users className="w-5 h-5 text-white" />;
+    case 'api':
+      return <Code className="w-5 h-5 text-white" />;
+    case 'database':
+      return <Database className="w-5 h-5 text-white" />;
+    case 'bot':
+      return <Bot className="w-5 h-5 text-white" />;
+    case 'mobile':
+      return <Smartphone className="w-5 h-5 text-white" />;
+    case 'learning':
+      return <Code className="w-5 h-5 text-white" />;
+    default:
+      return <Code className="w-5 h-5 text-white" />;
+  }
+};
 
 function Projects() {
   const { showcase } = data;
@@ -16,7 +48,7 @@ function Projects() {
       technologies: projects.project1.technologies,
       link1: projects.project1.link,
       buttonTitle1: 'Github',
-      type: 'Web App',
+      type: 'Bot',
     },
     {
       name: `${projects.project2.name1} & ${projects.project2.name2}`,
@@ -26,7 +58,7 @@ function Projects() {
       buttonTitle1: projects.project2.name1,
       link2: projects.project2.link2,
       buttonTitle2: projects.project2.name2,
-      type: 'Collaboration',
+      type: 'Learning',
     },
   ];
 
@@ -61,12 +93,19 @@ function Projects() {
       <div className="space-y-6 sm:space-y-8">
         {/* Header */}
         <motion.div
-          className="text-center"
-          initial={{ opacity: 0, y: 30 }}
+          className="text-center mb-8 sm:mb-10 lg:mb-12"
+          initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6 }}
         >
+          <motion.div
+            className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-primary-500 to-purple-600 rounded-xl sm:rounded-2xl mb-3 sm:mb-4"
+            whileHover={{ rotate: 360, scale: 1.1 }}
+            transition={{ duration: 0.6 }}
+          >
+            <FolderOpen className="w-6 h-6 sm:w-8 sm:w-8 text-white" />
+          </motion.div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold gradient-text">
             {projects.heading}
           </h2>
@@ -90,7 +129,7 @@ function Projects() {
             >
               {/* Project Type Badge */}
               <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-20">
-                <span className="px-2 py-1 sm:px-3 text-xs font-medium bg-primary-500/20 text-primary-700 dark:text-primary-300 rounded-full border border-primary-200 dark:border-primary-800">
+                <span className="px-2 py-1 sm:px-3 text-xs font-medium bg-gradient-to-r from-primary-500 to-purple-600 text-white rounded-full shadow-lg">
                   {project.type}
                 </span>
               </div>
@@ -98,9 +137,21 @@ function Projects() {
               {/* Content */}
               <div className="p-4 sm:p-6 relative z-10">
                 <div className="mb-3 sm:mb-4">
-                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2 group-hover:text-primary-600 transition-colors duration-300">
-                    {project.name}
-                  </h3>
+                  <div className="flex flex-col sm:flex-row sm:items-start space-y-3 sm:space-y-0 sm:space-x-4 mb-4">
+                    <motion.div
+                      className="p-2 sm:p-3 rounded-lg sm:rounded-xl bg-gradient-to-br from-primary-500 to-purple-600 shadow-lg self-start sm:self-auto"
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      {getProjectIcon(project.type)}
+                    </motion.div>
+
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2 group-hover:text-primary-600 transition-colors duration-300">
+                        {project.name}
+                      </h3>
+                    </div>
+                  </div>
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {project.description}
                   </p>
@@ -121,7 +172,7 @@ function Projects() {
                 </div>
 
                 {/* Links */}
-                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:space-x-3">
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-3">
                   {/* GitHub Link Button */}
                   <motion.button
                     type="button"
@@ -160,10 +211,7 @@ function Projects() {
               </div>
 
               {/* Hover Effect Overlay */}
-              <div
-                aria-hidden
-                className="pointer-events-none absolute inset-0 bg-gradient-to-r from-primary-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </motion.div>
           ))}
         </motion.div>

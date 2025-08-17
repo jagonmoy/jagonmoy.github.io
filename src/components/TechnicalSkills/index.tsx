@@ -2,16 +2,19 @@
 
 import data from 'data/data.json';
 import { motion } from 'framer-motion';
-import CIcon from 'icons/C';
-import CSSIcon from 'icons/CSS';
+// import CIcon from 'icons/C';
+import ChromaIcon from 'icons/Chroma';
+// import CSSIcon from 'icons/CSS';
 import DockerIcon from 'icons/Docker';
 import ExpressJsIcon from 'icons/ExpressJs';
+import FastAPIIcon from 'icons/FastAPI';
 import GitIcon from 'icons/Git';
-import GitHubIcon from 'icons/GitHub';
-import HTMLIcon from 'icons/HTML';
+// import GitHubIcon from 'icons/GitHub';
+// import HTMLIcon from 'icons/HTML';
 import JavaScriptIcon from 'icons/JavaScript'; // ← ensure file name & path casing matches
 import JestIcon from 'icons/Jest';
-import JupyterIcon from 'icons/Jupyter';
+// import JupyterIcon from 'icons/Jupyter';
+import LangChainIcon from 'icons/LangChain';
 import LinuxIcon from 'icons/Linux';
 import NestJsIcon from 'icons/NestJs';
 import NextJsIcon from 'icons/NextJs';
@@ -20,13 +23,13 @@ import NumPyIcon from 'icons/NumPy';
 import PandasIcon from 'icons/Pandas';
 import PlaywrightIcon from 'icons/Playwright';
 import PostGreSQLIcon from 'icons/PostGreSQL';
-import PostmanIcon from 'icons/Postman';
+// import PostmanIcon from 'icons/Postman';
 import PythonIcon from 'icons/Python';
 import PyTorchIcon from 'icons/PyTorch'; // ← ensure file name & path casing matches
 import ReactIcon from 'icons/React';
 import SanityIcon from 'icons/Sanity';
-import ScikitLearnIcon from 'icons/Scikit-learn';
-import SwaggerIcon from 'icons/Swagger';
+// import ScikitLearnIcon from 'icons/Scikit-learn';
+// import SwaggerIcon from 'icons/Swagger';
 import TailwindIcon from 'icons/Tailwind';
 import TensorFlowIcon from 'icons/TensorFlow';
 import TypeScriptIcon from 'icons/TypeScript';
@@ -47,8 +50,8 @@ const IconWrapper = ({ icon, name }: { icon: React.ReactNode; name: string }) =>
         svgElement.style.display = 'block';
         svgElement.style.width = '100%';
         svgElement.style.height = '100%';
-        svgElement.style.minWidth = '32px';
-        svgElement.style.minHeight = '32px';
+        svgElement.style.minWidth = '24px';
+        svgElement.style.minHeight = '24px';
 
         // Force all SVG children to be visible
         const svgChildren = svgElement.querySelectorAll('*');
@@ -69,7 +72,7 @@ const IconWrapper = ({ icon, name }: { icon: React.ReactNode; name: string }) =>
   return (
     <div
       ref={iconRef}
-      className="p-2 rounded-lg bg-primary-500/20 flex items-center justify-center h-20 w-20 overflow-hidden icon-wrapper relative"
+      className="p-2 rounded-lg bg-primary-500/20 flex items-center justify-center h-16 w-16 overflow-hidden icon-wrapper relative"
     >
       {/* Main SVG Icon */}
       <div
@@ -98,7 +101,7 @@ const IconWrapper = ({ icon, name }: { icon: React.ReactNode; name: string }) =>
 
       {/* Fallback text icon for iOS - shows if SVG not loaded */}
       {!isLoaded && (
-        <div className="absolute inset-0 flex items-center justify-center text-2xl font-bold text-primary-600 bg-primary-500/10 rounded-lg">
+        <div className="absolute inset-0 flex items-center justify-center text-lg font-bold text-primary-600 bg-primary-500/10 rounded-lg">
           {name.charAt(0).toUpperCase()}
         </div>
       )}
@@ -121,9 +124,9 @@ function TechnicalSkills() {
           },
           { icon: <TypeScriptIcon />, name: technicalSkills.languages.ts, category: 'Language' },
           { icon: <PythonIcon />, name: technicalSkills.languages.python, category: 'Language' },
-          { icon: <CIcon />, name: technicalSkills.languages.c, category: 'Language' },
-          { icon: <HTMLIcon />, name: technicalSkills.languages.html, category: 'Language' },
-          { icon: <CSSIcon />, name: technicalSkills.languages.css, category: 'Language' },
+          // { icon: <CIcon />, name: technicalSkills.languages.c, category: 'Language' },
+          // { icon: <HTMLIcon />, name: technicalSkills.languages.html, category: 'Language' },
+          // { icon: <CSSIcon />, name: technicalSkills.languages.css, category: 'Language' },
         ],
       },
       {
@@ -135,6 +138,11 @@ function TechnicalSkills() {
           {
             icon: <ExpressJsIcon />,
             name: technicalSkills.frameworks.express,
+            category: 'Framework',
+          },
+          {
+            icon: <FastAPIIcon />,
+            name: technicalSkills.frameworks.fastapi,
             category: 'Framework',
           },
           {
@@ -159,16 +167,26 @@ function TechnicalSkills() {
       {
         skills: [
           { icon: <GitIcon />, name: technicalSkills.developerTools.git, category: 'Tool' },
-          { icon: <GitHubIcon />, name: technicalSkills.developerTools.github, category: 'Tool' },
+          // { icon: <GitHubIcon />, name: technicalSkills.developerTools.github, category: 'Tool' },
           { icon: <LinuxIcon />, name: technicalSkills.developerTools.linux, category: 'Tool' },
           { icon: <DockerIcon />, name: technicalSkills.developerTools.docker, category: 'Tool' },
-          { icon: <SwaggerIcon />, name: technicalSkills.developerTools.swagger, category: 'Tool' },
-          { icon: <PostmanIcon />, name: technicalSkills.developerTools.postman, category: 'Tool' },
-          { icon: <JupyterIcon />, name: technicalSkills.developerTools.jupyter, category: 'Tool' },
+          // { icon: <SwaggerIcon />, name: technicalSkills.developerTools.swagger, category: 'Tool' },
+          // { icon: <PostmanIcon />, name: technicalSkills.developerTools.postman, category: 'Tool' },
+          // { icon: <JupyterIcon />, name: technicalSkills.developerTools.jupyter, category: 'Tool' },
         ],
       },
       {
         skills: [
+          {
+            icon: <LangChainIcon />,
+            name: technicalSkills.mlTools.langchain,
+            category: 'ML Tool',
+          },
+          {
+            icon: <ChromaIcon />,
+            name: technicalSkills.mlTools.chroma,
+            category: 'ML Tool',
+          },
           {
             icon: <PyTorchIcon />,
             name: technicalSkills.mlTools.pytorch,
@@ -181,7 +199,6 @@ function TechnicalSkills() {
           },
           { icon: <NumPyIcon />, name: technicalSkills.mlTools.numpy, category: 'ML Tool' },
           { icon: <PandasIcon />, name: technicalSkills.mlTools.pandas, category: 'ML Tool' },
-          { icon: <ScikitLearnIcon />, name: technicalSkills.mlTools.scikit, category: 'ML Tool' },
         ],
       },
     ];
@@ -239,7 +256,7 @@ function TechnicalSkills() {
           {skillCategories.map((category, categoryIndex) => (
             <motion.div key={categoryIndex} className="space-y-4 sm:space-y-6">
               <motion.div
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4"
+                className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 sm:gap-3"
                 variants={itemVariants}
               >
                 {category.skills.map((skill, skillIndex) => (
@@ -250,15 +267,15 @@ function TechnicalSkills() {
                     whileHover={{ y: -2, scale: 1.01 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="p-3 sm:p-4">
-                      <div className="flex items-center space-x-3 mb-2">
+                    <div className="p-2 sm:p-3">
+                      <div className="flex items-center space-x-2 mb-2">
                         <IconWrapper icon={skill.icon} name={skill.name} />
-                        <h4 className="text-sm sm:text-base font-semibold text-foreground group-hover:text-primary-600 transition-colors duration-300">
+                        <h4 className="text-xs sm:text-sm font-semibold text-foreground group-hover:text-primary-600 transition-colors duration-300">
                           {skill.name}
                         </h4>
                       </div>
                       <div className="text-xs text-muted-foreground">
-                        <span className="px-2 py-1 bg-primary-500/10 text-primary-600 rounded-full">
+                        <span className="px-2 py-1 bg-primary-500/10 text-primary-600 rounded-full text-xs">
                           {skill.category}
                         </span>
                       </div>
