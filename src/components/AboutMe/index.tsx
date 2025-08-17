@@ -111,6 +111,13 @@ function AboutMe() {
             </p>
           </motion.div>
 
+          {/* Areas of Interest Title */}
+          <motion.div className="text-center" variants={itemVariants}>
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold gradient-text mb-6 sm:mb-8">
+              Areas of Interest
+            </h3>
+          </motion.div>
+
           {/* Areas of Interest */}
           <motion.div
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
