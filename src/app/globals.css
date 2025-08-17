@@ -113,3 +113,59 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-gray-400 dark:bg-gray-500;
 }
+
+/* iOS Safari SVG rendering fixes */
+@supports (-webkit-touch-callout: none) {
+  svg {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    display: block !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
+  
+  /* Ensure SVG icons are visible on iOS */
+  .icon-wrapper svg {
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 32px !important;
+    min-height: 32px !important;
+  }
+  
+  /* Force SVG visibility on iOS */
+  .icon-wrapper svg * {
+    display: block !important;
+    visibility: visible !important;
+  }
+  
+  /* Ensure SVG paths and elements are rendered */
+  .icon-wrapper svg path,
+  .icon-wrapper svg circle,
+  .icon-wrapper svg rect,
+  .icon-wrapper svg g {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  /* Force SVG to take up space and be visible */
+  .icon-wrapper svg {
+    position: relative !important;
+    z-index: 1 !important;
+    overflow: visible !important;
+  }
+  
+  /* Ensure SVG content is rendered */
+  .icon-wrapper svg path,
+  .icon-wrapper svg circle,
+  .icon-wrapper svg rect,
+  .icon-wrapper svg g,
+  .icon-wrapper svg polygon {
+    vector-effect: non-scaling-stroke !important;
+    shape-rendering: geometricPrecision !important;
+  }
+}

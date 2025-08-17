@@ -35,40 +35,73 @@ import React from 'react';
 
 // Icon wrapper component for better iOS compatibility
 const IconWrapper = ({ icon, name }: { icon: React.ReactNode; name: string }) => {
-  const [isIOS, setIsIOS] = React.useState(false);
+  const iconRef = React.useRef<HTMLDivElement>(null);
+  const [isLoaded, setIsLoaded] = React.useState(false);
 
   React.useEffect(() => {
-    // Detect iOS devices and Safari
-    const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-    const isIOSDevice = iOS || (isSafari && /iPad|iPhone|iPod/.test(navigator.platform));
-    setIsIOS(isIOSDevice);
+    // Force SVG icons to be visible on iOS
+    if (iconRef.current) {
+      const svgElement = iconRef.current.querySelector('svg');
+      if (svgElement) {
+        // Force iOS Safari to render the SVG
+        svgElement.style.display = 'block';
+        svgElement.style.width = '100%';
+        svgElement.style.height = '100%';
+        svgElement.style.minWidth = '32px';
+        svgElement.style.minHeight = '32px';
+
+        // Force all SVG children to be visible
+        const svgChildren = svgElement.querySelectorAll('*');
+        svgChildren.forEach((child) => {
+          if (child instanceof SVGElement) {
+            child.style.display = 'block';
+            child.style.visibility = 'visible';
+            child.style.opacity = '1';
+          }
+        });
+
+        // Mark as loaded
+        setIsLoaded(true);
+      }
+    }
   }, []);
 
-  // For iOS devices, show fallback text icon
-  if (isIOS) {
-    return (
-      <div className="p-2 rounded-lg bg-primary-500/20 flex items-center justify-center h-20 w-20">
-        <div className="text-2xl font-bold text-primary-600 bg-primary-500/10 rounded-lg p-2">
-          {name.charAt(0).toUpperCase()}
-        </div>
-      </div>
-    );
-  }
-
-  // For other devices, show the custom SVG icon
   return (
-    <div className="p-2 rounded-lg bg-primary-500/20 flex items-center justify-center h-20 w-20 overflow-hidden">
+    <div
+      ref={iconRef}
+      className="p-2 rounded-lg bg-primary-500/20 flex items-center justify-center h-20 w-20 overflow-hidden icon-wrapper relative"
+    >
+      {/* Main SVG Icon */}
       <div
         className="w-full h-full flex items-center justify-center"
         style={{
           WebkitTransform: 'translateZ(0)',
           transform: 'translateZ(0)',
           backfaceVisibility: 'hidden',
+          WebkitBackfaceVisibility: 'hidden',
+          WebkitPerspective: '1000px',
+          perspective: '1000px',
         }}
       >
-        {icon}
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          {icon}
+        </div>
       </div>
+
+      {/* Fallback text icon for iOS - shows if SVG not loaded */}
+      {!isLoaded && (
+        <div className="absolute inset-0 flex items-center justify-center text-2xl font-bold text-primary-600 bg-primary-500/10 rounded-lg">
+          {name.charAt(0).toUpperCase()}
+        </div>
+      )}
     </div>
   );
 };
