@@ -89,7 +89,7 @@ function ProfileSocialLinks() {
 
   return (
     <motion.div
-      className="w-full glass-effect dark:glass-effect-dark mt-6 rounded-2xl p-6"
+      className="w-full glass-effect dark:glass-effect-dark mt-6 rounded-2xl p-3"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -106,7 +106,7 @@ function ProfileSocialLinks() {
             <Link
               href={link.href}
               target={link.label === 'Email' || link.label === 'Phone' ? undefined : '_blank'}
-              className="flex items-center space-x-4 p-3 rounded-xl hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all duration-300 border border-transparent hover:border-primary/20 focus:outline-none focus:ring-0 focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+              className="flex items-center space-x-4 p-2 rounded-xl hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all duration-300 border border-transparent hover:border-primary/20 focus:outline-none focus:ring-0 focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             >
               <motion.div
                 className={`p-2 rounded-lg transition-all duration-300 ${link.color}`}

@@ -2,7 +2,7 @@
 
 import data from 'data/data.json';
 import { motion } from 'framer-motion';
-import { Download, MapPin, Calendar } from 'lucide-react';
+import { Download, Calendar } from 'lucide-react';
 import Image from 'next/image';
 
 import ProfileSocialLinks from './ProfileSocialLinks';
@@ -103,25 +103,21 @@ function ProfileAndIntro() {
         {/* Quick Info */}
         <motion.div className="space-y-2 sm:space-y-3 mb-4 sm:mb-6" variants={itemVariants}>
           <div className="flex items-center space-x-3 text-sm text-muted-foreground">
-            <MapPin className="w-4 h-4 text-primary-500" />
-            <span>Bangladesh</span>
-          </div>
-          <div className="flex items-center space-x-3 text-sm text-muted-foreground">
             <Calendar className="w-4 h-4 text-primary-500" />
-            <span>Open to opportunities</span>
+            <span>Open to research collaborations</span>
           </div>
         </motion.div>
 
         {/* CTA Button */}
         <motion.button
-          className="w-full button-primary mb-4 sm:mb-6 focus:outline-none focus:ring-0 focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          className="w-full button-primary mb-4 sm:mb-6 focus:outline-none focus:ring-0 focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background flex items-center justify-center"
           onClick={handleDownloadCV}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           variants={itemVariants}
         >
-          <Download className="w-4 h-4 mr-2 inline" />
-          Download CV
+          <Download className="w-4 h-4 mr-2 flex-shrink-0" />
+          <span>Download CV</span>
         </motion.button>
 
         {/* Social Links */}
