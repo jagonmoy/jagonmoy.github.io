@@ -20,8 +20,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Jagonmoy | Software Engineer | ML Enthusiast',
-  description: 'Modern portfolio showcasing software engineering and machine learning expertise',
+  title: 'Jagonmoy | Software Engineer | Gen AI Enthusiast',
+  description: "Showcasing Jagonmoy's education, work experience, and projects",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
