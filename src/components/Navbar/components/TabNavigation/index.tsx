@@ -45,8 +45,16 @@ const TabNavigation = () => {
       label: 'Experience',
       type: 'dropdown',
       items: [
-        { id: 'research-experience', label: 'Research', href: '#research-experience' },
-        { id: 'industry-experience', label: 'Industry', href: '#industry-experience' },
+        {
+          id: 'ai-research-projects',
+          label: 'AI Research & Projects',
+          href: '#ai-research-projects',
+        },
+        {
+          id: 'software-development',
+          label: 'Software Development',
+          href: '#software-development',
+        },
         { id: 'mentorship-experience', label: 'Mentorship', href: '#mentorship-experience' },
         { id: 'volunteering-experience', label: 'Volunteering', href: '#volunteering-experience' },
       ],
@@ -160,7 +168,7 @@ const TabNavigation = () => {
   };
 
   return (
-    <div className="flex items-center py-2 md:py-3 lg:py-4 pl-4 space-x-4">
+    <div className="flex items-center py-1.5 md:py-2 lg:py-2.5 pl-4 space-x-4">
       <div className="text-foreground">
         <ul className="flex flex-wrap items-center space-x-2">
           {/* Desktop Navigation */}

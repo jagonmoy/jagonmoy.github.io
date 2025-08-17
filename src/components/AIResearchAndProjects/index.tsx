@@ -2,31 +2,52 @@
 
 import data from 'data/data.json';
 import { motion } from 'framer-motion';
-import { GraduationCap, School } from 'lucide-react';
+import { FlaskConical, Download, Brain, Sparkles } from 'lucide-react';
 
-function Education() {
-  const { education } = data;
+function AIResearchAndProjects() {
+  const { experience } = data;
+  const { artificial_intelligence } = experience;
 
-  const educationData = [
+  const aiResearchData = [
     {
-      icon: GraduationCap,
-      degree: education.university.degree,
-      institution: education.university.name,
-      duration: education.university.duration,
-      result: education.university.result,
-      bulletPoints: education.university.bulletPoints,
-      type: 'University',
-      color: 'from-blue-500 to-purple-600',
+      title: artificial_intelligence.research1.title,
+      description: artificial_intelligence.research1.description,
+      organization: artificial_intelligence.research1.orgnaization,
+      technologies: artificial_intelligence.research1.technologies,
+      bulletPoints: artificial_intelligence.research1.bulletPoints,
+      type: 'Thesis',
+      color: 'from-primary-500 to-purple-600',
+      hasDownload: false,
     },
     {
-      icon: School,
-      degree: education.college.degree,
-      institution: education.college.name,
-      duration: education.college.duration,
-      result: education.college.result,
-      bulletPoints: education.college.bulletPoints,
-      type: 'College',
-      color: 'from-green-500 to-blue-600',
+      title: artificial_intelligence.research2.title,
+      description: artificial_intelligence.research2.description,
+      organization: artificial_intelligence.research2.orgnaization,
+      technologies: artificial_intelligence.research2.technologies,
+      bulletPoints: artificial_intelligence.research2.bulletPoints,
+      type: 'AI Project',
+      color: 'from-green-500 to-emerald-600',
+      hasDownload: false,
+    },
+    {
+      title: artificial_intelligence.research3.title,
+      description: artificial_intelligence.research3.description,
+      organization: artificial_intelligence.research3.orgnaization,
+      technologies: artificial_intelligence.research3.technologies,
+      bulletPoints: artificial_intelligence.research3.bulletPoints,
+      type: 'AI Project',
+      color: 'from-orange-500 to-yellow-600',
+      hasDownload: false,
+    },
+    {
+      title: artificial_intelligence.research4.title,
+      description: artificial_intelligence.research4.description,
+      organization: artificial_intelligence.research4.orgnaization,
+      technologies: artificial_intelligence.research4.technologies,
+      bulletPoints: artificial_intelligence.research4.bulletPoints,
+      type: 'AI Project',
+      color: 'from-red-500 to-pink-600',
+      hasDownload: false,
     },
   ];
 
@@ -72,14 +93,14 @@ function Education() {
             whileHover={{ rotate: 360, scale: 1.1 }}
             transition={{ duration: 0.6 }}
           >
-            <GraduationCap className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+            <Brain className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
           </motion.div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold gradient-text">
-            {education.heading}
+            {artificial_intelligence.heading}
           </h2>
         </motion.div>
 
-        {/* Education Items */}
+        {/* AI Research & Projects Items */}
         <motion.div
           className="space-y-6 sm:space-y-8"
           variants={containerVariants}
@@ -87,7 +108,7 @@ function Education() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          {educationData.map((item, index) => (
+          {aiResearchData.map((item, index) => (
             <motion.div
               key={index}
               className="group relative overflow-hidden rounded-xl sm:rounded-2xl bg-white/50 dark:bg-gray-800/50 border border-gray-200/50 dark:border-gray-700/50 hover:border-primary/50 transition-all duration-300"
@@ -95,11 +116,9 @@ function Education() {
               whileHover={{ y: -3, scale: 1.01 }}
               transition={{ duration: 0.3 }}
             >
-              {/* Education Type Badge */}
+              {/* Research Type Badge */}
               <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10">
-                <span
-                  className={`px-2 py-1 sm:px-3 text-xs font-medium bg-gradient-to-r ${item.color} text-white rounded-full shadow-lg`}
-                >
+                <span className="px-2 py-1 sm:px-3 text-xs font-medium bg-gradient-to-r from-primary-500 to-purple-600 text-white rounded-full shadow-lg">
                   {item.type}
                 </span>
               </div>
@@ -112,21 +131,43 @@ function Education() {
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <item.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                    <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                   </motion.div>
 
                   <div className="flex-1 min-w-0">
                     <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2 group-hover:text-primary-600 transition-colors duration-300">
-                      {item.degree}
+                      {item.title}
                     </h3>
                     <p className="text-base sm:text-lg font-semibold text-primary-600 mb-1">
-                      {item.institution}
+                      {item.organization}
                     </p>
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-1 sm:space-y-0 text-sm text-muted-foreground mb-3">
-                      <span>{item.duration}</span>
-                      <span className="hidden sm:inline">•</span>
-                      <span className="font-medium text-primary-600">{item.result}</span>
-                    </div>
+                  </div>
+                </div>
+
+                {/* Description */}
+                <motion.div
+                  className="mb-4"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2, duration: 0.6 }}
+                >
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                    {item.description}
+                  </p>
+                </motion.div>
+
+                {/* Technologies */}
+                <div className="mb-4">
+                  <div className="flex flex-wrap gap-2">
+                    {item.technologies.split(', ').map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="px-2 py-1 sm:px-3 text-xs font-medium bg-muted text-muted-foreground rounded-full border border-gray-200 dark:border-gray-700"
+                      >
+                        {tech.trim()}
+                      </span>
+                    ))}
                   </div>
                 </div>
 
@@ -142,9 +183,7 @@ function Education() {
                       transition={{ delay: 0.1 * pointIndex, duration: 0.5 }}
                     >
                       <div className="w-2 h-2 bg-primary-500 rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                        {point}
-                      </p>
+                      <p className="text-muted-foreground leading-relaxed">{point}</p>
                     </motion.div>
                   ))}
                 </div>
@@ -160,4 +199,4 @@ function Education() {
   );
 }
 
-export default Education;
+export default AIResearchAndProjects;

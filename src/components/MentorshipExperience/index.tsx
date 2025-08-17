@@ -47,34 +47,34 @@ function MentorshipExperience() {
 
   return (
     <motion.div
-      className="w-full glass-effect dark:glass-effect-dark p-8 lg:p-10 rounded-3xl"
+      className="w-full glass-effect dark:glass-effect-dark p-4 sm:p-6 lg:p-8 xl:p-10 rounded-2xl sm:rounded-3xl"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.8, ease: 'easeOut' }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <div className="space-y-10">
+      <div className="space-y-6 sm:space-y-8 lg:space-y-10">
         {/* Header */}
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-10 lg:mb-12"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-500 to-purple-600 rounded-2xl mb-4"
+            className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-primary-500 to-purple-600 rounded-xl sm:rounded-2xl mb-3 sm:mb-4"
             whileHover={{ rotate: 360, scale: 1.1 }}
             transition={{ duration: 0.6 }}
           >
-            <Users className="w-8 h-8 text-white" />
+            <Users className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
           </motion.div>
-          <h2 className="text-3xl lg:text-4xl font-bold gradient-text">{mentorship.heading}</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold gradient-text">{mentorship.heading}</h2>
         </motion.div>
 
-        {/* Mentorship Experience Items */}
+        {/* Mentorship Items */}
         <motion.div
-          className="space-y-8"
+          className="space-y-6 sm:space-y-8"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -83,50 +83,46 @@ function MentorshipExperience() {
           {mentorshipData.map((item, index) => (
             <motion.div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-white/50 dark:bg-gray-800/50 border border-gray-200/50 dark:border-gray-700/50 hover:border-primary/50 transition-all duration-300"
+              className="group relative overflow-hidden rounded-xl sm:rounded-2xl bg-white/50 dark:bg-gray-800/50 border border-gray-200/50 dark:border-gray-700/50 hover:border-primary/50 transition-all duration-300"
               variants={itemVariants}
-              whileHover={{ y: -5, scale: 1.02 }}
+              whileHover={{ y: -3, scale: 1.01 }}
               transition={{ duration: 0.3 }}
             >
               {/* Mentorship Type Badge */}
-              <div className="absolute top-4 right-4 z-10">
-                <span className="px-3 py-1 text-xs font-medium bg-gradient-to-r from-primary-500 to-purple-600 text-white rounded-full shadow-lg">
+              <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10">
+                <span className="px-2 py-1 sm:px-3 text-xs font-medium bg-gradient-to-r from-primary-500 to-purple-600 text-white rounded-full shadow-lg">
                   Mentorship
                 </span>
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <div className="flex items-start space-x-4 mb-4">
+              <div className="p-4 sm:p-6">
+                <div className="flex flex-col sm:flex-row sm:items-start space-y-3 sm:space-y-0 sm:space-x-4 mb-4">
                   <motion.div
-                    className={`p-3 rounded-xl bg-gradient-to-br ${item.color} shadow-lg`}
+                    className="p-2 sm:p-3 rounded-lg sm:rounded-xl bg-gradient-to-br from-primary-500 to-purple-600 shadow-lg self-start sm:self-auto"
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <GraduationCap className="w-6 h-6 text-white" />
+                    <GraduationCap className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                   </motion.div>
 
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary-600 transition-colors duration-300">
+                    <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2 group-hover:text-primary-600 transition-colors duration-300">
                       {item.position}
                     </h3>
-                    <p className="text-lg font-semibold text-primary-600 mb-1">{item.institute}</p>
-                    <div className="flex items-center space-x-4 text-sm text-muted-foreground mb-3">
+                    <p className="text-base sm:text-lg font-semibold text-primary-600 mb-1">
+                      {item.institute}
+                    </p>
+                    <div className="text-sm text-muted-foreground mb-3">
                       <span>{item.duration}</span>
                     </div>
                   </div>
                 </div>
 
                 {/* Description */}
-                <motion.div
-                  className="pt-2"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.2, duration: 0.6 }}
-                >
-                  <p className="text-muted-foreground leading-relaxed">{item.description}</p>
-                </motion.div>
+                <div className="pt-2">
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{item.description}</p>
+                </div>
               </div>
 
               {/* Hover Effect Overlay */}

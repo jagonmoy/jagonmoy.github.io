@@ -14,7 +14,7 @@ const NavBar = () => {
 
   return (
     <motion.div
-      className="pb-6 md:pb-8 lg:pb-12"
+      className="pb-4 md:pb-6 lg:pb-8"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -25,7 +25,7 @@ const NavBar = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
-        <div className="flex justify-between items-center px-6 py-2 md:py-3 lg:py-4">
+        <div className="flex justify-between items-center px-6 py-2">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -53,7 +53,7 @@ const NavBar = () => {
               )}
             </motion.button>
 
-            <div className="hidden md:block">
+            <div className="hidden md:block lg:hidden">
               <SocialLinks />
             </div>
 
@@ -66,7 +66,7 @@ const NavBar = () => {
               {isMobileMenuOpen ? (
                 <X className="w-5 h-5 text-primary-600 dark:text-primary-400" />
               ) : (
-                <Menu className="w-5 h-5 text-primary-600 dark:text-primary-400" />
+                <Menu className="w-5 h-5 text-primary-400" />
               )}
             </motion.button>
           </div>
@@ -83,9 +83,9 @@ const NavBar = () => {
           }}
           transition={{ duration: 0.3, ease: 'easeInOut' }}
         >
-          <div className="px-6 pb-4 space-y-4">
+          <div className="px-6 pb-3 space-y-3">
             <TabNavigation />
-            <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
+            <div className="pt-3 border-t border-gray-200 dark:border-gray-700">
               <SocialLinks />
             </div>
           </div>

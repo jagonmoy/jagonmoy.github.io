@@ -54,7 +54,7 @@ function ProfileAndIntro() {
         whileHover={{ scale: 1.02 }}
         transition={{ duration: 0.3 }}
       >
-        <div className="relative rounded-2xl overflow-hidden border-2 border-primary/20 shadow-2xl bg-gradient-to-br from-primary/10 to-purple-500/10 p-1">
+        <div className="relative rounded-xl sm:rounded-2xl overflow-hidden border-2 border-primary/20 shadow-2xl bg-gradient-to-br from-primary/10 to-purple-500/10 p-1">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <Image
             src="/proPic.jpeg"
@@ -62,28 +62,19 @@ function ProfileAndIntro() {
             height={400}
             width={800}
             priority
-            className="rounded-xl w-full h-auto object-cover"
+            className="rounded-lg sm:rounded-xl w-full h-auto object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
         </div>
-
-        {/* Floating badge */}
-        <motion.div
-          className="absolute -top-2 -right-2 bg-primary-500 text-white px-3 py-1 rounded-full text-xs font-medium shadow-lg"
-          animate={{ y: [0, -5, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-        >
-          Available
-        </motion.div>
       </motion.div>
 
       {/* Profile Info */}
       <motion.div
-        className="w-full p-6 rounded-2xl glass-effect dark:glass-effect-dark"
+        className="w-full p-4 sm:p-6 rounded-xl sm:rounded-2xl glass-effect dark:glass-effect-dark"
         variants={itemVariants}
       >
         <motion.h1
-          className="font-bold text-2xl lg:text-3xl mb-2 gradient-text"
+          className="font-bold text-xl sm:text-2xl lg:text-3xl mb-2 gradient-text"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
@@ -92,7 +83,7 @@ function ProfileAndIntro() {
         </motion.h1>
 
         <motion.div
-          className="text-muted-foreground text-lg mb-4"
+          className="text-muted-foreground text-base sm:text-lg mb-3 sm:mb-4"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
@@ -101,7 +92,7 @@ function ProfileAndIntro() {
         </motion.div>
 
         <motion.div
-          className="text-foreground mb-6 leading-relaxed"
+          className="text-foreground mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
@@ -110,7 +101,7 @@ function ProfileAndIntro() {
         </motion.div>
 
         {/* Quick Info */}
-        <motion.div className="space-y-3 mb-6" variants={itemVariants}>
+        <motion.div className="space-y-2 sm:space-y-3 mb-4 sm:mb-6" variants={itemVariants}>
           <div className="flex items-center space-x-3 text-sm text-muted-foreground">
             <MapPin className="w-4 h-4 text-primary-500" />
             <span>Bangladesh</span>
@@ -123,7 +114,7 @@ function ProfileAndIntro() {
 
         {/* CTA Button */}
         <motion.button
-          className="w-full button-primary mb-6 focus:outline-none focus:ring-0 focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          className="w-full button-primary mb-4 sm:mb-6 focus:outline-none focus:ring-0 focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           onClick={handleDownloadCV}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}

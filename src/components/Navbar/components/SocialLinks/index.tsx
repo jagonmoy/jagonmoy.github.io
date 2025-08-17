@@ -31,7 +31,7 @@ const SocialLinks = () => {
   ];
 
   return (
-    <div className="flex justify-end space-x-4 py-4 pr-8">
+    <div className="flex justify-end space-x-4 pr-8">
       {socialLinks.map((social) => (
         <motion.div
           key={social.name}

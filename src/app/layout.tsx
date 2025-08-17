@@ -32,11 +32,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider>
           <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/20 dark:from-background dark:via-background dark:to-muted/20">
             <NavBar />
-            <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-4 pt-16 md:pt-18 lg:pt-20">
-              <div className="col-span-1 md:col-span-2 lg:col-span-1 px-4 py-6">
-                <ProfileAndIntro />
+            <div className="flex flex-col lg:grid lg:grid-cols-4 pt-16 md:pt-18 lg:pt-20">
+              <div className="w-full lg:col-span-1 px-4 sm:px-6 lg:px-4 py-4 sm:py-6">
+                <div className="lg:sticky lg:top-24 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto">
+                  <ProfileAndIntro />
+                </div>
               </div>
-              <div className="col-span-1 md:col-span-3 lg:col-span-3 px-6 md:pl-4 md:pr-6 mb-8">
+              <div className="w-full lg:col-span-3 px-4 sm:px-6 lg:px-6 mb-6 sm:mb-8">
                 {children}
               </div>
             </div>

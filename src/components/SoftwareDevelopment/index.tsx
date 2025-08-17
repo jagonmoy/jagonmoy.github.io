@@ -2,26 +2,39 @@
 
 import data from 'data/data.json';
 import { motion } from 'framer-motion';
-import { Heart, Users } from 'lucide-react';
+import { Building2, Briefcase, Code } from 'lucide-react';
 
-function VolunteeringExperience() {
+function SoftwareDevelopment() {
   const { experience } = data;
-  const { volunteering } = experience;
+  const { software_development } = experience;
 
-  const volunteeringData = [
+  const softwareData = [
     {
-      position: volunteering.volunteering1.position,
-      event: volunteering.volunteering1.event,
-      duration: volunteering.volunteering1.duration,
-      description: volunteering.volunteering1.description,
-      color: 'from-pink-500 to-rose-600',
+      position: software_development.experience1.position,
+      company: software_development.experience1.company,
+      duration: software_development.experience1.duration,
+      location: software_development.experience1.location,
+      technologies: software_development.experience1.technologies,
+      bulletPoints: software_development.experience1.bulletPoints,
+      color: 'from-blue-500 to-cyan-600',
     },
     {
-      position: volunteering.volunteering2.position,
-      event: volunteering.volunteering2.event,
-      duration: volunteering.volunteering2.duration,
-      description: volunteering.volunteering2.description,
-      color: 'from-emerald-500 to-teal-600',
+      position: software_development.experience2.position,
+      company: software_development.experience2.company,
+      duration: software_development.experience2.duration,
+      location: software_development.experience2.location,
+      technologies: software_development.experience2.technologies,
+      bulletPoints: software_development.experience2.bulletPoints,
+      color: 'from-purple-500 to-pink-600',
+    },
+    {
+      position: software_development.experience3.position,
+      company: software_development.experience3.company,
+      duration: software_development.experience3.duration,
+      location: software_development.experience3.location,
+      technologies: software_development.experience3.technologies,
+      bulletPoints: software_development.experience3.bulletPoints,
+      color: 'from-green-500 to-emerald-600',
     },
   ];
 
@@ -67,14 +80,14 @@ function VolunteeringExperience() {
             whileHover={{ rotate: 360, scale: 1.1 }}
             transition={{ duration: 0.6 }}
           >
-            <Heart className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+            <Code className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
           </motion.div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold gradient-text">
-            {volunteering.heading}
+            {software_development.heading}
           </h2>
         </motion.div>
 
-        {/* Volunteering Items */}
+        {/* Software Development Items */}
         <motion.div
           className="space-y-6 sm:space-y-8"
           variants={containerVariants}
@@ -82,7 +95,7 @@ function VolunteeringExperience() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          {volunteeringData.map((item, index) => (
+          {softwareData.map((item, index) => (
             <motion.div
               key={index}
               className="group relative overflow-hidden rounded-xl sm:rounded-2xl bg-white/50 dark:bg-gray-800/50 border border-gray-200/50 dark:border-gray-700/50 hover:border-primary/50 transition-all duration-300"
@@ -90,10 +103,10 @@ function VolunteeringExperience() {
               whileHover={{ y: -3, scale: 1.01 }}
               transition={{ duration: 0.3 }}
             >
-              {/* Volunteering Type Badge */}
+              {/* Software Dev Type Badge */}
               <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10">
                 <span className="px-2 py-1 sm:px-3 text-xs font-medium bg-gradient-to-r from-primary-500 to-purple-600 text-white rounded-full shadow-lg">
-                  Volunteering
+                  Software Dev
                 </span>
               </div>
 
@@ -105,7 +118,7 @@ function VolunteeringExperience() {
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <Users className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                    <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                   </motion.div>
 
                   <div className="flex-1 min-w-0">
@@ -113,19 +126,45 @@ function VolunteeringExperience() {
                       {item.position}
                     </h3>
                     <p className="text-base sm:text-lg font-semibold text-primary-600 mb-1">
-                      {item.event}
+                      {item.company}
                     </p>
-                    <div className="text-sm text-muted-foreground mb-3">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-1 sm:space-y-0 text-sm text-muted-foreground mb-3">
                       <span>{item.duration}</span>
+                      <span className="hidden sm:inline">•</span>
+                      <span>{item.location}</span>
                     </div>
                   </div>
                 </div>
 
-                {/* Description */}
-                <div className="pt-2">
-                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                    {item.description}
-                  </p>
+                {/* Technologies */}
+                <div className="mb-4">
+                  <div className="flex flex-wrap gap-2">
+                    {item.technologies.split(', ').map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="px-2 py-1 sm:px-3 text-xs font-medium bg-muted text-muted-foreground rounded-full border border-gray-200 dark:border-gray-700"
+                      >
+                        {tech.trim()}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Bullet Points */}
+                <div className="space-y-2">
+                  {item.bulletPoints.map((point, pointIndex) => (
+                    <motion.div
+                      key={pointIndex}
+                      className="flex items-start space-x-3"
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.1 * pointIndex, duration: 0.5 }}
+                    >
+                      <div className="w-2 h-2 bg-primary-500 rounded-full mt-2 flex-shrink-0" />
+                      <p className="text-muted-foreground leading-relaxed">{point}</p>
+                    </motion.div>
+                  ))}
                 </div>
               </div>
 
@@ -139,4 +178,4 @@ function VolunteeringExperience() {
   );
 }
 
-export default VolunteeringExperience;
+export default SoftwareDevelopment;

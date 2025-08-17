@@ -26,16 +26,14 @@
         "heading" : "About Me",
         "areasOfInterestHeading" : "Areas of Interest",
         "areasOfInterest" : [
-           "Empirical Software Engineering",
-           "Requirements Engineering and Software Testing",
-           "Use of NLP and Large Language Models (LLMs) in Software Engineering",
-           "Continuous Integration and Continuous Deployment (CI/CD)",
-           "Software Architecture and Design Patterns",
+           "Software Engineering",
+           "Use of LLM in different stages of Software Development",
+           "Use of LLM in real-word problems",
            "Natural Language Processing",
            "Human-Computer Interaction (HCI)"
         ],
-        "paragraph1": "Software engineer with over 2.5 years of experience in designing and building large-scale web systems. Skilled in cross-functional collaboration, mentoring, and contributing to team growth and strategic decision-making. Holds a degree in Software Engineering with a strong academic record and hands-on research experience in Natural Language Processing, particularly focused on speech and text understanding. Actively engaged in problem-solving, academic mentorship, and knowledge-sharing through departmental initiatives. Deeply passionate about the intersection of Software Engineering, Artificial Intelligence, and Human-Computer Interaction, with a growing interest in how language models and intelligent automation can advance software development practices and improve developer experience.",    
-        "paragraph2": "Currently seeking research collaborations in areas such as Empirical Software Engineering, AI and Large Language Models applied to Software Engineering, and Human-Computer Interaction. Open to opportunities that explore real-world developer behavior, intelligent tooling, automation of software tasks, and ways to make software systems more usable, efficient, and developer-friendly."
+        "paragraph1": "Software Engineer with 2.5+ years of experience designing and building large-scale web systems, with strengths in collaboration, mentoring, and architectural decision-making. I hold a degree in Software Engineering with a strong academic record and hands-on research experience in Natural Language Processing, focusing on speech and text understanding.",    
+        "paragraph2": "My passion lies in applying Artificial Intelligence to Software Engineering to address real-world challenges across the software development lifecycle — from requirements engineering and coding to testing, deployment, and maintenance. I am seeking research collaborations in Empirical Software Engineering and AI-driven developer tools, with a particular interest in how large language models and intelligent automation can improve software quality, accelerate development, and enhance the overall developer experience."
           
     },
     "education" : {
@@ -64,14 +62,14 @@
         }
     },
     "experience" : {
-        "industry" : {
-            "heading" : "Industry Experience",
+        "software_development" : {
+            "heading" : "Software Development",
             "experience1" : {
                 "position" : "Software Engineer",
                 "company" : "Cefalo Bangladesh Limited",
                 "duration" : "July 2024 - Present",
                 "location" : "Dhaka, Bangladesh",
-                "technologies" : "Technologies: TypeScript, Next.js, Imgix, MJML, Nest.js, BullMQ",
+                "technologies" : "TypeScript, Next.js, Imgix, MJML, Nest.js, BullMQ",
                 "bulletPoints": [
                     "Worked from scratch in an Oslo-based startup environment as a full-stack engineer to build and scale Subrite, a multi-tenant SaaS subscription management platform also contributing to the development of tenant projects, actively following Agile methodologies and the full software development life cycle (SDLC).",
                     "Architected email automation functions using Nest.js event queue system to handle both scheduled and event-driven tasks, serving around 300,000 users across Scandinavia.",
@@ -85,7 +83,7 @@
                 "company" : "Cefalo Bangladesh Limited",
                 "duration" : "February 2023 - June 2024",
                 "location" : "Dhaka, Bangladesh",
-                "technologies" : "Technologies: NextAuth, Playwright, Jest, TailwindCSS, TypeORM, PostgreSQL, Jira, Notion, Miro",
+                "technologies" : "NextAuth, Playwright, Jest, TailwindCSS, TypeORM, PostgreSQL, Jira, Notion, Miro",
                 "bulletPoints": [
                     "Integrated an external tenant application with Subrite’s OIDC system using NextAuth, handling secure authentication flows including dynamic redirect and callback URLs to support tenant-specific login and post-login redirection.",
                     "Introduced and configured Playwright for end-to-end testing across the system, integrating it into the CI/CD pipeline for automated testing and quality assurance, and wrote unit tests using Jest to ensure code reliability and functionality.",
@@ -98,7 +96,7 @@
                 "company" : "Cefalo Bangladesh Limited",
                 "duration" : "September 2021 - March 2022",
                 "location" : "Dhaka, Bangladesh",
-                "technologies" : "Technologies: JavaScript, React.js, Material UI, Node.js, Express.js, MongoDB, Mongoose, Git",
+                "technologies" : "JavaScript, React.js, Material UI, Node.js, Express.js, MongoDB, Mongoose, Git",
                 "bulletPoints": [
                     "Gained foundational knowledge of HTTP, HTTPS, Caching, CORS, and REST APIs.",
                     "Built an in-house web application with secure authentication, content negotiation, and state management."
@@ -106,25 +104,56 @@
         
             }
         },
-        "research" : {
-            "heading" : "Research Experience",
+        "artificial_intelligence" : {
+            "heading" : "AI Research & Projects",
             "research1" : {
-                "title" : "Thesis: Speaker Diarization with Speech Recognition in Bengali",
-                "university" : "Shahjalal University of Science and Technology",
-                "duration" : "September 2022 - February 2023",
-                "location" : "Sylhet, Bangladesh",
-                "superviser": "Supervised by Mohammad Shahidur Rahman, PhD",
-                "superviserLink": "https://scholar.google.com/citations?user=EKkysqUAAAAJ&hl=en",
+                "title" : "Undergrad thesis: Speaker Diarization with Speech Recognition in Bengali",
+                "description": "Addressed the problem of multi-speaker transcription in Bangla by developing a system that combines speaker diarization (”who spoke when”) and speech recognition (”what was said”) to generate structured, dialogue-style transcripts.",
+                "orgnaization" : "Shahjalal University of Science and Technology",
+                "technologies": "Python, Google Cloud Speech-to-Text, Tensorflow, ELAN, Audacity",
                 "bulletPoints": [
-                    "Addressed the problem of multi-speaker transcription in Bangla by developing a system that combines speaker diarization (”who spoke when”) and speech recognition (”what was said”) to generate structured, dialogue-style transcripts.",
                     "Designed a full pipeline using Bi-LSTM for speaker diarization and Google Cloud Speech-to-Text for transcription, incorporating voice activity detection, speaker segmentation, and clustering.",
                     "Integrated the WebRTC VAD library for detecting speech regions, developed custom code snippets to link VAD with segmentation, and used pyannote-audio embeddings for speaker representation.",
                     "Collected and annotated 8 hours of Bangla audio data from YouTube debates and talk shows using ELAN,Audacity, and y2Mate."
                 ]
+            },
+            "research2": {
+                "title": "AI-Driven Task Reviewer",
+                "description": "A proof-of-concept AI-powered assistant that connects to Jira to help software teams maintain high-quality boards — an intelligent co-pilot for task clarity, speed, and quality.",
+                "orgnaization": "Cefalo Bangladesh Limited",
+                "technologies": "Python, FastAPI, ChromaDB, PostgreSQL, RAG, OpenAI, Jira API, Slack API",
+                "bulletPoints": [
+                    "Smart Duplicate Detection: Used RAG + LLM technology for accurate duplicate ticket detection.",
+                    "Ongoing Task Intelligence: Monitors 'In Review' and 'In Progress' tickets with LLM-powered summaries.",
+                    "Automated Release Management: Generates weekly/monthly release logs automatically.",
+                    "Quality Assurance: Detects missing ticket details and vague summaries using LLM."
+                ]
+            },
+            "research3": {
+                "title": "Vocabuilder - AI-Powered Vocabulary Builder",
+                "description": "A modern web application for building vocabulary with AI-powered word analysis, intelligent learning features, and contextual story generation. Built with LLM technology, LangChain, and vector databases, this project combines advanced AI with modern web frameworks to create a powerful vocabulary learning experience.",
+                "orgnaization": "Personal R&D Project",
+                "technologies": "Python, FastAPI, LangChain, OpenAI GPT-4, Google Gemini, ChromaDB, PostgreSQL, Next.js, TypeScript",
+                "bulletPoints": [
+                    "AI-Powered Learning Features: Multi-model AI analysis with OpenAI GPT-4 and Google Gemini.",
+                    "Contextual Story Generation: Generates engaging stories using vocabulary words in context.",
+                    "Semantic Similarity: Finds similar words using embeddings and semantic search.",
+                    "Advanced AI Architecture: LangChain-based prompt engineering with vector database integration."
+                ]
+            },
+            "research4": {
+                "title": "Time-Series Analysis with Stock Market Data",
+                "description": "Developed a custom extension in a forked version of TSLib, a widely used open-source time series library. Implemented a stock market data loader for a Kaggle dataset so that the dataset can be trained and evaluated by available models.",
+                "orgnaization": "Personal R&D Project",
+                "technologies": "Python, PyTorch, Scikit-learn, NumPy, Pandas, TSLib, Kaggle",
+                "bulletPoints": [
+                    "Custom TSLib Extension: Developed a stock market data loader for time series analysis.",
+                    "Machine Learning Integration: Implemented data preprocessing for PyTorch and Scikit-learn models."
+                ]
             }
         },
         "mentorship": {
-            "heading": "Mentorship Experience",
+            "heading": "Mentorship",
             "mentorship1": {
                 "position": "Trainer for Junior Software Engineers and Interns",
                 "institue": "Cefalo Bangladesh Limited",
@@ -145,7 +174,7 @@
             }
         },
         "volunteering": {
-            "heading": "Volunteering Experience",
+            "heading": "Volunteering activities",
             "volunteering1": {
                 "position": "Programming Contest Coordinator at SUST SWE TECHNOVENT 2023",
                 "event": "SUST SWE TECHNOVENT 2023",
@@ -210,33 +239,21 @@
         },
         "projects": {
             "heading": "Projects",
-            "project1": {
-                "name": "Alternative Requirement Generation with RAG-LM",
-                "link": "https://github.com/jagonmoy/Alternative-Requirement-Generation-with-RAG-LM",
-                "technologies": "Technologies: Python, PyTorch, SpaCy, FAISS, BERT, FLAN-T5",
-                "description": "A prototype for generating alternative software requirements using Retrieval-Augmented Generation (RAG) with FLAN-T5 and BERT, powered by smart masking."
-            },
-            "project2": {
-                "name": "Time-Series-with-stock ",
-                "link": "https://github.com/jagonmoy/Time-Series-with-stock/blob/add-stock-price-data-loader-and-script/README_STOCK.md",
-                "technologies": "Technologies:Python, PyTorch, Scikit-learn, NumPy, Pandas",
-                "description": "Developed a custom extension in a forked version of TSLib, a widely used open-source time series library. Implemented a stock market data loader for a kaggle dataset so that the dataset can be trained and evaluated by available models."
 
-            },
-            "project3": {
+            "project1": {
                 "name": "SlackBook",
                 "link": "https://github.com/RakibulRanak/SlackBook",
-                "technologies": "Technologies: JavaScript, Node.js, Slack API, Facebook Graph API",
+                "technologies": "JavaScript, Node.js, Slack API, Facebook Graph API",
                 "description": "Developed a Slackbot, integrating Slack API and Facebook Graph API to automate message/attachment sharing between Slack and Facebook using various commands."
                 
 
             },
-            "project4": {
+            "project2": {
                 "name1": "Number Theory",
                 "name2": "Graph Theory",
                 "link1": "https://github.com/jagonmoy/Number-Theory",
                 "link2": "https://github.com/jagonmoy/Graph-Theory",
-                "technologies": "Technologies: C++, C",
+                "technologies": "C++, C",
                 "description": "Created and maintained two GitHub repositories on Number Theory and Graph Theory, featuring tutorials, problems, and solutions for learning DSA. Each repository has received 20+ stars and is now used in the department to construct Competitive Programming and Data Structures and Algorithms courses."
                 
 
@@ -246,7 +263,7 @@
             "heading": "Competitive Programming",
             "cfLink": "https://codeforces.com/profile/jagonmoy",
             "leetCodeLink": "https://leetcode.com/jagonmoy/",
-            "stopstalkLink": "https://www.stopstalk.com/user/profile/jagonmoy",
+            "uhuntLink": "https://uhunt.onlinejudge.org/id/954978",
             "bulletPoints": [
                 "Solved over 1200 problems on online judges like Codeforces, UVa, LightOJ, and LeetCode, with a maximum rating of 1500+ on Codeforces.",
                 "Participated in 80+ contests which includes both virtual and on-site contests",

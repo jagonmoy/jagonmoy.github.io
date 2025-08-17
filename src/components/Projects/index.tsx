@@ -1,9 +1,9 @@
 'use client';
 
-import data from 'data/data.json';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { Code, ExternalLink, Github, Globe } from 'lucide-react';
+import { Github, ExternalLink } from 'lucide-react';
+
+import data from '../../data/data.json';
 
 function Projects() {
   const { showcase } = data;
@@ -14,29 +14,18 @@ function Projects() {
       name: projects.project1.name,
       description: projects.project1.description,
       technologies: projects.project1.technologies,
-      link: projects.project1.link,
+      link1: projects.project1.link,
+      buttonTitle1: 'Github',
       type: 'Web App',
     },
     {
-      name: projects.project2.name,
+      name: `${projects.project2.name1} & ${projects.project2.name2}`,
       description: projects.project2.description,
       technologies: projects.project2.technologies,
-      link: projects.project2.link,
-      type: 'ML Project',
-    },
-    {
-      name: projects.project3.name,
-      description: projects.project3.description,
-      technologies: projects.project3.technologies,
-      link: projects.project3.link,
-      type: 'Research',
-    },
-    {
-      name: `${projects.project4.name1} & ${projects.project4.name2}`,
-      description: projects.project4.description,
-      technologies: projects.project4.technologies,
-      link: projects.project4.link1,
-      link2: projects.project4.link2,
+      link1: projects.project2.link1,
+      buttonTitle1: projects.project2.name1,
+      link2: projects.project2.link2,
+      buttonTitle2: projects.project2.name2,
       type: 'Collaboration',
     },
   ];
@@ -63,34 +52,29 @@ function Projects() {
 
   return (
     <motion.div
-      className="w-full glass-effect dark:glass-effect-dark p-8 lg:p-10 rounded-3xl"
+      className="w-full glass-effect dark:glass-effect-dark p-4 sm:p-6 lg:p-8 xl:p-10 rounded-2xl sm:rounded-3xl"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
     >
-      <div className="space-y-8">
+      <div className="space-y-6 sm:space-y-8">
         {/* Header */}
         <motion.div
-          className="text-center mb-10"
-          initial={{ opacity: 0, y: -20 }}
+          className="text-center"
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          <motion.div
-            className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-500 to-purple-600 rounded-2xl mb-4"
-            whileHover={{ rotate: 360, scale: 1.1 }}
-            transition={{ duration: 0.6 }}
-          >
-            <Code className="w-8 h-8 text-white" />
-          </motion.div>
-          <h2 className="text-3xl lg:text-4xl font-bold gradient-text">{projects.heading}</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold gradient-text">
+            {projects.heading}
+          </h2>
         </motion.div>
 
         {/* Projects Grid */}
         <motion.div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -99,22 +83,22 @@ function Projects() {
           {projectData.map((project, index) => (
             <motion.div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-white/50 dark:bg-gray-800/50 border border-gray-200/50 dark:border-gray-700/50 hover:border-primary/50 transition-all duration-300"
+              className="group relative overflow-hidden rounded-xl sm:rounded-2xl bg-white/50 dark:bg-gray-800/50 border border-gray-200/50 dark:border-gray-700/50 hover:border-primary-500/50 transition-all duration-300"
               variants={cardVariants}
-              whileHover={{ y: -8, scale: 1.02 }}
+              whileHover={{ y: -4, scale: 1.01 }}
               transition={{ duration: 0.3 }}
             >
               {/* Project Type Badge */}
-              <div className="absolute top-4 right-4 z-10">
-                <span className="px-3 py-1 text-xs font-medium bg-primary-500/20 text-primary-700 dark:text-primary-300 rounded-full border border-primary-200 dark:border-primary-800">
+              <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-20">
+                <span className="px-2 py-1 sm:px-3 text-xs font-medium bg-primary-500/20 text-primary-700 dark:text-primary-300 rounded-full border border-primary-200 dark:border-primary-800">
                   {project.type}
                 </span>
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <div className="mb-4">
-                  <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary-600 transition-colors duration-300">
+              <div className="p-4 sm:p-6 relative z-10">
+                <div className="mb-3 sm:mb-4">
+                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2 group-hover:text-primary-600 transition-colors duration-300">
                     {project.name}
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
@@ -123,47 +107,63 @@ function Projects() {
                 </div>
 
                 {/* Technologies */}
-                <div className="mb-6">
+                <div className="mb-4 sm:mb-6">
                   <div className="flex flex-wrap gap-2">
-                    {project.technologies.split(', ').map((tech, techIndex) => (
+                    {project.technologies.split(', ').map((tech: string, techIndex: number) => (
                       <span
                         key={techIndex}
-                        className="px-3 py-1 text-xs font-medium bg-muted text-muted-foreground rounded-full border border-gray-200 dark:border-gray-700"
+                        className="px-2 py-1 sm:px-3 text-xs font-medium bg-muted text-muted-foreground rounded-full border border-gray-200 dark:border-gray-700"
                       >
-                        {tech.trim()}
+                        {tech}
                       </span>
                     ))}
                   </div>
                 </div>
 
                 {/* Links */}
-                <div className="flex items-center space-x-3">
-                  {project.link && (
-                    <Link
-                      href={project.link}
-                      target="_blank"
-                      className="flex items-center space-x-2 px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors duration-200 group/link"
-                    >
-                      <Globe className="w-4 h-4" />
-                      <span className="text-sm font-medium">Live Demo</span>
-                      <ExternalLink className="w-3 h-3 group-hover/link:translate-x-1 transition-transform duration-200" />
-                    </Link>
-                  )}
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:space-x-3">
+                  {/* GitHub Link Button */}
+                  <motion.button
+                    type="button"
+                    className="flex items-center justify-center sm:justify-start space-x-2 px-3 py-2 sm:px-4 bg-primary-500 text-white rounded-lg hover:bg-primary-600 active:bg-primary-700 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-background text-sm font-medium"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    onClick={() => {
+                      if (project.link1) {
+                        window.open(project.link1, '_blank');
+                      }
+                    }}
+                  >
+                    <Github className="w-4 h-4" />
+                    <span className="text-sm font-medium">{project.buttonTitle1}</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </motion.button>
+
+                  {/* Second GitHub Link for projects that have it */}
                   {project.link2 && (
-                    <Link
-                      href={project.link2}
-                      target="_blank"
-                      className="flex items-center space-x-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors duration-200 border border-gray-200 dark:border-gray-700"
+                    <motion.button
+                      type="button"
+                      className="flex items-center justify-center sm:justify-start space-x-2 px-3 py-2 sm:px-4 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 active:bg-secondary/90 transition-all duration-200 border border-gray-200 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2 focus:ring-offset-background text-sm font-medium"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      onClick={() => {
+                        if (project.link2) {
+                          window.open(project.link2, '_blank');
+                        }
+                      }}
                     >
                       <Github className="w-4 h-4" />
-                      <span className="text-sm font-medium">GitHub</span>
-                    </Link>
+                      <span className="text-sm font-medium">{project.buttonTitle2}</span>
+                    </motion.button>
                   )}
                 </div>
               </div>
 
               {/* Hover Effect Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-0 bg-gradient-to-r from-primary-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              />
             </motion.div>
           ))}
         </motion.div>
