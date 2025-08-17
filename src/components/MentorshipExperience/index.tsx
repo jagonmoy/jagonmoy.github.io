@@ -98,7 +98,7 @@ function MentorshipExperience() {
               </div>
 
               {/* Content */}
-              <div className="p-4 sm:p-6">
+              <div className="p-4 sm:p-6 pt-12 sm:pt-16">
                 <div className="flex flex-col sm:flex-row sm:items-start space-y-3 sm:space-y-0 sm:space-x-4 mb-4">
                   <motion.div
                     className="p-2 sm:p-3 rounded-lg sm:rounded-xl bg-gradient-to-br from-primary-500 to-purple-600 shadow-lg self-start sm:self-auto"
@@ -109,10 +109,10 @@ function MentorshipExperience() {
                   </motion.div>
 
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2 group-hover:text-primary-600 transition-colors duration-300">
+                    <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2 group-hover:text-primary-600 transition-colors duration-300 break-words leading-tight">
                       {item.position}
                     </h3>
-                    <p className="text-base sm:text-lg font-semibold text-primary-600 mb-1">
+                    <p className="text-base sm:text-lg font-semibold text-primary-600 mb-1 break-words">
                       {item.institute}
                     </p>
                     <div className="text-sm text-muted-foreground mb-3">

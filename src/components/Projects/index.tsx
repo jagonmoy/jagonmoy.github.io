@@ -135,7 +135,7 @@ function Projects() {
               </div>
 
               {/* Content */}
-              <div className="p-4 sm:p-6 relative z-10">
+              <div className="p-4 sm:p-6 pt-12 sm:pt-16 relative z-10">
                 <div className="mb-3 sm:mb-4">
                   <div className="flex flex-col sm:flex-row sm:items-start space-y-3 sm:space-y-0 sm:space-x-4 mb-4">
                     <motion.div
@@ -147,7 +147,7 @@ function Projects() {
                     </motion.div>
 
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2 group-hover:text-primary-600 transition-colors duration-300">
+                      <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2 group-hover:text-primary-600 transition-colors duration-300 break-words leading-tight">
                         {project.name}
                       </h3>
                     </div>
