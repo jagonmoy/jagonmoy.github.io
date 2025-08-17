@@ -106,9 +106,9 @@ function AboutMe() {
             <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
               {aboutMeParagraphs.paragraph1}
             </p>
-            <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed mt-4">
+            {/* <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed mt-4">
               {aboutMeParagraphs.paragraph2}
-            </p>
+            </p> */}
           </motion.div>
 
           {/* Areas of Interest Title */}
