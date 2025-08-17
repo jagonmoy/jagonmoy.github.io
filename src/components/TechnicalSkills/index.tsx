@@ -33,6 +33,46 @@ import TypeScriptIcon from 'icons/TypeScript';
 import { Code } from 'lucide-react';
 import React from 'react';
 
+// Icon wrapper component for better iOS compatibility
+const IconWrapper = ({ icon, name }: { icon: React.ReactNode; name: string }) => {
+  const [isIOS, setIsIOS] = React.useState(false);
+
+  React.useEffect(() => {
+    // Detect iOS devices and Safari
+    const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    const isIOSDevice = iOS || (isSafari && /iPad|iPhone|iPod/.test(navigator.platform));
+    setIsIOS(isIOSDevice);
+  }, []);
+
+  // For iOS devices, show fallback text icon
+  if (isIOS) {
+    return (
+      <div className="p-2 rounded-lg bg-primary-500/20 flex items-center justify-center h-20 w-20">
+        <div className="text-2xl font-bold text-primary-600 bg-primary-500/10 rounded-lg p-2">
+          {name.charAt(0).toUpperCase()}
+        </div>
+      </div>
+    );
+  }
+
+  // For other devices, show the custom SVG icon
+  return (
+    <div className="p-2 rounded-lg bg-primary-500/20 flex items-center justify-center h-20 w-20 overflow-hidden">
+      <div
+        className="w-full h-full flex items-center justify-center"
+        style={{
+          WebkitTransform: 'translateZ(0)',
+          transform: 'translateZ(0)',
+          backfaceVisibility: 'hidden',
+        }}
+      >
+        {icon}
+      </div>
+    </div>
+  );
+};
+
 function TechnicalSkills() {
   const { showcase } = data;
   const { technicalSkills } = showcase;
@@ -179,9 +219,7 @@ function TechnicalSkills() {
                   >
                     <div className="p-3 sm:p-4">
                       <div className="flex items-center space-x-3 mb-2">
-                        <div className="p-2 rounded-lg bg-primary-500/20 flex items-center justify-center h-20 w-20">
-                          {skill.icon}
-                        </div>
+                        <IconWrapper icon={skill.icon} name={skill.name} />
                         <h4 className="text-sm sm:text-base font-semibold text-foreground group-hover:text-primary-600 transition-colors duration-300">
                           {skill.name}
                         </h4>
