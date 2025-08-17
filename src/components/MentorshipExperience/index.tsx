@@ -51,7 +51,7 @@ function MentorshipExperience() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
     >
       <div className="space-y-6 sm:space-y-8 lg:space-y-10">
         {/* Header */}
@@ -69,7 +69,9 @@ function MentorshipExperience() {
           >
             <Users className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
           </motion.div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold gradient-text">{mentorship.heading}</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold gradient-text">
+            {mentorship.heading}
+          </h2>
         </motion.div>
 
         {/* Mentorship Items */}
@@ -121,7 +123,9 @@ function MentorshipExperience() {
 
                 {/* Description */}
                 <div className="pt-2">
-                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{item.description}</p>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
               </div>
 

@@ -2,7 +2,7 @@
 
 import data from 'data/data.json';
 import { motion } from 'framer-motion';
-import { Building2, Briefcase, Code } from 'lucide-react';
+import { Briefcase, Code } from 'lucide-react';
 
 function SoftwareDevelopment() {
   const { experience } = data;

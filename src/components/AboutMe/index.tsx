@@ -147,7 +147,7 @@ function AboutMe() {
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
-              Let's Connect
+              Let&apos;s Connect
             </motion.h3>
             <motion.p
               className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto"

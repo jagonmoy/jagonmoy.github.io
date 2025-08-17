@@ -1,13 +1,13 @@
 'use client';
 
 import AboutMe from 'components/AboutMe';
+import AIResearchAndProjects from 'components/AIResearchAndProjects';
 import CP from 'components/CP';
 import Education from 'components/Education';
-import SoftwareDevelopment from 'components/SoftwareDevelopment';
 import LanguageProficiency from 'components/LanguageProficiency';
 import MentorshipExperience from 'components/MentorshipExperience';
 import Projects from 'components/Projects';
-import AIResearchAndProjects from 'components/AIResearchAndProjects';
+import SoftwareDevelopment from 'components/SoftwareDevelopment';
 import TechnicalSkills from 'components/TechnicalSkills';
 import VolunteeringExperience from 'components/VolunteeringExperience';
 import { motion } from 'framer-motion';

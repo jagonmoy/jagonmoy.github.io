@@ -2,8 +2,8 @@
 
 import data from 'data/data.json';
 import { motion } from 'framer-motion';
+import { Facebook, Github, Instagram, Linkedin } from 'lucide-react';
 import Link from 'next/link';
-import { Facebook, Github, Instagram, Linkedin, Mail, Heart } from 'lucide-react';
 
 export default function Footer() {
   const { profileIntro } = data;
