@@ -34,7 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <NavBar />
             <div className="flex flex-col lg:grid lg:grid-cols-4 pt-16 md:pt-18 lg:pt-20">
               <div className="w-full lg:col-span-1 px-4 sm:px-6 lg:px-4 py-4 sm:py-6">
-                <div className="lg:sticky lg:top-24 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto">
+                <div className="lg:sticky lg:top-24 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto lg:scrollbar-hide">
                   <ProfileAndIntro />
                 </div>
               </div>

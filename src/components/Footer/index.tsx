@@ -82,7 +82,7 @@ export default function Footer() {
             transition={{ delay: 0.2, duration: 0.6 }}
           >
             <p className="text-muted-foreground text-sm">
-              &copy; 2024 Jagonmoy Dey. All rights reserved.
+              &copy; 2025 Jagonmoy Dey. All rights reserved.
             </p>
           </motion.div>
 

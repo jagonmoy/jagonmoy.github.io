@@ -2,7 +2,7 @@
 
 import data from 'data/data.json';
 import { motion } from 'framer-motion';
-import { FlaskConical, Download, Brain, Sparkles } from 'lucide-react';
+import { Brain, Sparkles, Github, Play, ExternalLink } from 'lucide-react';
 
 function AIResearchAndProjects() {
   const { experience } = data;
@@ -15,9 +15,11 @@ function AIResearchAndProjects() {
       organization: artificial_intelligence.research1.orgnaization,
       technologies: artificial_intelligence.research1.technologies,
       bulletPoints: artificial_intelligence.research1.bulletPoints,
-      type: 'Thesis',
-      color: 'from-primary-500 to-purple-600',
+      type: 'AI Research',
+      color: 'from-blue-500 to-cyan-600',
       hasDownload: false,
+      githublink: (artificial_intelligence.research1 as any).githublink || '',
+      videoDemo: (artificial_intelligence.research1 as any).videoDemo || '',
     },
     {
       title: artificial_intelligence.research2.title,
@@ -28,6 +30,8 @@ function AIResearchAndProjects() {
       type: 'AI Project',
       color: 'from-green-500 to-emerald-600',
       hasDownload: false,
+      githublink: artificial_intelligence.research2.githublink || '',
+      videoDemo: artificial_intelligence.research2.videoDemo || '',
     },
     {
       title: artificial_intelligence.research3.title,
@@ -38,6 +42,8 @@ function AIResearchAndProjects() {
       type: 'AI Project',
       color: 'from-orange-500 to-yellow-600',
       hasDownload: false,
+      githublink: artificial_intelligence.research3.githublink || '',
+      videoDemo: artificial_intelligence.research3.videoDemo || '',
     },
     {
       title: artificial_intelligence.research4.title,
@@ -48,6 +54,8 @@ function AIResearchAndProjects() {
       type: 'AI Project',
       color: 'from-red-500 to-pink-600',
       hasDownload: false,
+      githublink: (artificial_intelligence.research4 as any).GithubLink || '',
+      videoDemo: artificial_intelligence.research4.videoDemo || '',
     },
   ];
 
@@ -187,10 +195,59 @@ function AIResearchAndProjects() {
                     </motion.div>
                   ))}
                 </div>
+
+                {/* Action Buttons */}
+                {(item.githublink || item.videoDemo) && (
+                  <motion.div
+                    className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:space-x-3 mt-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.3, duration: 0.6 }}
+                  >
+                    {item.githublink && (
+                      <motion.button
+                        type="button"
+                        className="flex items-center justify-center sm:justify-start space-x-2 px-3 py-2 sm:px-4 bg-primary-500 text-white rounded-lg hover:bg-primary-600 active:bg-primary-700 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-background text-sm font-medium"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        onClick={() => {
+                          if (item.githublink) {
+                            window.open(item.githublink, '_blank');
+                          }
+                        }}
+                      >
+                        <Github className="w-4 h-4" />
+                        <span className="text-sm font-medium">View Code</span>
+                        <ExternalLink className="w-3 h-3" />
+                      </motion.button>
+                    )}
+
+                    {item.videoDemo && (
+                      <motion.button
+                        type="button"
+                        className="flex items-center justify-center sm:justify-start space-x-2 px-3 py-2 sm:px-4 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 active:bg-secondary/90 transition-all duration-200 border border-gray-200 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2 focus:ring-offset-background text-sm font-medium"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        onClick={() => {
+                          if (item.videoDemo) {
+                            window.open(item.videoDemo, '_blank');
+                          }
+                        }}
+                      >
+                        <Play className="w-4 h-4" />
+                        <span className="text-sm font-medium">Watch Demo</span>
+                      </motion.button>
+                    )}
+                  </motion.div>
+                )}
               </div>
 
               {/* Hover Effect Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-0 bg-gradient-to-r from-primary-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              />
             </motion.div>
           ))}
         </motion.div>

@@ -122,6 +122,8 @@
                 "description": "A proof-of-concept AI-powered assistant that connects to Jira to help software teams maintain high-quality boards — an intelligent co-pilot for task clarity, speed, and quality.",
                 "orgnaization": "Cefalo Bangladesh Limited",
                 "technologies": "Python, FastAPI, ChromaDB, PostgreSQL, RAG, OpenAI, Jira API, Slack API",
+                "githublink": "",
+                "videoDemo": "",
                 "bulletPoints": [
                     "Smart Duplicate Detection: Used RAG + LLM technology for accurate duplicate ticket detection.",
                     "Ongoing Task Intelligence: Monitors 'In Review' and 'In Progress' tickets with LLM-powered summaries.",
@@ -134,6 +136,8 @@
                 "description": "A modern web application for building vocabulary with AI-powered word analysis, intelligent learning features, and contextual story generation. Built with LLM technology, LangChain, and vector databases, this project combines advanced AI with modern web frameworks to create a powerful vocabulary learning experience.",
                 "orgnaization": "Personal R&D Project",
                 "technologies": "Python, FastAPI, LangChain, OpenAI GPT-4, Google Gemini, ChromaDB, PostgreSQL, Next.js, TypeScript",
+                "githublink": "",
+                "videoDemo": "",
                 "bulletPoints": [
                     "AI-Powered Learning Features: Multi-model AI analysis with OpenAI GPT-4 and Google Gemini.",
                     "Contextual Story Generation: Generates engaging stories using vocabulary words in context.",
@@ -145,6 +149,8 @@
                 "title": "Time-Series Analysis with Stock Market Data",
                 "description": "Developed a custom extension in a forked version of TSLib, a widely used open-source time series library. Implemented a stock market data loader for a Kaggle dataset so that the dataset can be trained and evaluated by available models.",
                 "orgnaization": "Personal R&D Project",
+                "videoDemo": "",
+                "GithubLink": "https://github.com/jagonmoy/Time-Series-with-stock",
                 "technologies": "Python, PyTorch, Scikit-learn, NumPy, Pandas, TSLib, Kaggle",
                 "bulletPoints": [
                     "Custom TSLib Extension: Developed a stock market data loader for time series analysis.",
