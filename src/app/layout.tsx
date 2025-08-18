@@ -20,7 +20,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Jagonmoy | Software Engineer | Gen AI Enthusiast',
+  title: 'Jagonmoy | Software Engineer | Generative AI Enthusiast',
   description: "Showcasing Jagonmoy's education, work experience, and projects",
 };
 
