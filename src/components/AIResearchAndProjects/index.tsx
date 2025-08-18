@@ -20,6 +20,7 @@ function AIResearchAndProjects() {
       hasDownload: false,
       githublink: (artificial_intelligence.research1 as any).githublink || '',
       videoDemo: (artificial_intelligence.research1 as any).videoDemo || '',
+      warning: artificial_intelligence.research1.warning || '',
     },
     {
       title: artificial_intelligence.research2.title,
@@ -32,6 +33,7 @@ function AIResearchAndProjects() {
       hasDownload: false,
       githublink: artificial_intelligence.research2.githublink || '',
       videoDemo: artificial_intelligence.research2.videoDemo || '',
+      warning: artificial_intelligence.research2.warning || '',
     },
     {
       title: artificial_intelligence.research3.title,
@@ -44,6 +46,8 @@ function AIResearchAndProjects() {
       hasDownload: false,
       githublink: artificial_intelligence.research3.githublink || '',
       videoDemo: artificial_intelligence.research3.videoDemo || '',
+      liveDemo: (artificial_intelligence.research3 as any).liveDemo || '',
+      warning: (artificial_intelligence.research3 as any).warning || '',
     },
     {
       title: artificial_intelligence.research4.title,
@@ -196,8 +200,32 @@ function AIResearchAndProjects() {
                   ))}
                 </div>
 
+                {/* Warning Message */}
+                {item.warning && (
+                  <motion.div
+                    className="my-4 p-3 sm:p-4 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/50"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.25, duration: 0.6 }}
+                  >
+                    <div className="flex items-start space-x-3">
+                      <div className="flex-shrink-0 mt-0.5">
+                        <div className="w-5 h-5 rounded-full bg-amber-500 flex items-center justify-center">
+                          <span className="text-white text-xs font-bold">!</span>
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <p className="text-sm text-amber-800 dark:text-amber-200 leading-relaxed">
+                          {item.warning}
+                        </p>
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+
                 {/* Action Buttons */}
-                {(item.githublink || item.videoDemo) && (
+                {(item.githublink || item.videoDemo || item.liveDemo) && (
                   <motion.div
                     className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:space-x-3 mt-4"
                     initial={{ opacity: 0, y: 20 }}
@@ -218,7 +246,7 @@ function AIResearchAndProjects() {
                         }}
                       >
                         <Github className="w-4 h-4" />
-                        <span className="text-sm font-medium">View Code</span>
+                        <span className="text-sm font-medium">Github</span>
                         <ExternalLink className="w-3 h-3" />
                       </motion.button>
                     )}
@@ -237,6 +265,23 @@ function AIResearchAndProjects() {
                       >
                         <Play className="w-4 h-4" />
                         <span className="text-sm font-medium">Watch Demo</span>
+                      </motion.button>
+                    )}
+
+                    {item.liveDemo && (
+                      <motion.button
+                        type="button"
+                        className="flex items-center justify-center sm:justify-start space-x-2 px-3 py-2 sm:px-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-lg hover:from-green-600 hover:to-emerald-700 active:from-green-700 active:to-emerald-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-background text-sm font-medium shadow-lg"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        onClick={() => {
+                          if (item.liveDemo) {
+                            window.open(item.liveDemo, '_blank');
+                          }
+                        }}
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        <span className="text-sm font-medium">Live Demo</span>
                       </motion.button>
                     )}
                   </motion.div>

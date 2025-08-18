@@ -110,6 +110,7 @@
                 "description": "Addressed the problem of multi-speaker transcription in Bangla by developing a system that combines speaker diarization (”who spoke when”) and speech recognition (”what was said”) to generate structured, dialogue-style transcripts.",
                 "orgnaization" : "Shahjalal University of Science and Technology",
                 "technologies": "Python, Google Cloud Speech-to-Text, Tensorflow, ELAN, Audacity",
+                "warning": "You can contact me if you want to read the thesis.",
                 "bulletPoints": [
                     "Designed a full pipeline using Bi-LSTM for speaker diarization and Google Cloud Speech-to-Text for transcription, incorporating voice activity detection, speaker segmentation, and clustering.",
                     "Integrated the WebRTC VAD library for detecting speech regions, developed custom code snippets to link VAD with segmentation, and used pyannote-audio embeddings for speaker representation.",
@@ -117,12 +118,13 @@
                 ]
             },
             "research2": {
-                "title": "AI-Driven Task Reviewer",
-                "description": "A proof-of-concept AI-powered assistant that connects to Jira to help software teams maintain high-quality boards — an intelligent co-pilot for task clarity, speed, and quality.",
+                "title": "Jira Insights: AI-Driven Task Reviewer",
+                "description": "An AI-powered assistant that connects to Jira to help software teams maintain high-quality boards — an intelligent co-pilot for task clarity, speed, and quality.",
                 "orgnaization": "Cefalo Bangladesh Limited",
                 "technologies": "Python, FastAPI, RAG, ChromaDB, OpenAI, Jira API, Slack API",
                 "githublink": "",
-                "videoDemo": "",
+                "videoDemo": "https://drive.google.com/file/d/1OkXXAUhFAq_WHHcccxnTj6CdBK1vXGSs/view?usp=sharing",
+                "warning": "Cefalo has the ownership of the repository and the code is not public. That's why Github link is not available.",
                 "bulletPoints": [
                     "Smart Duplicate Detection: Used RAG + LLM technology for accurate duplicate ticket detection.",
                     "Ongoing Task Intelligence: Monitors 'In Review' and 'In Progress' tickets with LLM-powered summaries.",
@@ -140,9 +142,11 @@
                 "orgnaization": "Personal R&D Project",
                 "technologies": "Python, FastAPI, RAG, LangChain, ChromaDB, OpenAI, Google Gemini, PostgreSQL, Next.js, TypeScript",
                 "githublink": "",
-                "videoDemo": "",
+                "videoDemo": "https://drive.google.com/file/d/1b5xz4J_DwzZs_0GiigBcjoS4yKcn5RjM/view?usp=sharing",
+                "liveDemo": "https://vocabuilder-frontend.onrender.com/",
+                "warning": "The backend and database are hosted on two different servers in different regions in free tier, so the live demo will be slow and not responsive as the recorded demo. The Github Repository is not public yet but if you are interested and want access to the code, you can contact me.",
                 "bulletPoints": [
-                    "AI-Powered Learning Features: Multi-model AI analysis with OpenAI GPT-4 and Google Gemini.",
+                    "AI-Powered Learning Features: Multi-model AI analysis with OpenAI and Google Gemini.",
                     "Contextual Story Generation: Generates engaging stories using vocabulary words in context.",
                     "Semantic Similarity: Finds similar words using embeddings and semantic search.",
                     "Advanced AI Architecture: LangChain-based prompt engineering with vector database integration."
