@@ -141,10 +141,10 @@
                 "description": "A modern web application for building vocabulary with AI-powered word analysis, intelligent learning features, and contextual story generation. Built with LLM technology, LangChain, and vector databases, this project combines advanced AI with modern web frameworks to create a powerful vocabulary learning experience.",
                 "orgnaization": "Personal R&D Project",
                 "technologies": "Python, FastAPI, RAG, LangChain, ChromaDB, OpenAI, Google Gemini, PostgreSQL, Next.js, TypeScript",
-                "githublink": "",
+                "githublink": "https://github.com/jagonmoy/VocaBuilder",
                 "videoDemo": "https://drive.google.com/file/d/1b5xz4J_DwzZs_0GiigBcjoS4yKcn5RjM/view?usp=sharing",
                 "liveDemo": "https://vocabuilder-frontend.onrender.com/",
-                "warning": "The backend and database are hosted on two different servers in different regions in free tier, so the live demo will be slow and not responsive as the recorded demo. The Github Repository is not public yet but if you are interested and want access to the code, you can contact me.",
+                "warning": "The backend and database are hosted on two different servers in different regions in free tier, so the live demo will be slow and not responsive as the recorded demo.",
                 "bulletPoints": [
                     "AI-Powered Learning Features: Multi-model AI analysis with OpenAI and Google Gemini.",
                     "Contextual Story Generation: Generates engaging stories using vocabulary words in context.",
