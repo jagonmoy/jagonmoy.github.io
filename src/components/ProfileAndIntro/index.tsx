@@ -57,7 +57,7 @@ function ProfileAndIntro() {
         <div className="relative rounded-xl sm:rounded-2xl overflow-hidden border-2 border-primary/20 shadow-2xl bg-gradient-to-br from-primary/10 to-purple-500/10 p-1">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <Image
-            src="/proPic.jpeg"
+            src="/proPic.jpg"
             alt="Profile"
             height={400}
             width={800}
