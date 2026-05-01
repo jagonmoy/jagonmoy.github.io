@@ -31,4 +31,14 @@ This is a **Next.js 16 / React 19 personal portfolio** (single-page, App Router)
 
 **Module resolution:** `tsconfig.json` sets `baseUrl` to `src/`, so imports use `components/Foo`, `contexts/ThemeContext`, `data/data.json`, `icons/Python`, etc. — no relative paths needed from within `src/`.
 
+**`data.json` schema:** Five top-level keys map to the sections:
+
+- `profileIntro` — name, bio, location, social links (used by `ProfileAndIntro` sidebar)
+- `aboutMeParagraphs` — heading, areas of interest, paragraph text (used by `AboutMe`)
+- `education` — university and college entries (used by `Education`)
+- `experience` — sub-keys `software_development`, `research_experience`, `mentorship`, `volunteering` (used by the four experience sections)
+- `showcase` — sub-keys `technicalSkills`, `projects`, `competitiveProgramming`, `languageProficiency` (used by the four showcase sections)
+
+**Public assets:** `public/Jagonmoy_CV.pdf` (CV file), `public/proPic.jpg` (profile photo) — referenced directly from `data.json` paths.
+
 **Environment variable:** `NEXT_PUBLIC_GOOGLE_ANALYTICS_ID` — set in `.env.local` for GA integration.
