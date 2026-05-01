@@ -30,9 +30,7 @@
            "Large Language Models in Software Development Lifecycle",
            "AI-Driven Software Engineering and Automation"
         ],
-        "paragraph1": "I am a Software Engineer with 3.5+ years of industry experience building full-stack systems, and I have increasingly shifted my focus toward AI for Software Engineering (AI4SE). I have hands-on experience with LLM-powered tools that improve real engineering workflows — from intelligent task automation and RAG pipelines to working with modern agentic development workflows using tools like Claude. I have also collaborated with a software engineering research group on empirical work studying the intersection of AI and code quality.",
-        "paragraph2": "My interests lie in Empirical Software Engineering and Applied AI/LLM for Software Engineering — particularly how AI shapes developer productivity, code quality, and the software development lifecycle. I am drawn to research and engineering work that measures and advances how software is built in the age of AI."
-          
+        "paragraph1": "I am a Software Engineer with 3.5+ years of industry experience building full-stack systems, and I have increasingly shifted my focus toward AI for Software Engineering (AI4SE). I have hands-on experience with LLM-powered tools that improve real engineering workflows — from intelligent task automation and RAG pipelines to working with modern agentic development workflows using tools like Claude. I have also collaborated with a software engineering research group on empirical work studying the intersection of AI and software security."
     },
     "education" : {
         "heading" : "Education",
