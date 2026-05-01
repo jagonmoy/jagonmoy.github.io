@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Sparkles, Code, Brain, Target, Users, Github, Linkedin, Mail } from 'lucide-react';
+import { Sparkles, Code, Brain, Github, Linkedin, Mail } from 'lucide-react';
 
 import data from 'data/data.json';
 
@@ -11,11 +11,9 @@ function AboutMe() {
   // Map areas of interest to appropriate icons
   const getIconForInterest = (interest: string) => {
     if (interest.includes('Software Engineering')) return Code;
-    if (interest.includes('LLM') || interest.includes('Software Development')) return Brain;
-    if (interest.includes('real-world problems')) return Target;
-    if (interest.includes('Natural Language Processing')) return Brain;
-    if (interest.includes('HCI') || interest.includes('Interaction')) return Users;
-    return Code; // Default icon for Software Engineering focus
+    if (interest.includes('LLM') || interest.includes('Large Language')) return Brain;
+    if (interest.includes('AI-Driven') || interest.includes('Automation')) return Brain;
+    return Code;
   };
 
   const interests = aboutMeParagraphs.areasOfInterest.map((interest) => ({

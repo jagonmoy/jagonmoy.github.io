@@ -28,9 +28,7 @@
         "areasOfInterest" : [
            "Software Engineering and Systems Architecture",
            "Large Language Models in Software Development Lifecycle",
-           "AI-Driven Software Engineering and Automation",
-           "Natural Language Processing",
-           "Human-Computer Interaction"
+           "AI-Driven Software Engineering and Automation"
         ],
         "paragraph1": "I am a Software Engineer with 3+ years of experience designing and building full-stack web systems, developing scalable backend services and modern frontends, and I have also contributed to Generative AI–powered applications by integrating large language models (LLMs) into web systems to deliver intelligent, user-focused features. I hold a degree in Software Engineering with a strong academic record and research experience in Natural Language Processing, where I worked on speech and text understanding. Bringing together my full-stack expertise, hands-on experience with LLM applications, and academic foundation in NLP, I am passionate about applying Artificial Intelligence to software engineering — exploring how LLMs and intelligent automation can improve coding, testing, deployment, and maintenance while advancing developer tools, software quality, and the overall developer experience."
           
@@ -103,11 +101,24 @@
         
             }
         },
-        "artificial_intelligence" : {
-            "heading" : "AI Research & Projects",
+        "research_experience" : {
             "research1" : {
+                "title" : "Volunteer Researcher — Secure Software Engineering & AI-Generated Code",
+                "description": "Collaborated with Dr. Tanmay Bhowmik and his research group SERA (Software Engineering Research and Analysis Lab) at Kennesaw State University on security weaknesses in AI-generated code.",
+                "orgnaization" : "SERA Lab (Software Engineering Research and Analysis Lab), Kennesaw State University",
+                "technologies": "Python, Bash, CodeQL, GitHub API",
+                "duration": "November 2025 - March 2026",
+                "githubLink": "https://github.com/jagonmoy/SE-AI-Security",
+                "bulletPoints": [
+                    "Performing literature review on security weaknesses in AI-generated code and contributing to shaping a research proposal in Secure Software Engineering.",
+                    "Engineered a GitHub code-mining pipeline to collect AI-generated code datasets, handling pagination, rate limits, and file-size constraints, and exporting results to CSV.",
+                    "Automated local CodeQL scanning (cross-platform) to run query suites, extracting CWE-tagged security findings across codebases.",
+                    "Mapped CWEs to CVEs by scraping vulnerability intelligence (Python + Playwright), producing a consolidated dataset with CVSS, summaries, and publish/update dates."
+                ]
+            },
+            "research2" : {
                 "title" : "Undergrad thesis: Speaker Diarization with Speech Recognition in Bengali",
-                "description": "Addressed the problem of multi-speaker transcription in Bangla by developing a system that combines speaker diarization (”who spoke when”) and speech recognition (”what was said”) to generate structured, dialogue-style transcripts.",
+                "description": "Addressed the problem of multi-speaker transcription in Bangla by developing a system that combines speaker diarization (\"who spoke when\") and speech recognition (\"what was said\") to generate structured, dialogue-style transcripts.",
                 "orgnaization" : "Shahjalal University of Science and Technology",
                 "technologies": "Python, Google Cloud Speech-to-Text, Tensorflow, ELAN, Audacity",
                 "warning": "You can contact me if you want to read the thesis.",
@@ -117,7 +128,7 @@
                     "Collected and annotated 8 hours of Bangla audio data from YouTube debates and talk shows using ELAN,Audacity, and y2Mate."
                 ]
             },
-            "research2": {
+            "research3": {
                 "title": "Jira Insights: AI-Driven Task Reviewer",
                 "description": "An AI-powered assistant that connects to Jira to help software teams maintain high-quality boards — an intelligent co-pilot for task clarity, speed, and quality.",
                 "orgnaization": "Cefalo Bangladesh Limited",
@@ -136,7 +147,7 @@
                     "Real-time Logs: Advanced task search and monitoring capabilities."
                 ]
             },
-            "research3": {
+            "research4": {
                 "title": "Vocabuilder - AI-Powered Vocabulary Builder",
                 "description": "A modern web application for building vocabulary with AI-powered word analysis, intelligent learning features, and contextual story generation. Built with LLM technology, LangChain, and vector databases, this project combines advanced AI with modern web frameworks to create a powerful vocabulary learning experience.",
                 "orgnaization": "Personal R&D Project",
@@ -152,7 +163,7 @@
                     "Advanced AI Architecture: LangChain-based prompt engineering with vector database integration."
                 ]
             },
-            "research4": {
+            "research5": {
                 "title": "Time-Series Analysis with Stock Market Data",
                 "description": "Developed a custom extension in a forked version of TSLib, a widely used open-source time series library. Implemented a stock market data loader for a Kaggle dataset so that the dataset can be trained and evaluated by available models.",
                 "orgnaization": "Personal R&D Project",

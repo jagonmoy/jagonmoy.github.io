@@ -7,60 +7,73 @@ import data from 'data/data.json';
 
 function AIResearchAndProjects() {
   const { experience } = data;
-  const { artificial_intelligence } = experience;
+  const { research_experience } = experience;
 
   const aiResearchData = [
     {
-      title: artificial_intelligence.research1.title,
-      description: artificial_intelligence.research1.description,
-      organization: artificial_intelligence.research1.orgnaization,
-      technologies: artificial_intelligence.research1.technologies,
-      bulletPoints: artificial_intelligence.research1.bulletPoints,
+      title: research_experience.research1.title,
+      description: research_experience.research1.description,
+      organization: research_experience.research1.orgnaization,
+      technologies: research_experience.research1.technologies,
+      bulletPoints: research_experience.research1.bulletPoints,
+      type: 'Research',
+      color: 'from-violet-500 to-indigo-600',
+      hasDownload: false,
+      githublink: (research_experience.research1 as any).githubLink || '',
+      videoDemo: '',
+      warning: '',
+    },
+    {
+      title: research_experience.research2.title,
+      description: research_experience.research2.description,
+      organization: research_experience.research2.orgnaization,
+      technologies: research_experience.research2.technologies,
+      bulletPoints: research_experience.research2.bulletPoints,
       type: 'AI Research',
       color: 'from-blue-500 to-cyan-600',
       hasDownload: false,
-      githublink: (artificial_intelligence.research1 as any).githublink || '',
-      videoDemo: (artificial_intelligence.research1 as any).videoDemo || '',
-      warning: artificial_intelligence.research1.warning || '',
+      githublink: (research_experience.research2 as any).githublink || '',
+      videoDemo: (research_experience.research2 as any).videoDemo || '',
+      warning: (research_experience.research2 as any).warning || '',
     },
     {
-      title: artificial_intelligence.research2.title,
-      description: artificial_intelligence.research2.description,
-      organization: artificial_intelligence.research2.orgnaization,
-      technologies: artificial_intelligence.research2.technologies,
-      bulletPoints: artificial_intelligence.research2.bulletPoints,
+      title: research_experience.research3.title,
+      description: research_experience.research3.description,
+      organization: research_experience.research3.orgnaization,
+      technologies: research_experience.research3.technologies,
+      bulletPoints: research_experience.research3.bulletPoints,
       type: 'AI Project',
       color: 'from-green-500 to-emerald-600',
       hasDownload: false,
-      githublink: artificial_intelligence.research2.githublink || '',
-      videoDemo: artificial_intelligence.research2.videoDemo || '',
-      warning: artificial_intelligence.research2.warning || '',
+      githublink: (research_experience.research3 as any).githublink || '',
+      videoDemo: (research_experience.research3 as any).videoDemo || '',
+      warning: (research_experience.research3 as any).warning || '',
     },
     {
-      title: artificial_intelligence.research3.title,
-      description: artificial_intelligence.research3.description,
-      organization: artificial_intelligence.research3.orgnaization,
-      technologies: artificial_intelligence.research3.technologies,
-      bulletPoints: artificial_intelligence.research3.bulletPoints,
+      title: research_experience.research4.title,
+      description: research_experience.research4.description,
+      organization: research_experience.research4.orgnaization,
+      technologies: research_experience.research4.technologies,
+      bulletPoints: research_experience.research4.bulletPoints,
       type: 'AI Project',
       color: 'from-orange-500 to-yellow-600',
       hasDownload: false,
-      githublink: artificial_intelligence.research3.githublink || '',
-      videoDemo: artificial_intelligence.research3.videoDemo || '',
-      liveDemo: (artificial_intelligence.research3 as any).liveDemo || '',
-      warning: (artificial_intelligence.research3 as any).warning || '',
+      githublink: (research_experience.research4 as any).githublink || '',
+      videoDemo: (research_experience.research4 as any).videoDemo || '',
+      liveDemo: (research_experience.research4 as any).liveDemo || '',
+      warning: (research_experience.research4 as any).warning || '',
     },
     {
-      title: artificial_intelligence.research4.title,
-      description: artificial_intelligence.research4.description,
-      organization: artificial_intelligence.research4.orgnaization,
-      technologies: artificial_intelligence.research4.technologies,
-      bulletPoints: artificial_intelligence.research4.bulletPoints,
+      title: research_experience.research5.title,
+      description: research_experience.research5.description,
+      organization: research_experience.research5.orgnaization,
+      technologies: research_experience.research5.technologies,
+      bulletPoints: research_experience.research5.bulletPoints,
       type: 'AI Project',
       color: 'from-red-500 to-pink-600',
       hasDownload: false,
-      githublink: (artificial_intelligence.research4 as any).GithubLink || '',
-      videoDemo: artificial_intelligence.research4.videoDemo || '',
+      githublink: (research_experience.research5 as any).GithubLink || '',
+      videoDemo: (research_experience.research5 as any).videoDemo || '',
     },
   ];
 
@@ -109,11 +122,11 @@ function AIResearchAndProjects() {
             <Brain className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
           </motion.div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold gradient-text">
-            {artificial_intelligence.heading}
+            Research &amp; AI Projects
           </h2>
         </motion.div>
 
-        {/* AI Research & Projects Items */}
+        {/* Research & AI Project Items */}
         <motion.div
           className="space-y-6 sm:space-y-8"
           variants={containerVariants}
@@ -226,7 +239,7 @@ function AIResearchAndProjects() {
                 )}
 
                 {/* Action Buttons */}
-                {(item.githublink || item.videoDemo || item.liveDemo) && (
+                {(item.githublink || item.videoDemo || (item as any).liveDemo) && (
                   <motion.div
                     className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:space-x-3 mt-4"
                     initial={{ opacity: 0, y: 20 }}
@@ -269,15 +282,15 @@ function AIResearchAndProjects() {
                       </motion.button>
                     )}
 
-                    {item.liveDemo && (
+                    {(item as any).liveDemo && (
                       <motion.button
                         type="button"
                         className="flex items-center justify-center sm:justify-start space-x-2 px-3 py-2 sm:px-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-lg hover:from-green-600 hover:to-emerald-700 active:from-green-700 active:to-emerald-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-background text-sm font-medium shadow-lg"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                         onClick={() => {
-                          if (item.liveDemo) {
-                            window.open(item.liveDemo, '_blank');
+                          if ((item as any).liveDemo) {
+                            window.open((item as any).liveDemo, '_blank');
                           }
                         }}
                       >
