@@ -1,9 +1,10 @@
 'use client';
 
-import data from 'data/data.json';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import Link from 'next/link';
+
+import data from 'data/data.json';
 
 const SocialLinks = () => {
   const { profileIntro } = data;

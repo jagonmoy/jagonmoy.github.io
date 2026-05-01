@@ -1,8 +1,9 @@
 'use client';
 
-import data from 'data/data.json';
 import { motion } from 'framer-motion';
 import { GraduationCap, School } from 'lucide-react';
+
+import data from 'data/data.json';
 
 function Education() {
   const { education } = data;

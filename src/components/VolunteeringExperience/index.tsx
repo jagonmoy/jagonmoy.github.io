@@ -1,8 +1,9 @@
 'use client';
 
-import data from 'data/data.json';
 import { motion } from 'framer-motion';
 import { Heart, Users } from 'lucide-react';
+
+import data from 'data/data.json';
 
 function VolunteeringExperience() {
   const { experience } = data;

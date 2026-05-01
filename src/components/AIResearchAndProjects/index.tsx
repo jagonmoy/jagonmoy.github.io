@@ -1,8 +1,9 @@
 'use client';
 
-import data from 'data/data.json';
 import { motion } from 'framer-motion';
 import { Brain, Sparkles, Github, Play, ExternalLink } from 'lucide-react';
+
+import data from 'data/data.json';
 
 function AIResearchAndProjects() {
   const { experience } = data;

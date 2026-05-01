@@ -1,8 +1,9 @@
 'use client';
 
-import data from 'data/data.json';
 import { motion } from 'framer-motion';
 import { Languages, Globe, MessageCircle } from 'lucide-react';
+
+import data from 'data/data.json';
 
 function LanguageProficiency() {
   const { showcase } = data;

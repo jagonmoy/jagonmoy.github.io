@@ -1,11 +1,12 @@
 'use client';
 
-import data from 'data/data.json';
 import { motion } from 'framer-motion';
 import { Download, Calendar } from 'lucide-react';
 import Image from 'next/image';
 
 import ProfileSocialLinks from './ProfileSocialLinks';
+
+import data from 'data/data.json';
 
 function ProfileAndIntro() {
   const { profileIntro } = data;

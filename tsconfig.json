@@ -17,9 +17,9 @@
       ],
       "icons/*": [
         "icons/*"
-      ],
+      ]
     },
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "target": "es5",
     "lib": [
       "dom",
@@ -35,7 +35,7 @@
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
@@ -51,7 +51,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "./jest.setup.ts"
+    "./jest.setup.ts",
+    ".next/dev/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"

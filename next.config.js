@@ -13,9 +13,6 @@ const nextConfig = {
   reactStrictMode: true,
   basePath: '',
   assetPrefix: '',
-  publicRuntimeConfig: {
-    basePath: '',
-  },
 };
 
 module.exports = nextConfig;

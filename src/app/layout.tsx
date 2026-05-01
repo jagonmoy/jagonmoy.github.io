@@ -1,12 +1,14 @@
 import { GoogleAnalytics } from '@next/third-parties/google';
-import Footer from 'components/Footer';
-import NavBar from 'components/Navbar';
-import './globals.css';
-import ProfileAndIntro from 'components/ProfileAndIntro';
-import { ThemeProvider } from 'contexts/ThemeContext';
 import type { Metadata } from 'next';
 import { Inter, Poppins } from 'next/font/google';
 import React from 'react';
+
+import Footer from 'components/Footer';
+import NavBar from 'components/Navbar';
+import ProfileAndIntro from 'components/ProfileAndIntro';
+import { ThemeProvider } from 'contexts/ThemeContext';
+
+import './globals.css';
 
 const inter = Inter({
   subsets: ['latin'],

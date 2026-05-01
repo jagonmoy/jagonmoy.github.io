@@ -1,5 +1,7 @@
 'use client';
 
+import { motion } from 'framer-motion';
+
 import AboutMe from 'components/AboutMe';
 import AIResearchAndProjects from 'components/AIResearchAndProjects';
 import CP from 'components/CP';
@@ -10,7 +12,6 @@ import Projects from 'components/Projects';
 import SoftwareDevelopment from 'components/SoftwareDevelopment';
 import TechnicalSkills from 'components/TechnicalSkills';
 import VolunteeringExperience from 'components/VolunteeringExperience';
-import { motion } from 'framer-motion';
 
 function Home() {
   const containerVariants = {

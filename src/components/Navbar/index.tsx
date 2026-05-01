@@ -1,12 +1,13 @@
 'use client';
 
-import { useTheme } from 'contexts/ThemeContext';
 import { motion } from 'framer-motion';
 import { Menu, Moon, Sun, X } from 'lucide-react';
 import * as React from 'react';
 
 import SocialLinks from './components/SocialLinks';
 import TabNavigation from './components/TabNavigation';
+
+import { useTheme } from 'contexts/ThemeContext';
 
 const NavBar = () => {
   const { theme, toggleTheme } = useTheme();

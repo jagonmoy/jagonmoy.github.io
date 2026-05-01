@@ -1,8 +1,9 @@
 'use client';
 
-import data from 'data/data.json';
 import { motion } from 'framer-motion';
 import { Trophy, Code, Target, TrendingUp, Brain } from 'lucide-react';
+
+import data from 'data/data.json';
 
 function CP() {
   const { showcase } = data;

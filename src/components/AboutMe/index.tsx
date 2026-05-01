@@ -1,8 +1,9 @@
 'use client';
 
-import data from 'data/data.json';
 import { motion } from 'framer-motion';
 import { Sparkles, Code, Brain, Target, Users, Github, Linkedin, Mail } from 'lucide-react';
+
+import data from 'data/data.json';
 
 function AboutMe() {
   const { aboutMeParagraphs } = data;

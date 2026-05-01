@@ -1,7 +1,10 @@
 'use client';
 
-import data from 'data/data.json';
 import { motion } from 'framer-motion';
+import { Code } from 'lucide-react';
+import React from 'react';
+
+import data from 'data/data.json';
 // import CIcon from 'icons/C';
 import ChromaIcon from 'icons/Chroma';
 // import CSSIcon from 'icons/CSS';
@@ -33,8 +36,6 @@ import SanityIcon from 'icons/Sanity';
 import TailwindIcon from 'icons/Tailwind';
 import TensorFlowIcon from 'icons/TensorFlow';
 import TypeScriptIcon from 'icons/TypeScript';
-import { Code } from 'lucide-react';
-import React from 'react';
 
 // Icon wrapper component for better iOS compatibility
 const IconWrapper = ({ icon, name }: { icon: React.ReactNode; name: string }) => {
