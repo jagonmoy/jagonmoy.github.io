@@ -2,7 +2,7 @@
     "profileIntro" : {
         "name" : "Jagonmoy Dey",
         "pronouns" : "he/him",
-        "bio" : "Software Engineer | Full Stack | Generative AI Enthusiast",
+        "bio" : "Software Engineer | Full Stack | AI4SE Enthusiast",
         "location" : "Dhaka, Bangladesh",
         "locationLink" : "https://maps.app.goo.gl/yckfxuxVuqbfKsvE9",
         "company" : "Cefalo Bangladesh Limited",
@@ -30,7 +30,8 @@
            "Large Language Models in Software Development Lifecycle",
            "AI-Driven Software Engineering and Automation"
         ],
-        "paragraph1": "I am a Software Engineer with 3+ years of experience designing and building full-stack web systems, developing scalable backend services and modern frontends, and I have also contributed to Generative AI–powered applications by integrating large language models (LLMs) into web systems to deliver intelligent, user-focused features. I hold a degree in Software Engineering with a strong academic record and research experience in Natural Language Processing, where I worked on speech and text understanding. Bringing together my full-stack expertise, hands-on experience with LLM applications, and academic foundation in NLP, I am passionate about applying Artificial Intelligence to software engineering — exploring how LLMs and intelligent automation can improve coding, testing, deployment, and maintenance while advancing developer tools, software quality, and the overall developer experience."
+        "paragraph1": "I am a Software Engineer with 3.5+ years of industry experience building full-stack systems, and I have increasingly shifted my focus toward AI for Software Engineering (AI4SE). I have hands-on experience with LLM-powered tools that improve real engineering workflows — from intelligent task automation and RAG pipelines to working with modern agentic development workflows using tools like Claude. I have also collaborated with a software engineering research group on empirical work studying the intersection of AI and code quality.",
+        "paragraph2": "My interests lie in Empirical Software Engineering and Applied AI/LLM for Software Engineering — particularly how AI shapes developer productivity, code quality, and the software development lifecycle. I am drawn to research and engineering work that measures and advances how software is built in the age of AI."
           
     },
     "education" : {
