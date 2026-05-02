@@ -7,6 +7,7 @@ import React from 'react';
 import data from 'data/data.json';
 // import CIcon from 'icons/C';
 import ChromaIcon from 'icons/Chroma';
+import ClaudeIcon from 'icons/Claude';
 // import CSSIcon from 'icons/CSS';
 import DockerIcon from 'icons/Docker';
 import ExpressJsIcon from 'icons/ExpressJs';
@@ -200,6 +201,7 @@ function TechnicalSkills() {
           },
           { icon: <NumPyIcon />, name: technicalSkills.mlTools.numpy, category: 'ML Tool' },
           { icon: <PandasIcon />, name: technicalSkills.mlTools.pandas, category: 'ML Tool' },
+          { icon: <ClaudeIcon />, name: technicalSkills.mlTools.claude, category: 'ML Tool' },
         ],
       },
     ];

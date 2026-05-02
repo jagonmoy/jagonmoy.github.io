@@ -253,7 +253,8 @@
         "numpy": "NumPy",
         "pandas": "Pandas",
         "langchain": "LangChain",
-        "chroma": "ChromaDB"
+        "chroma": "ChromaDB",
+        "claude": "Claude"
       }
     },
     "projects": {
