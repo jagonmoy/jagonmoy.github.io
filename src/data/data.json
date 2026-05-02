@@ -1,307 +1,296 @@
 {
-    "profileIntro" : {
-        "name" : "Jagonmoy Dey",
-        "pronouns" : "he/him",
-        "bio" : "Software Engineer | Full Stack | AI4SE Enthusiast",
-        "location" : "Dhaka, Bangladesh",
-        "locationLink" : "https://maps.app.goo.gl/yckfxuxVuqbfKsvE9",
-        "company" : "Cefalo Bangladesh Limited",
-        "companyLink": "https://www.cefalo.com/en",
-        "university" : "Shahjalal University of Science and Technology",
-        "universityLink" : "https://www.sust.edu/",
-        "emailText": "jagonmoydey1997@gmail.com",
-        "emailLink": "mailto:jagonmoydey1997@gmail.com",
-        "phoneText": "(+880) 1932 880 727",
-        "phoneLink": "tel:+8801932880727",
-        "githubLinkText" : "github.com/jagonmoy",
-        "githubLink" : "https://github.com/jagonmoy",
-        "linkedinLinkText" : "linkedin.com/in/jagonmoy",
-        "linkedinLink" : "https://www.linkedin.com/in/jagonmoy/",
-        "instagramLinkText" : "instagram.com/jagonmoy",
-        "instagramLink" : "https://www.instagram.com/jagonmoy/",
-        "facebookLinkText" : "facebook.com/jagonmoy",
-        "facebookLink" : "https://www.facebook.com/jagonmoy/"
+  "profileIntro": {
+    "name": "Jagonmoy Dey",
+    "pronouns": "he/him",
+    "bio": "Software Engineer | Full Stack | AI4SE Enthusiast",
+    "location": "Dhaka, Bangladesh",
+    "locationLink": "https://maps.app.goo.gl/yckfxuxVuqbfKsvE9",
+    "company": "Cefalo Bangladesh Limited",
+    "companyLink": "https://www.cefalo.com/en",
+    "university": "Shahjalal University of Science and Technology",
+    "universityLink": "https://www.sust.edu/",
+    "emailText": "jagonmoydey1997@gmail.com",
+    "emailLink": "mailto:jagonmoydey1997@gmail.com",
+    "phoneText": "(+880) 1932 880 727",
+    "phoneLink": "tel:+8801932880727",
+    "githubLinkText": "github.com/jagonmoy",
+    "githubLink": "https://github.com/jagonmoy",
+    "linkedinLinkText": "linkedin.com/in/jagonmoy",
+    "linkedinLink": "https://www.linkedin.com/in/jagonmoy/",
+    "instagramLinkText": "instagram.com/jagonmoy",
+    "instagramLink": "https://www.instagram.com/jagonmoy/",
+    "facebookLinkText": "facebook.com/jagonmoy",
+    "facebookLink": "https://www.facebook.com/jagonmoy/"
+  },
+  "aboutMeParagraphs": {
+    "heading": "About Me",
+    "areasOfInterestHeading": "Areas of Interest",
+    "areasOfInterest": [
+      "Software Engineering and Systems Architecture",
+      "Large Language Models in Software Development Lifecycle",
+      "AI-Driven Software Engineering and Automation"
+    ],
+    "paragraph1": "I am a Software Engineer with 3.5+ years of industry experience building full-stack systems, and I have increasingly shifted my focus toward AI for Software Engineering (AI4SE). I have hands-on experience with LLM-powered tools that improve real engineering workflows — from intelligent task automation and RAG pipelines to working with modern agentic development workflows using tools like Claude. I have also collaborated with a software engineering research group on empirical work studying the intersection of AI and software security."
+  },
+  "education": {
+    "heading": "Education",
+    "university": {
+      "name": "Shahjalal University of Science and Technology",
+      "degree": "Bachelor of Science in Software Engineering",
+      "duration": "January 2018 - February 2023",
+      "result": "CGPA: 3.60/4.00",
+      "bulletPoints": [
+        "Ranked among the top 10 performers in the graduating batch, demonstrating consistent academic excellence.",
+        "Achieved a 3.85 average GPA over the last four semesters, with a perfect 4.0 (1st place) in the 7th semester and 3.97 (2nd place) in the 8th semester.",
+        "Coursework: Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networking, Distributed Systems, Software Architecture and Design Patterns, Software Requirement Engineering, Software Verification and Validation, Software Metrics, Linear and Abstract Algebra, Data Science, Machine Learning, Artificial Intelligence."
+      ]
     },
-    "aboutMeParagraphs" : {
-        "heading" : "About Me",
-        "areasOfInterestHeading" : "Areas of Interest",
-        "areasOfInterest" : [
-           "Software Engineering and Systems Architecture",
-           "Large Language Models in Software Development Lifecycle",
-           "AI-Driven Software Engineering and Automation"
-        ],
-        "paragraph1": "I am a Software Engineer with 3.5+ years of industry experience building full-stack systems, and I have increasingly shifted my focus toward AI for Software Engineering (AI4SE). I have hands-on experience with LLM-powered tools that improve real engineering workflows — from intelligent task automation and RAG pipelines to working with modern agentic development workflows using tools like Claude. I have also collaborated with a software engineering research group on empirical work studying the intersection of AI and software security."
-    },
-    "education" : {
-        "heading" : "Education",
-        "university" : {
-            "name": "Shahjalal University of Science and Technology",
-            "degree": "Bachelor of Science in Software Engineering",
-            "duration": "January 2018 - February 2023",
-            "result": "CGPA: 3.60/4.00",
-            "bulletPoints": [
-                "Ranked among the top 10 performers in the graduating batch, demonstrating consistent academic excellence.",
-                "Achieved a 3.85 average GPA over the last four semesters, with a perfect 4.0 (1st place) in the 7th semester and 3.97 (2nd place) in the 8th semester.",
-                "Coursework: Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networking, Distributed Systems, Software Architecture and Design Patterns, Software Requirement Engineering, Software Verification and Validation, Software Metrics, Linear and Abstract Algebra, Data Science, Machine Learning, Artificial Intelligence."
-            ]
-
-        },
-        "college" : {
-            "name": "MC College",
-            "degree": "Higher Secondary School Certificate in Science",
-            "duration": "July 2014 — August 2016",
-            "result": "CGPA 5.00 / 5.00",
-            "bulletPoints" : [
-                "Scored above 85% in Higher Secondary School Certificate exams and received government scholarships.",
-                "Achieved a perfect score of GPA 5.00/5.00 in both the Secondary School Certificate and Junior School Certificate exams, receiving government scholarships for both."
-            ]
-        }
-    },
-    "experience" : {
-        "software_development" : {
-            "heading" : "Software Development",
-            "experience1" : {
-                "position" : "Software Engineer",
-                "company" : "Cefalo Bangladesh Limited",
-                "duration" : "July 2024 - Present",
-                "location" : "Dhaka, Bangladesh",
-                "technologies" : "TypeScript, Next.js, Imgix, MJML, Nest.js, BullMQ",
-                "bulletPoints": [
-                    "Worked from scratch in an Oslo-based startup environment as a full-stack engineer to build and scale Subrite, a multi-tenant SaaS subscription management platform also contributing to the development of tenant projects, actively following Agile methodologies and the full software development life cycle (SDLC).",
-                    "Architected email automation functions using Nest.js event queue system to handle both scheduled and event-driven tasks, serving around 300,000 users across Scandinavia.",
-                    "Optimized web performance by implementing efficient data fetching and caching strategies incorporating Next.Js and Redis, improving overall page load performance from 55% to 95% and SEO from 85% to 100% (Google Lighthouse metrics).",
-                    "Designed responsive email templates using MJML; implemented rich text rendering to generate parsable HTML and PDF content; developed on-the-fly PDF generation and optimized media delivery with MUX for video, and Imgix, Next/Image for efficient image rendering.",
-                    "Worked extensively with the Sanity CMS alongside traditional SQL databases—implemented automated type generation, wrote efficient GROQ queries, and handled diverse content types (icons, rich text, media) to dynamically render them on the frontend."
-                ]                   
-            },
-            "experience2" : {
-                "position" : "Associate Software Engineer",
-                "company" : "Cefalo Bangladesh Limited",
-                "duration" : "February 2023 - June 2024",
-                "location" : "Dhaka, Bangladesh",
-                "technologies" : "NextAuth, Playwright, Jest, TailwindCSS, TypeORM, PostgreSQL, Jira, Notion, Miro",
-                "bulletPoints": [
-                    "Integrated an external tenant application with Subrite’s OIDC system using NextAuth, handling secure authentication flows including dynamic redirect and callback URLs to support tenant-specific login and post-login redirection.",
-                    "Introduced and configured Playwright for end-to-end testing across the system, integrating it into the CI/CD pipeline for automated testing and quality assurance, and wrote unit tests using Jest to ensure code reliability and functionality.",
-                    "Implemented custom fields integration for a multi-tenant front-end, allowing tenant-specific configurations to be applied dynamically, built responsive UIs, and developed well-maintained, reusable components.",
-                    "Optimized backend RESTful API performance and fine-tuned TypeORM SQL queries, resulting in a 1.5x improvement in API response times and overall system efficiency."
-                ]
-            },
-            "experience3" : {
-                "position" : "Trainee Software Engineer",
-                "company" : "Cefalo Bangladesh Limited",
-                "duration" : "September 2021 - March 2022",
-                "location" : "Dhaka, Bangladesh",
-                "technologies" : "JavaScript, React.js, Material UI, Node.js, Express.js, MongoDB, Mongoose, Git",
-                "bulletPoints": [
-                    "Gained foundational knowledge of HTTP, HTTPS, Caching, CORS, and REST APIs.",
-                    "Built an in-house web application with secure authentication, content negotiation, and state management."
-                ]
-        
-            }
-        },
-        "research_experience" : {
-            "research1" : {
-                "title" : "Volunteer Researcher — Secure Software Engineering & AI-Generated Code",
-                "description": "Collaborated with Dr. Tanmay Bhowmik and his research group SERA (Software Engineering Research and Analysis Lab) at Kennesaw State University on security weaknesses in AI-generated code.",
-                "orgnaization" : "SERA Lab (Software Engineering Research and Analysis Lab), Kennesaw State University",
-                "technologies": "Python, Bash, CodeQL, GitHub API",
-                "duration": "November 2025 - March 2026",
-                "githubLink": "https://github.com/jagonmoy/SE-AI-Security",
-                "bulletPoints": [
-                    "Performing literature review on security weaknesses in AI-generated code and contributing to shaping a research proposal in Secure Software Engineering.",
-                    "Engineered a GitHub code-mining pipeline to collect AI-generated code datasets, handling pagination, rate limits, and file-size constraints, and exporting results to CSV.",
-                    "Automated local CodeQL scanning (cross-platform) to run query suites, extracting CWE-tagged security findings across codebases.",
-                    "Mapped CWEs to CVEs by scraping vulnerability intelligence (Python + Playwright), producing a consolidated dataset with CVSS, summaries, and publish/update dates."
-                ]
-            },
-            "research2" : {
-                "title" : "Undergrad thesis: Speaker Diarization with Speech Recognition in Bengali",
-                "description": "Addressed the problem of multi-speaker transcription in Bangla by developing a system that combines speaker diarization (\"who spoke when\") and speech recognition (\"what was said\") to generate structured, dialogue-style transcripts.",
-                "orgnaization" : "Shahjalal University of Science and Technology",
-                "technologies": "Python, Google Cloud Speech-to-Text, Tensorflow, ELAN, Audacity",
-                "warning": "You can contact me if you want to read the thesis.",
-                "bulletPoints": [
-                    "Designed a full pipeline using Bi-LSTM for speaker diarization and Google Cloud Speech-to-Text for transcription, incorporating voice activity detection, speaker segmentation, and clustering.",
-                    "Integrated the WebRTC VAD library for detecting speech regions, developed custom code snippets to link VAD with segmentation, and used pyannote-audio embeddings for speaker representation.",
-                    "Collected and annotated 8 hours of Bangla audio data from YouTube debates and talk shows using ELAN,Audacity, and y2Mate."
-                ]
-            },
-            "research3": {
-                "title": "Jira Insights: AI-Driven Task Reviewer",
-                "description": "An AI-powered assistant that connects to Jira to help software teams maintain high-quality boards — an intelligent co-pilot for task clarity, speed, and quality.",
-                "orgnaization": "Cefalo Bangladesh Limited",
-                "technologies": "Python, FastAPI, RAG, ChromaDB, OpenAI, Jira API, Slack API",
-                "githublink": "",
-                "videoDemo": "https://drive.google.com/file/d/1OkXXAUhFAq_WHHcccxnTj6CdBK1vXGSs/view?usp=sharing",
-                "warning": "Cefalo has the ownership of the repository and the code is not public. That's why Github link is not available.",
-                "bulletPoints": [
-                    "Smart Duplicate Detection: Used RAG + LLM technology for accurate duplicate ticket detection.",
-                    "Ongoing Task Intelligence: Monitors 'In Review' and 'In Progress' tickets with LLM-powered summaries.",
-                    "Automated Release Management: Generates weekly/monthly release logs automatically.",
-                    "Quality Assurance: Detects missing ticket details and vague summaries using LLM.",
-                    "Smart Communication: Identifies unanswered questions in comments using LLM.",
-                    "Multi-Channel Notifications: Jira comments, Slack messages, and email alerts.",
-                    "Flexible Configuration: Customizable rules and settings.",
-                    "Real-time Logs: Advanced task search and monitoring capabilities."
-                ]
-            },
-            "research4": {
-                "title": "Vocabuilder - AI-Powered Vocabulary Builder",
-                "description": "A modern web application for building vocabulary with AI-powered word analysis, intelligent learning features, and contextual story generation. Built with LLM technology, LangChain, and vector databases, this project combines advanced AI with modern web frameworks to create a powerful vocabulary learning experience.",
-                "orgnaization": "Personal R&D Project",
-                "technologies": "Python, FastAPI, RAG, LangChain, ChromaDB, OpenAI, Google Gemini, PostgreSQL, Next.js, TypeScript",
-                "githublink": "https://github.com/jagonmoy/VocaBuilder",
-                "videoDemo": "https://drive.google.com/file/d/1b5xz4J_DwzZs_0GiigBcjoS4yKcn5RjM/view?usp=sharing",
-                "liveDemo": "https://vocabuilder-frontend.onrender.com/",
-                "warning": "The backend and database are hosted on two different servers in different regions in free tier, so the live demo will be slow and not responsive as the recorded demo.",
-                "bulletPoints": [
-                    "AI-Powered Learning Features: Multi-model AI analysis with OpenAI and Google Gemini.",
-                    "Contextual Story Generation: Generates engaging stories using vocabulary words in context.",
-                    "Semantic Similarity: Finds similar words using embeddings and semantic search.",
-                    "Advanced AI Architecture: LangChain-based prompt engineering with vector database integration."
-                ]
-            },
-            "research5": {
-                "title": "Time-Series Analysis with Stock Market Data",
-                "description": "Developed a custom extension in a forked version of TSLib, a widely used open-source time series library. Implemented a stock market data loader for a Kaggle dataset so that the dataset can be trained and evaluated by available models.",
-                "orgnaization": "Personal R&D Project",
-                "videoDemo": "",
-                "GithubLink": "https://github.com/jagonmoy/Time-Series-with-stock",
-                "technologies": "Python, PyTorch, Scikit-learn, NumPy, Pandas, TSLib, Kaggle",
-                "bulletPoints": [
-                    "Custom TSLib Extension: Developed a stock market data loader for time series analysis.",
-                    "Machine Learning Integration: Implemented data preprocessing for PyTorch and Scikit-learn models."
-                ]
-            }
-        },
-        "mentorship": {
-            "heading": "Mentorship",
-            "mentorship1": {
-                "position": "Trainer for Junior Software Engineers and Interns",
-                "institue": "Cefalo Bangladesh Limited",
-                "duration": "September 2023 - Present",
-                "location": "Dhaka, Bangladesh",
-                "description": "Trained junior engineers on the complete software development process, conducted React.js and Next.js workshops, reviewed code, and planned training programs."
-                
-
-            },
-            "mentorship2": {
-                "position": "Competitive Programming Instructor",
-                "institue": "Shahjalal University of Science and Technology",
-                "duration": "January 2021 - August 2021",
-                "location": "Sylhet, Bangladesh",
-                "description": "Conducted university workshops on competitive programming, teaching concepts related to various data structures and algorithms to improve problem-solving skills."
-                
-
-            }
-        },
-        "volunteering": {
-            "heading": "Volunteering activities",
-            "volunteering1": {
-                "position": "Programming Contest Coordinator at SUST SWE TECHNOVENT 2023",
-                "event": "SUST SWE TECHNOVENT 2023",
-                "location": "Shahjalal University of Science and Technology",
-                "duration": "January 2023",
-                "description": "Worked as a Programming Contest Coordinator, overseeing the setup and management of the contest infrastructure for participants from 100+ universities nationwide, and led a team of juniors in executing the event."
-                
-            },
-            "volunteering2": {
-                "position": "Photography Team Lead at SUST SWE TECHNOVENT 2023",
-                "event": "SUST SWE TECHNOVENT 2023",
-                "location": "Shahjalal University of Science and Technology",
-                "duration": "January 2023",
-                "description": "Led the photography team to cover all major events, including the opening and closing ceremonies, programming contest, hackathons, and security contest."
-            }
-        }
-    },
-    "showcase": {
-        "technicalSkills" : {
-            "heading" : "Technical Skills",
-            "languagesHeading" : "Languages",
-            "frameworksHeading" : "Frameworks / Libraries",
-            "developerToolsHeading" : "Developer Tools",
-            "mlToolsHeading": "Machine Learning Technologies",
-            "languages" : {
-                "js" : "JavaScript",
-                "ts" : "TypeScript",
-                "python" : "Python",
-                "c": "C",
-                "sql": "SQL",
-                "html": "HTML",
-                "css": "CSS"
-            },
-            "frameworks": {
-                "react": "React.js",
-                "next": "Next.js",
-                "nest": "Nest.js",
-                "node": "Node.js",
-                "express": "Express.js",
-                "fastapi": "FastAPI",
-                "tailwind": "Tailwind CSS",
-                "jest": "Jest",
-                "playwright": "Playwright",
-                "postgres": "PostgreSQL",
-                "sanity": "Sanity"
-            },
-            "developerTools": {
-                "git": "Git",
-                "github": "GitHub",
-                "linux": "Linux",
-                "docker": "Docker",
-                "jupyter": "Jupyter",
-                "swagger": "Swagger",
-                "postman": "Postman"
-            },
-            "mlTools": {
-                "pytorch": "PyTorch",
-                "tensorflow": "TensorFlow",
-                "scikit": "Scikit-learn",
-                "numpy": "NumPy",
-                "pandas": "Pandas",
-                "langchain": "LangChain",
-                "chroma": "ChromaDB"
-            }
-        },
-        "projects": {
-            "heading": "Projects",
-
-            "project1": {
-                "name": "SlackBook",
-                "link": "https://github.com/RakibulRanak/SlackBook",
-                "technologies": "JavaScript, Node.js, Slack API, Facebook Graph API",
-                "description": "Developed a Slackbot, integrating Slack API and Facebook Graph API to automate message/attachment sharing between Slack and Facebook using various commands."
-                
-
-            },
-            "project2": {
-                "name1": "Number Theory",
-                "name2": "Graph Theory",
-                "link1": "https://github.com/jagonmoy/Number-Theory",
-                "link2": "https://github.com/jagonmoy/Graph-Theory",
-                "technologies": "C++, C",
-                "description": "Created and maintained two GitHub repositories on Number Theory and Graph Theory, featuring tutorials, problems, and solutions for learning DSA. Each repository has received 20+ stars and is now used in the department to construct Competitive Programming and Data Structures and Algorithms courses."
-                
-
-            }
-        },
-        "competitiveProgramming" : {
-            "heading": "Competitive Programming",
-            "cfLink": "https://codeforces.com/profile/jagonmoy",
-            "leetCodeLink": "https://leetcode.com/jagonmoy/",
-            "uhuntLink": "https://uhunt.onlinejudge.org/id/954978",
-            "bulletPoints": [
-                "Solved over 1200 problems on online judges like Codeforces, UVa, LightOJ, and LeetCode, with a maximum rating of 1500+ on Codeforces.",
-                "Participated in 80+ contests which includes both virtual and on-site contests",
-                "Competitive Programming Profiles:"
-            ]
-        },
-        "languageProficiency": {
-            "heading": "Language Proficiency",
-            "english": "English",
-            "englishDescription": "C1 English proficiency, IELTS 7.5 ( Listening: 8.5, Reading: 7.0, Writing: 6.5, Speaking: 7.5)",
-            "bengali": "Bengali",
-            "bengaliDescription": "Native Proficiency"
-        }
+    "college": {
+      "name": "MC College",
+      "degree": "Higher Secondary School Certificate in Science",
+      "duration": "July 2014 — August 2016",
+      "result": "CGPA 5.00 / 5.00",
+      "bulletPoints": [
+        "Scored above 85% in Higher Secondary School Certificate exams and received government scholarships.",
+        "Achieved a perfect score of GPA 5.00/5.00 in both the Secondary School Certificate and Junior School Certificate exams, receiving government scholarships for both."
+      ]
     }
+  },
+  "experience": {
+    "software_development": {
+      "heading": "Software Development",
+      "experience1": {
+        "position": "Software Engineer",
+        "company": "Cefalo Bangladesh Limited",
+        "duration": "July 2024 - Present",
+        "location": "Dhaka, Bangladesh",
+        "technologies": "TypeScript, Next.js, Imgix, MJML, Nest.js, BullMQ",
+        "bulletPoints": [
+          "Built and scaled subrite.no, an Oslo-based multi-tenant SaaS subscription management platform, from scratch as a full-stack engineer, contributing to the core product and tenant projects while following Agile and SDLC practices.",
+          "Architected email automation functions using Nest.js event queue system to handle both scheduled and event-driven tasks, serving around 300,000 users.",
+          "Optimized data fetching and caching with Next.js and Redis, boosting Google Lighthouse scores from 55%→95% (page load performance) and 85%→100% (SEO).",
+          "Built a content pipeline integrating Sanity CMS with automated type generation and GROQ queries, featuring MJML email templates, rich text-to-HTML/PDF rendering, and optimized media delivery via MUX, Imgix, and Next/Image.",
+          "Developing real-time control interfaces for OSC.no, an ocean simulation platform, processing high-frequency data streams via NATS pub/sub for remote equipment operation.",
+          "Leveraged Claude Code with agentic workflows, hooks, skills, and MCP integrations to automate repetitive development tasks and streamline engineering pipelines."
+        ]
+      },
+      "experience2": {
+        "position": "Associate Software Engineer",
+        "company": "Cefalo Bangladesh Limited",
+        "duration": "February 2023 - June 2024",
+        "location": "Dhaka, Bangladesh",
+        "technologies": "NextAuth, Playwright, Jest, TailwindCSS, TypeORM, PostgreSQL, Jira, Notion, Miro",
+        "bulletPoints": [
+          "Integrated a tenant application with Subrite’s OIDC system via NextAuth, handling secure authentication flows with dynamic redirect and callback URLs for tenant-specific login.",
+          "Introduced Playwright for E2E testing and integrated it into the CI/CD pipeline, alongside Jest unit tests to ensure code reliability.",
+          "Implemented dynamic tenant-specific custom fields, built responsive UIs, and developed reusable component libraries for a multi-tenant frontend.",
+          "Optimized backend RESTful API performance and fine-tuned TypeORM SQL queries, resulting in a 1.5x improvement in API response times."
+        ]
+      },
+      "experience3": {
+        "position": "Trainee Software Engineer",
+        "company": "Cefalo Bangladesh Limited",
+        "duration": "September 2021 - March 2022",
+        "location": "Dhaka, Bangladesh",
+        "technologies": "JavaScript, React.js, Material UI, Node.js, Express.js, MongoDB, Mongoose, Git",
+        "bulletPoints": [
+          "Received structured training on Web, HTTP, REST APIs, and software engineering foundations, and implemented these concepts by developing features for Cefalo's internal in-house web platforms."
+        ]
+      }
+    },
+    "research_experience": {
+      "research1": {
+        "title": "Volunteer Researcher — Secure Software Engineering & AI-Generated Code",
+        "description": "Collaborated with Dr. Tanmay Bhowmik and his research group SERA (Software Engineering Research and Analysis Lab) at Kennesaw State University on security weaknesses in AI-generated code.",
+        "orgnaization": "SERA Lab (Software Engineering Research and Analysis Lab), Kennesaw State University",
+        "technologies": "Python, Bash, CodeQL, GitHub API",
+        "duration": "November 2025 - March 2026",
+        "githubLink": "https://github.com/jagonmoy/SE-AI-Security",
+        "bulletPoints": [
+          "Performing literature review on security weaknesses in AI-generated code and contributing to shaping a research proposal in Secure Software Engineering.",
+          "Engineered a GitHub code-mining pipeline to collect AI-generated code datasets, handling pagination, rate limits, and file-size constraints, and exporting results to CSV.",
+          "Automated local CodeQL scanning (cross-platform) to run query suites, extracting CWE-tagged security findings across codebases.",
+          "Mapped CWEs to CVEs by scraping vulnerability intelligence (Python + Playwright), producing a consolidated dataset with CVSS, summaries, and publish/update dates."
+        ]
+      },
+      "research2": {
+        "title": "Undergrad thesis: Speaker Diarization with Speech Recognition in Bengali",
+        "description": "Addressed the problem of multi-speaker transcription in Bangla by developing a system that combines speaker diarization (\"who spoke when\") and speech recognition (\"what was said\") to generate structured, dialogue-style transcripts.",
+        "orgnaization": "Shahjalal University of Science and Technology",
+        "technologies": "Python, Google Cloud Speech-to-Text, Tensorflow, ELAN, Audacity",
+        "warning": "You can contact me if you want to read the thesis.",
+        "bulletPoints": [
+          "Designed a full pipeline using Bi-LSTM for speaker diarization and Google Cloud Speech-to-Text for transcription, incorporating voice activity detection, speaker segmentation, and clustering.",
+          "Integrated the WebRTC VAD library for detecting speech regions, developed custom code snippets to link VAD with segmentation, and used pyannote-audio embeddings for speaker representation.",
+          "Collected and annotated 8 hours of Bangla audio data from YouTube debates and talk shows using ELAN,Audacity, and y2Mate."
+        ]
+      },
+      "research3": {
+        "title": "Jira Insights: AI-Driven Task Reviewer",
+        "description": "An AI-powered assistant that connects to Jira to help software teams maintain high-quality boards — an intelligent co-pilot for task clarity, speed, and quality.",
+        "orgnaization": "Cefalo Bangladesh Limited",
+        "technologies": "Python, FastAPI, RAG, ChromaDB, OpenAI, Jira API, Slack API",
+        "githublink": "",
+        "videoDemo": "https://drive.google.com/file/d/1OkXXAUhFAq_WHHcccxnTj6CdBK1vXGSs/view?usp=sharing",
+        "warning": "Cefalo has the ownership of the repository and the code is not public. That's why Github link is not available.",
+        "bulletPoints": [
+          "Smart Duplicate Detection: Used RAG + LLM technology for accurate duplicate ticket detection.",
+          "Ongoing Task Intelligence: Monitors 'In Review' and 'In Progress' tickets with LLM-powered summaries.",
+          "Automated Release Management: Generates weekly/monthly release logs automatically.",
+          "Quality Assurance: Detects missing ticket details and vague summaries using LLM.",
+          "Smart Communication: Identifies unanswered questions in comments using LLM.",
+          "Multi-Channel Notifications: Jira comments, Slack messages, and email alerts.",
+          "Flexible Configuration: Customizable rules and settings.",
+          "Real-time Logs: Advanced task search and monitoring capabilities."
+        ]
+      },
+      "research4": {
+        "title": "Vocabuilder - AI-Powered Vocabulary Builder",
+        "description": "A modern web application for building vocabulary with AI-powered word analysis, intelligent learning features, and contextual story generation. Built with LLM technology, LangChain, and vector databases, this project combines advanced AI with modern web frameworks to create a powerful vocabulary learning experience.",
+        "orgnaization": "Personal R&D Project",
+        "technologies": "Python, FastAPI, RAG, LangChain, ChromaDB, OpenAI, Google Gemini, PostgreSQL, Next.js, TypeScript",
+        "githublink": "https://github.com/jagonmoy/VocaBuilder",
+        "videoDemo": "https://drive.google.com/file/d/1b5xz4J_DwzZs_0GiigBcjoS4yKcn5RjM/view?usp=sharing",
+        "liveDemo": "https://vocabuilder-frontend.onrender.com/",
+        "warning": "The backend and database are hosted on two different servers in different regions in free tier, so the live demo will be slow and not responsive as the recorded demo.",
+        "bulletPoints": [
+          "AI-Powered Learning Features: Multi-model AI analysis with OpenAI and Google Gemini.",
+          "Contextual Story Generation: Generates engaging stories using vocabulary words in context.",
+          "Semantic Similarity: Finds similar words using embeddings and semantic search.",
+          "Advanced AI Architecture: LangChain-based prompt engineering with vector database integration."
+        ]
+      },
+      "research5": {
+        "title": "Time-Series Analysis with Stock Market Data",
+        "description": "Developed a custom extension in a forked version of TSLib, a widely used open-source time series library. Implemented a stock market data loader for a Kaggle dataset so that the dataset can be trained and evaluated by available models.",
+        "orgnaization": "Personal R&D Project",
+        "videoDemo": "",
+        "GithubLink": "https://github.com/jagonmoy/Time-Series-with-stock",
+        "technologies": "Python, PyTorch, Scikit-learn, NumPy, Pandas, TSLib, Kaggle",
+        "bulletPoints": [
+          "Custom TSLib Extension: Developed a stock market data loader for time series analysis.",
+          "Machine Learning Integration: Implemented data preprocessing for PyTorch and Scikit-learn models."
+        ]
+      }
+    },
+    "mentorship": {
+      "heading": "Mentorship",
+      "mentorship1": {
+        "position": "Trainer for Junior Software Engineers and Interns",
+        "institue": "Cefalo Bangladesh Limited",
+        "duration": "September 2023 - Present",
+        "location": "Dhaka, Bangladesh",
+        "description": "Trained junior engineers on the complete software development process, conducted React.js and Next.js workshops, reviewed code, and planned training programs."
+      },
+      "mentorship2": {
+        "position": "Competitive Programming Instructor",
+        "institue": "Shahjalal University of Science and Technology",
+        "duration": "January 2021 - August 2021",
+        "location": "Sylhet, Bangladesh",
+        "description": "Conducted university workshops on competitive programming, teaching concepts related to various data structures and algorithms to improve problem-solving skills."
+      }
+    },
+    "volunteering": {
+      "heading": "Volunteering activities",
+      "volunteering1": {
+        "position": "Programming Contest Coordinator at SUST SWE TECHNOVENT 2023",
+        "event": "SUST SWE TECHNOVENT 2023",
+        "location": "Shahjalal University of Science and Technology",
+        "duration": "January 2023",
+        "description": "Worked as a Programming Contest Coordinator, overseeing the setup and management of the contest infrastructure for participants from 100+ universities nationwide, and led a team of juniors in executing the event."
+      },
+      "volunteering2": {
+        "position": "Photography Team Lead at SUST SWE TECHNOVENT 2023",
+        "event": "SUST SWE TECHNOVENT 2023",
+        "location": "Shahjalal University of Science and Technology",
+        "duration": "January 2023",
+        "description": "Led the photography team to cover all major events, including the opening and closing ceremonies, programming contest, hackathons, and security contest."
+      }
+    }
+  },
+  "showcase": {
+    "technicalSkills": {
+      "heading": "Technical Skills",
+      "languagesHeading": "Languages",
+      "frameworksHeading": "Frameworks / Libraries",
+      "developerToolsHeading": "Developer Tools",
+      "mlToolsHeading": "Machine Learning Technologies",
+      "languages": {
+        "js": "JavaScript",
+        "ts": "TypeScript",
+        "python": "Python",
+        "c": "C",
+        "sql": "SQL",
+        "html": "HTML",
+        "css": "CSS"
+      },
+      "frameworks": {
+        "react": "React.js",
+        "next": "Next.js",
+        "nest": "Nest.js",
+        "node": "Node.js",
+        "express": "Express.js",
+        "fastapi": "FastAPI",
+        "tailwind": "Tailwind CSS",
+        "jest": "Jest",
+        "playwright": "Playwright",
+        "postgres": "PostgreSQL",
+        "sanity": "Sanity"
+      },
+      "developerTools": {
+        "git": "Git",
+        "github": "GitHub",
+        "linux": "Linux",
+        "docker": "Docker",
+        "jupyter": "Jupyter",
+        "swagger": "Swagger",
+        "postman": "Postman"
+      },
+      "mlTools": {
+        "pytorch": "PyTorch",
+        "tensorflow": "TensorFlow",
+        "scikit": "Scikit-learn",
+        "numpy": "NumPy",
+        "pandas": "Pandas",
+        "langchain": "LangChain",
+        "chroma": "ChromaDB"
+      }
+    },
+    "projects": {
+      "heading": "Projects",
+
+      "project1": {
+        "name": "SlackBook",
+        "link": "https://github.com/RakibulRanak/SlackBook",
+        "technologies": "JavaScript, Node.js, Slack API, Facebook Graph API",
+        "description": "Developed a Slackbot, integrating Slack API and Facebook Graph API to automate message/attachment sharing between Slack and Facebook using various commands."
+      },
+      "project2": {
+        "name1": "Number Theory",
+        "name2": "Graph Theory",
+        "link1": "https://github.com/jagonmoy/Number-Theory",
+        "link2": "https://github.com/jagonmoy/Graph-Theory",
+        "technologies": "C++, C",
+        "description": "Created and maintained two GitHub repositories on Number Theory and Graph Theory, featuring tutorials, problems, and solutions for learning DSA. Each repository has received 20+ stars and is now used in the department to construct Competitive Programming and Data Structures and Algorithms courses."
+      }
+    },
+    "competitiveProgramming": {
+      "heading": "Competitive Programming",
+      "cfLink": "https://codeforces.com/profile/jagonmoy",
+      "leetCodeLink": "https://leetcode.com/jagonmoy/",
+      "uhuntLink": "https://uhunt.onlinejudge.org/id/954978",
+      "bulletPoints": [
+        "Solved over 1200 problems on online judges like Codeforces, UVa, LightOJ, and LeetCode, with a maximum rating of 1500+ on Codeforces.",
+        "Participated in 80+ contests which includes both virtual and on-site contests",
+        "Competitive Programming Profiles:"
+      ]
+    },
+    "languageProficiency": {
+      "heading": "Language Proficiency",
+      "english": "English",
+      "englishDescription": "C1 English proficiency, IELTS 7.5 ( Listening: 8.5, Reading: 7.0, Writing: 6.5, Speaking: 7.5)",
+      "bengali": "Bengali",
+      "bengaliDescription": "Native Proficiency"
+    }
+  }
 }
