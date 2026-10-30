@@ -30,7 +30,7 @@
       "Large Language Models in Software Development Lifecycle",
       "AI-Driven Software Engineering and Automation"
     ],
-    "paragraph1": "I am a Software Engineer with 3.5+ years of industry experience building full-stack systems, and I have increasingly shifted my focus toward AI for Software Engineering (AI4SE). I have hands-on experience with LLM-powered tools that improve real engineering workflows — from intelligent task automation and RAG pipelines to working with modern agentic development workflows using tools like Claude. I have also collaborated with a software engineering research group on empirical work studying the intersection of AI and software security."
+    "paragraph1": "I am a Software Engineer with 4 years of industry experience building scalable full-stack systems, and my focus has increasingly shifted toward AI for Software Engineering (AI4SE). My work explores how large language models can make software development more reliable, secure and efficient, both in research on secure code generation and in industry through LLM-powered tools and agentic development workflows. I enjoy working where solid engineering practice meets applied AI research."
   },
   "education": {
     "heading": "Education",
@@ -60,37 +60,43 @@
     "software_development": {
       "heading": "Software Development",
       "experience1": {
-        "position": "Software Engineer",
+        "position": "Software Engineer II",
         "company": "Cefalo Bangladesh Limited",
-        "duration": "July 2024 - Present",
+        "duration": "January 2026 - Present",
         "location": "Dhaka, Bangladesh",
-        "technologies": "TypeScript, Next.js, Imgix, MJML, Nest.js, BullMQ",
+        "technologies": "TypeScript, NATS, Claude Code, MCP",
         "bulletPoints": [
-          "Built and scaled subrite.no, an Oslo-based multi-tenant SaaS subscription management platform, from scratch as a full-stack engineer, contributing to the core product and tenant projects while following Agile and SDLC practices.",
-          "Architected email automation functions using Nest.js event queue system to handle both scheduled and event-driven tasks, serving around 300,000 users.",
-          "Optimized data fetching and caching with Next.js and Redis, boosting Google Lighthouse scores from 55%→95% (page load performance) and 85%→100% (SEO).",
-          "Built a content pipeline integrating Sanity CMS with automated type generation and GROQ queries, featuring MJML email templates, rich text-to-HTML/PDF rendering, and optimized media delivery via MUX, Imgix, and Next/Image.",
-          "Developing real-time control interfaces for OSC.no, an ocean simulation platform, processing high-frequency data streams via NATS pub/sub for remote equipment operation.",
+          "Developing real-time control interfaces for OSC.no, a Norwegian ocean simulation platform, processing high-frequency data streams via NATS pub/sub for remote equipment operation.",
           "Leveraged Claude Code with agentic workflows, hooks, skills, and MCP integrations to automate repetitive development tasks and streamline engineering pipelines."
         ]
       },
       "experience2": {
+        "position": "Software Engineer I",
+        "company": "Cefalo Bangladesh Limited",
+        "duration": "July 2024 - December 2025",
+        "location": "Dhaka, Bangladesh",
+        "technologies": "TypeScript, Next.js, Nest.js, BullMQ, Redis, Sanity, MJML, MUX, Imgix",
+        "bulletPoints": [
+          "Built and scaled subrite.no, a multi-tenant SaaS subscription management platform, as a full-stack engineer from initial development through production, serving around 300,000 users.",
+          "Architected an event-driven and scheduled task system for automated email workflows (Nest.js queues), and a content pipeline integrating Sanity CMS with automated type generation, GROQ queries, and templated rendering (MJML, rich text to HTML/PDF).",
+          "Optimized data fetching, caching (Next.js, Redis), and media delivery (MUX, Imgix, Next/Image), raising Google Lighthouse scores from 55%→95% (performance) and 85%→100% (SEO)."
+        ]
+      },
+      "experience3": {
         "position": "Associate Software Engineer",
         "company": "Cefalo Bangladesh Limited",
         "duration": "February 2023 - June 2024",
         "location": "Dhaka, Bangladesh",
         "technologies": "NextAuth, Playwright, Jest, TailwindCSS, TypeORM, PostgreSQL, Jira, Notion, Miro",
         "bulletPoints": [
-          "Integrated a tenant application with Subrite’s OIDC system via NextAuth, handling secure authentication flows with dynamic redirect and callback URLs for tenant-specific login.",
-          "Introduced Playwright for E2E testing and integrated it into the CI/CD pipeline, alongside Jest unit tests to ensure code reliability.",
-          "Implemented dynamic tenant-specific custom fields, built responsive UIs, and developed reusable component libraries for a multi-tenant frontend.",
-          "Optimized backend RESTful API performance and fine-tuned TypeORM SQL queries, resulting in a 1.5x improvement in API response times."
+          "Integrated tenant applications with Subrite’s OIDC system via NextAuth, implementing secure authentication flows with dynamic tenant-specific redirect and callback URLs; introduced Playwright end-to-end tests into the CI/CD pipeline alongside Jest unit tests to ensure code reliability.",
+          "Built a multi-tenant frontend with dynamic tenant-specific custom fields, responsive UIs, and reusable component libraries; optimized backend RESTful APIs and TypeORM SQL queries, improving response times by 1.5x."
         ]
       },
-      "experience3": {
+      "experience4": {
         "position": "Trainee Software Engineer",
         "company": "Cefalo Bangladesh Limited",
-        "duration": "September 2021 - March 2022",
+        "duration": "September 2021 - February 2022",
         "location": "Dhaka, Bangladesh",
         "technologies": "JavaScript, React.js, Material UI, Node.js, Express.js, MongoDB, Mongoose, Git",
         "bulletPoints": [
@@ -103,14 +109,15 @@
         "title": "Volunteer Researcher — Secure Software Engineering & AI-Generated Code",
         "description": "Collaborated with Dr. Tanmay Bhowmik and his research group SERA (Software Engineering Research and Analysis Lab) at Kennesaw State University on security weaknesses in AI-generated code.",
         "orgnaization": "SERA Lab (Software Engineering Research and Analysis Lab), Kennesaw State University",
-        "technologies": "Python, Bash, CodeQL, GitHub API",
-        "duration": "November 2025 - March 2026",
+        "technologies": "Python, Bash, CodeQL, Bandit, GitHub API",
+        "duration": "April 2026 - Present",
         "githubLink": "https://github.com/jagonmoy/SE-AI-Security",
+        "labLink": "https://www.seralab.tech/",
         "bulletPoints": [
-          "Performing literature review on security weaknesses in AI-generated code and contributing to shaping a research proposal in Secure Software Engineering.",
-          "Engineered a GitHub code-mining pipeline to collect AI-generated code datasets, handling pagination, rate limits, and file-size constraints, and exporting results to CSV.",
-          "Automated local CodeQL scanning (cross-platform) to run query suites, extracting CWE-tagged security findings across codebases.",
-          "Mapped CWEs to CVEs by scraping vulnerability intelligence (Python + Playwright), producing a consolidated dataset with CVSS, summaries, and publish/update dates."
+          "Led a research project with Dr. Tanmay Bhowmik’s SERA Lab as first author of a paper (under review) on secure code generation; identified the security–functionality trade-off in existing LLM-based methods and drove the work from problem formulation to evaluation.",
+          "Developed a two-stage generate-then-select framework that builds a diverse candidate pool via multiple generation strategies and security-aware retrieval, then selects the final solution through test free ranking based on test agreement, consensus, and security scores.",
+          "Outperformed four state-of-the-art baselines across 1,200+ tasks and multiple LLMs, with a 24–30% relative gain in secure-and-correct generation; used independent analyzers (CodeQL, Bandit) to prevent evaluation leakage.",
+          "Built a pipeline that mines AI-generated Python from GitHub, detects CWE weaknesses with CodeQL, and maps them to real-world CVEs with CVSS severity, providing the empirical motivation for the framework."
         ]
       },
       "research2": {
@@ -259,7 +266,6 @@
     },
     "projects": {
       "heading": "Projects",
-
       "project1": {
         "name": "SlackBook",
         "link": "https://github.com/RakibulRanak/SlackBook",

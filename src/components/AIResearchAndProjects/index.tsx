@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Brain, Sparkles, Github, Play, ExternalLink } from 'lucide-react';
+import { Brain, Sparkles, Github, Play, ExternalLink, Globe } from 'lucide-react';
 
 import data from 'data/data.json';
 
@@ -20,6 +20,7 @@ function AIResearchAndProjects() {
       color: 'from-violet-500 to-indigo-600',
       hasDownload: false,
       githublink: (research_experience.research1 as any).githubLink || '',
+      labLink: (research_experience.research1 as any).labLink || '',
       videoDemo: '',
       warning: '',
     },
@@ -239,7 +240,10 @@ function AIResearchAndProjects() {
                 )}
 
                 {/* Action Buttons */}
-                {(item.githublink || item.videoDemo || (item as any).liveDemo) && (
+                {(item.githublink ||
+                  item.videoDemo ||
+                  (item as any).liveDemo ||
+                  (item as any).labLink) && (
                   <motion.div
                     className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:space-x-3 mt-4"
                     initial={{ opacity: 0, y: 20 }}
@@ -261,6 +265,24 @@ function AIResearchAndProjects() {
                       >
                         <Github className="w-4 h-4" />
                         <span className="text-sm font-medium">Github</span>
+                        <ExternalLink className="w-3 h-3" />
+                      </motion.button>
+                    )}
+
+                    {(item as any).labLink && (
+                      <motion.button
+                        type="button"
+                        className="flex items-center justify-center sm:justify-start space-x-2 px-3 py-2 sm:px-4 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 active:bg-secondary/90 transition-all duration-200 border border-gray-200 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2 focus:ring-offset-background text-sm font-medium"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        onClick={() => {
+                          if ((item as any).labLink) {
+                            window.open((item as any).labLink, '_blank');
+                          }
+                        }}
+                      >
+                        <Globe className="w-4 h-4" />
+                        <span className="text-sm font-medium">Lab Website</span>
                         <ExternalLink className="w-3 h-3" />
                       </motion.button>
                     )}

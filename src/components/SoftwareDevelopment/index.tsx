@@ -37,6 +37,15 @@ function SoftwareDevelopment() {
       bulletPoints: software_development.experience3.bulletPoints,
       color: 'from-green-500 to-emerald-600',
     },
+    {
+      position: software_development.experience4.position,
+      company: software_development.experience4.company,
+      duration: software_development.experience4.duration,
+      location: software_development.experience4.location,
+      technologies: software_development.experience4.technologies,
+      bulletPoints: software_development.experience4.bulletPoints,
+      color: 'from-orange-500 to-yellow-600',
+    },
   ];
 
   const containerVariants = {
