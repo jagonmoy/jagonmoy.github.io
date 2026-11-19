@@ -92,16 +92,6 @@
           "Integrated tenant applications with Subrite’s OIDC system via NextAuth, implementing secure authentication flows with dynamic tenant-specific redirect and callback URLs; introduced Playwright end-to-end tests into the CI/CD pipeline alongside Jest unit tests to ensure code reliability.",
           "Built a multi-tenant frontend with dynamic tenant-specific custom fields, responsive UIs, and reusable component libraries; optimized backend RESTful APIs and TypeORM SQL queries, improving response times by 1.5x."
         ]
-      },
-      "experience4": {
-        "position": "Trainee Software Engineer",
-        "company": "Cefalo Bangladesh Limited",
-        "duration": "September 2021 - February 2022",
-        "location": "Dhaka, Bangladesh",
-        "technologies": "JavaScript, React.js, Material UI, Node.js, Express.js, MongoDB, Mongoose, Git",
-        "bulletPoints": [
-          "Received structured training on Web, HTTP, REST APIs, and software engineering foundations, and implemented these concepts by developing features for Cefalo's internal in-house web platforms."
-        ]
       }
     },
     "research_experience": {
